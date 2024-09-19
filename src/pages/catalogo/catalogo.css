@@ -1,0 +1,138 @@
+.container-catalogo {
+    position: absolute; 
+    top: 0; 
+    width: 100%; 
+    padding: 10px 0; 
+    z-index: 1000; 
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    background-color: transparent
+
+}
+
+.container-navbar{
+    display: flex; 
+    justify-content: center; 
+    flex: 1; 
+    z-index: 1;
+    margin-left: 10%;
+    margin-bottom: 5%;
+}
+
+.container-navbar a{
+    
+    position: relative;
+    color: #000; 
+    text-decoration: none; 
+    margin-top: 5px;
+    margin-left: 30px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.btn-login{
+    position: absolute; 
+    top: 10px; 
+    right: 30px; 
+    display: flex;
+    align-items: center;
+}
+
+.btn-login button{
+    background: none; 
+    border: 0.5px solid #000; 
+    border-radius: 0;
+    color: #000; 
+    padding: 8px 25px; 
+    cursor: pointer; 
+    text-decoration: none;
+    
+}
+
+
+.container-logo {
+    display: flex;
+    justify-content: start;
+    width: 100%;
+    margin-bottom: 10px; /* Espaço abaixo do logo, ajuste conforme necessário */
+}
+
+.container-logo img{
+    width: 10%;
+    margin-left: 40px;
+    margin-top: 10px;
+}
+
+
+.container-titulo {
+    position: relative;
+    flex-direction: column;
+    justify-content: center; 
+    width: 80%;
+    padding: 20px 0;
+    margin-right: 15px;
+    margin-left: 10%;
+    margin-bottom: 10px;
+    background-color: #E2F2DF;
+}
+
+
+.container-titulo h2 {
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 48px;
+    
+   
+}
+
+.container-descricoes{
+    display: flex;
+}
+
+.container-descricoes h5 {
+    color: #6BBF59;
+    font-size: 20px;
+    width: 100%;
+    text-align: end;
+    margin: 20px 80px 10px;
+    
+    
+      
+}
+
+.container-descricoes p {
+    color: #6BBF59;
+    font-size: 20px;
+    text-align: start;
+    width: 100%;
+    font-weight: bold;
+    margin: 20px 40px;
+    /* margin-right: 70%;  */
+}
+
+
+
+.container-not img{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 50px;
+    
+}
+
+.container-not p{
+    text-align: justify;
+    padding: 10px 95px 20px;
+    font-weight: bold;
+}
+
+.container-not p .highlight {
+    color: #6BBF59; 
+    text-decoration: underline;    
+  }
+  
+.container-outras-not img-outras-not{
+    flex-direction: column;
+    justify-content: end;
+}
