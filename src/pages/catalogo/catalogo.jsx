@@ -36,12 +36,51 @@ function catalogo(){
         <br></br> 
         As árvores oferecem habitat para diversas espécies, sustentando ecossistemas ricos e promovendo a biodiversidade. <span className='highlight'>Elas ajudam a manter o solo estável e a prevenir a erosão, essencial para a agricultura sustentável.</span><br></br> 
         <br></br> 
-        Além dos benefícios ambientais, o contato com áreas arborizadas reduz o estresse e melhora o bem-estar, oferecendo um ambiente mais saudável e agradável.<span className='highlight'> Preservar e plantar árvores é vital para a sustentabilidade e para um futuro mais equilibrado e saudável para todos.</span></p>
+        Além dos benefícios ambientais, o contato com áreas arborizadas reduz o estresse e melhora o bem-estar, oferecendo um ambiente mais saudável e agradável. <span className='highlight'>Preservar e plantar árvores é vital para a sustentabilidade e para um futuro mais equilibrado e saudável para todos.</span></p>
     </div>
     <div className='container-outras-not'>
         <h3>Outras notícias</h3>
         <img className='img-outras-not' src='/img/linha-outras-not.svg' alt='img' />
     </div>
+    <div className='pai-outras-noticias'>
+         <div className='container-not-um'>
+            <img src='/img/img-noticia-dois.svg' alt='img-noticia' className='img-not-dois'/>
+            <h5>A importancia  da <br></br> reciclagem.</h5>          
+            <button className='btn-not-um' type='button'>LEIA MAIS</button>        
+        </div>
+
+        <div className='container-not-um'>
+            <img src='/img/img-noticia-dois.svg' alt='img-noticia' className='img-not-dois'/>
+            <h5>A importancia  da <br></br> reciclagem.</h5>          
+            <button className='btn-not-um' type='button'>LEIA MAIS</button>        
+        </div>
+
+        <div className='container-not-um'>
+            <img src='/img/img-noticia-dois.svg' alt='img-noticia' className='img-not-dois'/>
+            <h5>A importancia  da <br></br> reciclagem.</h5>          
+            <button className='btn-not-um' type='button'>LEIA MAIS</button>        
+        </div>
+        </div>
+
+        <div className='container-footer'>
+        <img src="/img/logo-v2.svg" alt="logo" className='logo-verdois' />  
+        <p>Seu guia para um futuro <br></br>mais verde.</p> 
+        <a href="#top" className='botao-voltar'>
+            <img src='/img/btn-voltar.svg' alt='Voltar ao topo' />
+        </a>
+        
+        <div className='container-footer-btn'>
+        <a href="#artigos">ARTIGOS</a>
+        <a href="#sobre">SOBRE</a>
+        </div>
+
+        <div className='container-linha'>
+        <img src="/img/line-footer.svg" alt="linha" className='linha-footer'/>
+        <p>Copyright © 2024 | ECOGUIA | by ECO12BIOTEC</p>
+        </div>
+
+                      
+        </div>
 
     </div>
     
