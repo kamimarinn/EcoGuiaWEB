@@ -9,7 +9,7 @@ function catalogo(){
     <div className='container-navbar'>
     
         <a href="#sobre">SOBRE</a>
-        <a href="#horario-coleta">HORÁRIOS DA COLETA</a>
+        <a href="#horario-coleta">HORÁRIOS DAS COLETAS</a>
         <a href="#artigos">ARTIGOS</a>
         <a href="#ecopontos">ECOPONTOS</a>
     </div>
