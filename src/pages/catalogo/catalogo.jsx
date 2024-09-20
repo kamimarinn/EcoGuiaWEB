@@ -14,15 +14,14 @@ function catalogo(){
         <a href="#ecopontos">ECOPONTOS</a>
     </div>
     <div className='btn-login'>
-    <button type="button">
-                LOGIN
-    </button>
+    <button type="button">LOGIN</button>
     </div>
+    
     <div className='container-titulo'>
         <h2>POR QUE ÁRVORES SÃO TÃO<br></br> IMPORTANTES PARA O PLANETA?</h2>
         
     <div className='container-descricoes'>
-        <p>21 de agosto de 2024, São Paulo</p>
+        <p>São Paulo, 21 de agosto de 2024</p>
         <h5>via chatGPT</h5>
     </div>
     </div>
@@ -44,19 +43,19 @@ function catalogo(){
     </div>
     <div className='pai-outras-noticias'>
          <div className='container-not-um'>
-            <img src='/img/img-noticia-dois.svg' alt='img-noticia' className='img-not-dois'/>
+            <img src='/img/img-pag-catalogo.svg' alt='img-noticia' className='img-not-dois'/>
             <h5>A importancia  da <br></br> reciclagem.</h5>          
             <button className='btn-not-um' type='button'>LEIA MAIS</button>        
         </div>
 
         <div className='container-not-um'>
-            <img src='/img/img-noticia-dois.svg' alt='img-noticia' className='img-not-dois'/>
+            <img src='/img/img-pag-catalogo.svg' alt='img-noticia' className='img-not-dois'/>
             <h5>A importancia  da <br></br> reciclagem.</h5>          
             <button className='btn-not-um' type='button'>LEIA MAIS</button>        
         </div>
 
         <div className='container-not-um'>
-            <img src='/img/img-noticia-dois.svg' alt='img-noticia' className='img-not-dois'/>
+            <img src='/img/img-pag-catalogo.svg' alt='img-noticia' className='img-not-dois'/>
             <h5>A importancia  da <br></br> reciclagem.</h5>          
             <button className='btn-not-um' type='button'>LEIA MAIS</button>        
         </div>
@@ -70,8 +69,8 @@ function catalogo(){
         </a>
         
         <div className='container-footer-btn'>
-        <a href="#artigos">ARTIGOS</a>
-        <a href="#sobre">SOBRE</a>
+        <a href="/horariocoleta">ARTIGOS</a>
+        <a href="/funcionalidades">SOBRE</a>
         </div>
 
         <div className='container-linha'>
