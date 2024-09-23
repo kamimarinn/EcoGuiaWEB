@@ -1,9 +1,9 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home/home-index.jsx";
 import PageCatalogo from "./pages/catalogo/catalogo.jsx";
-import Login from "./pages/Login/Login.jsx";
 import Funcionalidades from "./componentes/Funcionalidades/Funcionalidades.jsx";
 import HorarioColeta from "./componentes/HorarioColeta/HorarioColeta.jsx";
+import Login from "./pages/Login/Login.jsx";
 // import Footer from "./componentes/Footer/Footer.jsx";
 
 export default function Rotas() {
@@ -15,6 +15,7 @@ export default function Rotas() {
                 <Route path="/" element={<Login/>}/>
                 <Route path="/Funcionalidades" element={<Funcionalidades/>}/>
                 <Route path="/HorarioColeta" element={<HorarioColeta/>}/>
+                <Route path="/Login" element={<Login/>}/>
                 {/* <Route path="/Footer" element={<Footer/>}/> */}
                 
             </Routes>

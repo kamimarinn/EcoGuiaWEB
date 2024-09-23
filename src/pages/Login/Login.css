@@ -1,0 +1,89 @@
+.container-login {
+    display: flex;
+    background-color: #ffff;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh;
+    position: relative; 
+}
+
+.container-eco{
+    width: 75vw; /* Aumenta a largura para 90% */
+    height: 80%; 
+    background-color: #F1F1F1;
+    border: 0.5px solid transparent;
+    border-radius: 39px;
+    box-shadow: 1px 3px 10px 9px rgba(0, 0, 0, 0.16);
+    margin: 10px 115px 20px;
+    z-index: 7;
+    position: relative; 
+    display: flex; 
+    
+    justify-content: center; 
+    padding: 40px; /* Ajuste conforme necessário */
+}
+
+.imgum-telalogin{
+    display: flex;
+    width: 50%; 
+    justify-content: space-between;
+    margin-right: 100px;
+   
+}
+
+.container-cadastro {
+    flex-direction: column; 
+    align-items: center; 
+    width: 65%; 
+}
+
+.logo-telalogin {
+    width: 65%;
+    margin-left: 75px;
+}
+
+.container-cadastro h2 {
+    font-size: 37px;
+    text-align: center; 
+    margin: 0;
+}
+
+
+.btn-google {
+    padding: 10px 20px; 
+    background-color: transparent;
+    color: #000; 
+    border: 0.5px solid #000; 
+    border-radius: 15px; 
+    cursor: pointer; 
+    display: flex; 
+    align-items: center; 
+}
+
+.btn-google img{
+    width: 15px; 
+    height: auto;
+    margin-right: 10px; 
+    margin-top: 0; 
+}
+
+.container-cadastro input{
+    width: 70%;
+    height: auto;
+    flex-direction: column;
+    padding: 1rem;
+    margin-top: 15px;
+    border: 0.5px solid #000;
+    border-radius: 5px; 
+    
+    
+}
+
+.cad-input::placeholder {
+    color: none;
+    text-align: start; 
+    
+  }
+
+
+
