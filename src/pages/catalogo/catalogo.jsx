@@ -1,4 +1,5 @@
 import './catalogo.css';
+import {Link} from "react-router-dom";
 
 function catalogo(){
     return(
@@ -14,7 +15,7 @@ function catalogo(){
         <a href="#ecopontos">ECOPONTOS</a>
     </div>
     <div className='btn-login'>
-    <button type="button">LOGIN</button>
+    <Link className="button" to="/Login">LOGIN</Link>
     </div>
     
     <div className='container-titulo'>
