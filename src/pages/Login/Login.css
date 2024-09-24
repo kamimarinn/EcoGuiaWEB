@@ -1,20 +1,21 @@
 .container-login {
+    width: 100%;
+    height: 100vh;
     display: flex;
     background-color: #ffff;
     justify-content: center; 
     align-items: center; 
-    height: 100vh;
     position: relative; 
 }
 
 .container-eco{
-    width: 75vw; /* Aumenta a largura para 90% */
+    width: 70vw; 
     height: 80%; 
     background-color: #F1F1F1;
     border: 0.5px solid transparent;
     border-radius: 39px;
     box-shadow: 1px 3px 10px 9px rgba(0, 0, 0, 0.16);
-    margin: 10px 115px 20px;
+    margin: 20px 150px 20px;
     z-index: 7;
     position: relative; 
     display: flex; 
@@ -34,23 +35,26 @@
 .container-cadastro {
     flex-direction: column; 
     align-items: center; 
-    width: 65%; 
+    
 }
 
 .logo-telalogin {
-    width: 65%;
-    margin-left: 75px;
+    width: 75%;
+    margin-left: 45px;
 }
 
 .container-cadastro h2 {
-    font-size: 37px;
+    font-size: 30px;
     text-align: center; 
     margin: 0;
 }
 
 
 .btn-google {
-    padding: 10px 20px; 
+    width: 60%;
+    height: auto;
+    font-size: 15px;
+    padding: 5px 10px 5px; 
     background-color: transparent;
     color: #000; 
     border: 0.5px solid #000; 
@@ -58,25 +62,31 @@
     cursor: pointer; 
     display: flex; 
     align-items: center; 
+    margin-top: 10px;
+    margin-bottom: 25px;
+    margin-left: 85px;
 }
 
 .btn-google img{
-    width: 15px; 
+    width: 10px; 
     height: auto;
     margin-right: 10px; 
     margin-top: 0; 
+   
 }
 
 .container-cadastro input{
-    width: 70%;
-    height: auto;
+    width: 60%;
+    height: 5px;
+    color: #919890;
+    background-color: #F1F1F1;
     flex-direction: column;
     padding: 1rem;
-    margin-top: 15px;
-    border: 0.5px solid #000;
+    margin-top: 5px;
+    margin-left: 70px;
+    border: 0.5px solid #3F463E;
     border-radius: 5px; 
-    
-    
+        
 }
 
 .cad-input::placeholder {
@@ -84,6 +94,53 @@
     text-align: start; 
     
   }
+
+  .btn-confirmar{
+    background-color: #6BBF59;
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 5px 40px; 
+  border: none; 
+  border-radius: 5px; 
+  margin-left: 130px;
+  margin-top: 20px;
+  border-radius: 15px; 
+}
+
+
+.container-login-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px; 
+    margin-left: 10px;
+}
+
+.container-login-link span {
+    margin-right: 5px;
+}
+
+.btn-faça-login {
+    flex-direction: column;
+    justify-content: center;
+    background-color: #F1F1F1;
+    color: #6BBF59; 
+    border: none; 
+    padding: 5px 10px; 
+    cursor: pointer; 
+    margin: 0;
+}
+
+.btn-faça-login:hover {
+    color: darkgreen;
+}
+
+
 
 
 

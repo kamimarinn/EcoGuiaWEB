@@ -18,9 +18,13 @@ function Login(){
         <input type="text" id="input-id" className="cad-input" placeholder="E-mail" />
         <input type="number" id="input-id" className="cad-input" placeholder="Senha" />
         <input type="number" id="input-id" className="cad-input" placeholder="Confirmar Senha" />
-       
-
+        <button className="btn-confirmar">Concluído</button>
+        <div className="container-login-link">
+                        <span>Já tem conta?</span>
+                        <button className="btn-faça-login">Faça login</button>
+                    </div>
         </div>
+       
 
         </div>
         </div> 

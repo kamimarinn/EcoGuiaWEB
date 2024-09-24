@@ -7,10 +7,10 @@ export default  function NavBar() {
                     
         <div className='container-pag'>
         
-        <a href="/funcionalidades">SOBRE</a>
-        <a href="/horario-coleta">HORÁRIOS DA COLETA</a>
-        <a href="/horario-coleta">ARTIGOS</a>
-        <a href="/horario-coleta">ECOPONTOS</a>
+        <a href="#">SOBRE</a>
+        <a href="#">HORÁRIOS DA COLETA</a>
+        <a href="#">ARTIGOS</a>
+        <a href="#">ECOPONTOS</a>
         </div>
         
         
