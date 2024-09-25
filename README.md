@@ -1,6 +1,5 @@
 # 🌳 Ecoguia Website 
-
-Aplicativo projetado em alinhamento com o 12º ODS (Objetivo de Desenvolvimento Sustentável) para estimular práticas de consumo sustentável de maneira interativa e educativa.
+Em consonância com o 12º ODS (Objetivo de Desenvolvimento Sustentável), desenvolvemos o EcoGuia. Este projeto oferece uma plataforma rica em artigos sobre sustentabilidade, promovendo a conscientização e incentivando práticas de consumo responsável de forma interativa e educativa.
 
 # 💡 Funcionalidades:
 
