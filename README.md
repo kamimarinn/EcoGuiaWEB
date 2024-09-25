@@ -17,7 +17,7 @@ Aplicativo projetado em alinhamento com o 12º ODS (Objetivo de Desenvolvimento 
 
 3. Instale as dependências do projeto: npm install
 
-4. Inicie o projeto: npm run dev
+4. Inicie o projeto: *npm run dev*
 
 5. Copie o link fornecido, identificado como localhost, e cole na barra de URL.
 
