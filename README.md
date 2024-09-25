@@ -20,7 +20,7 @@ Aplicativo projetado em alinhamento com o 12º ODS (Objetivo de Desenvolvimento 
 
 5. Escaneie o QR Code no seu celular através do aplicativo do Expo Go
 
-# Sobre o projeto:
+# 📄 Sobre o projeto:
 
 Currently, two official plugins are available:
 
