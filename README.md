@@ -9,7 +9,7 @@ Aplicativo projetado em alinhamento com o 12º ODS (Objetivo de Desenvolvimento 
 
 📱 REPOSITORIO ECOGUIA MOBILE: https://github.com/Giovanna-Sant/EcoGuiaMOB?tab=readme-ov-file
 
-# Como visualizar localmente?
+#  👁️‍🗨️ Como visualizar localmente?
 
 # Sobre o projeto:
 
