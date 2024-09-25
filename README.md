@@ -7,7 +7,7 @@ Aplicativo projetado em alinhamento com o 12º ODS (Objetivo de Desenvolvimento 
 # Links Úteis:
 🖌️ FIGMA: https://www.figma.com/design/g6fvHnC4mVXiQc28NnTuPr/ECOGUIA?node-id=12-2&m=dev&t=037P6U9rhg3XCo6O-1
 
-📱 REPOSITORIO ECOGUIA MOBILE: https://github.com/Giovanna-Sant/EcoGuiaMOB?tab=readme-ov-file
+📱 REPOSITORIO ECOGUIA MOBILE: https://github.com/Giovanna-Sant/EcoGuiaMOB.git
 
 #  👁️‍🗨️ Como visualizar localmente?
 1. Abra a linha de comando e clone o repositório: git clone https://github.com/kamimarinn/EcoGuiaWEB
