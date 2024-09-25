@@ -1,6 +1,6 @@
 # Ecoguia Website 🌳
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicativo projetado em alinhamento com o 12º ODS (Objetivo de Desenvolvimento Sustentável) para estimular práticas de consumo sustentável de maneira interativa e educativa.
 
 # Funcionalidades:
 
