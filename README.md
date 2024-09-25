@@ -2,7 +2,7 @@
 
 Aplicativo projetado em alinhamento com o 12º ODS (Objetivo de Desenvolvimento Sustentável) para estimular práticas de consumo sustentável de maneira interativa e educativa.
 
-# Funcionalidades:
+# 💡 Funcionalidades:
 
 # 🔗 Links Úteis:
  <a href="https://www.figma.com/design/g6fvHnC4mVXiQc28NnTuPr/ECOGUIA?node-id=12-2&m=dev&t=037P6U9rhg3XCo6O-1">🖌️ FIGMA</a> 
