@@ -10,7 +10,7 @@ Em consonância com o 12º ODS (Objetivo de Desenvolvimento Sustentável), desen
 
 
 #  👁️‍🗨️ Como visualizar localmente?
-1. Abra a linha de comando e clone o repositório: git clone https://github.com/kamimarinn/EcoGuiaWEB
+1. Abra a linha de comando e clone o repositório: *git clone https://github.com/kamimarinn/EcoGuiaWEB*
 
 2. Entre na pasta que foi criada: *cd EcoGuiaWEB*
 
