@@ -16,10 +16,10 @@ Aplicativo projetado em alinhamento com o 12º ODS (Objetivo de Desenvolvimento 
 
 3. Instale as dependências do projeto: npm install
 
-4. Inicie o Metro Bundler: npm start --tunnel
+4. Inicie o projeto: npm run dev
 
-5. Escaneie o QR Code no seu celular através do aplicativo do Expo Go
+5. Copie o link fornecido, identificado como localhost, e cole na barra de URL.
 
 # 📄 Sobre o projeto:
 
-Trabalho de Conclusão de Curso desenvolvido pelo grupo EcoBio12 da turma 3DM do curso de Desenvolvimento de Sistemas do SENAI Suíço-Brasileiro.
+Trabalho de Conclusão de Curso desenvolvido pelo grupo ECOBIO12 da turma 3DM do curso de Desenvolvimento de Sistemas do SENAI Suíço-Brasileiro.
