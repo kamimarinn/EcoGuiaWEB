@@ -75,6 +75,32 @@
    
 }
 
+.btn-google-login{
+    width: 60%;
+    height: auto;
+    font-size: 15px;
+    padding: 5px 10px 5px 25px; 
+    background-color: transparent;
+    color: #000; 
+    border: 0.5px solid #000; 
+    border-radius: 15px; 
+    cursor: pointer; 
+    display: flex; 
+    align-items: center; 
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    margin-left: 85px;
+}
+
+.btn-google-login img{
+    width: 10px; 
+    height: auto;
+    margin-right: 10px; 
+    margin-top: 0; 
+   
+}
+
 .container-cadastro input{
     width: 60%;
     height: 5px;
