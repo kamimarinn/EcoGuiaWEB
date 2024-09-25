@@ -5,7 +5,7 @@ Aplicativo projetado em alinhamento com o 12º ODS (Objetivo de Desenvolvimento 
 # Funcionalidades:
 
 # Links Úteis:
-🖌️ FIGMA: https://www.figma.com/design/g6fvHnC4mVXiQc28NnTuPr/ECOGUIA?node-id=12-2&m=dev&t=037P6U9rhg3XCo6O-1
+: <a href="https://www.figma.com/design/g6fvHnC4mVXiQc28NnTuPr/ECOGUIA?node-id=12-2&m=dev&t=037P6U9rhg3XCo6O-1">🖌️ FIGMA</a> 
 
 📱 REPOSITORIO ECOGUIA MOBILE: https://github.com/Giovanna-Sant/EcoGuiaMOB.git
 
