@@ -12,11 +12,11 @@ Em consonância com o 12º ODS (Objetivo de Desenvolvimento Sustentável), desen
 #  👁️‍🗨️ Como visualizar localmente?
 1. Abra a linha de comando e clone o repositório: git clone https://github.com/kamimarinn/EcoGuiaWEB
 
-2. Entre na pasta que foi criada: cd EcoGuiaWEB
+2. Entre na pasta que foi criada: *cd EcoGuiaWEB*
 
-3. Instale as dependências do projeto: npm install
+3. Instale as dependências do projeto: *npm install*
 
-4. Inicie o projeto: npm run dev
+4. Inicie o projeto: *npm run dev*
 
 5. Copie o link fornecido, identificado como localhost, e cole na barra de URL.
 
