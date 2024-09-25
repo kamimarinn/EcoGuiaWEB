@@ -10,6 +10,15 @@ Aplicativo projetado em alinhamento com o 12º ODS (Objetivo de Desenvolvimento 
 📱 REPOSITORIO ECOGUIA MOBILE: https://github.com/Giovanna-Sant/EcoGuiaMOB?tab=readme-ov-file
 
 #  👁️‍🗨️ Como visualizar localmente?
+1. Abra a linha de comando e clone o repositório: git clone https://github.com/kamimarinn/EcoGuiaWEB
+
+2. Entre na pasta que foi criada: cd EcoGuiaWEB
+
+3. Instale as dependências do projeto: npm install
+
+4. Inicie o Metro Bundler: npm start --tunnel
+
+5. Escaneie o QR Code no seu celular através do aplicativo do Expo Go
 
 # Sobre o projeto:
 
