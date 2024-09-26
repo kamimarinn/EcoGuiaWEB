@@ -19,7 +19,6 @@
     z-index: 7;
     position: relative; 
     display: flex; 
-    
     justify-content: center; 
     padding: 40px; /* Ajuste conforme necessário */
 }
@@ -68,7 +67,7 @@
 }
 
 .btn-google img{
-    width: 10px; 
+    width: 20px; 
     height: auto;
     margin-right: 10px; 
     margin-top: 0; 
@@ -94,7 +93,7 @@
 }
 
 .btn-google-login img{
-    width: 10px; 
+    width: 20px; 
     height: auto;
     margin-right: 10px; 
     margin-top: 0; 

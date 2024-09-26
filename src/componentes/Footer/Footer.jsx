@@ -12,6 +12,7 @@ function Footer(){
         <div className='container-footer-btn'>
         <a href="#artigos">ARTIGOS</a>
         <a href="#sobre">SOBRE</a>
+        <a href="/Crud">CRUD</a>
         </div>
 
         <div className='container-linha'>
