@@ -5,7 +5,8 @@ import PageCatalogo from "./pages/catalogo/catalogo.jsx";
 import Funcionalidades from "./componentes/Funcionalidades/Funcionalidades.jsx";
 import HorarioColeta from "./componentes/HorarioColeta/HorarioColeta.jsx";
 import Login from "./pages/Login/Login.jsx";
-// import Footer from "./componentes/Footer/Footer.jsx";
+import Crud from "./pages/Tela CRUD/crud.jsx";
+
 
 export default function Rotas() {
     return (
@@ -17,7 +18,8 @@ export default function Rotas() {
                 <Route path="/Funcionalidades" element={<Funcionalidades/>}/>
                 <Route path="/HorarioColeta" element={<HorarioColeta/>}/>
                 <Route path="/Login" element={<Login/>}/>
-                {/* <Route path="/Footer" element={<Footer/>}/> */}
+                <Route path="/Crud"  element={<Crud/>}/>
+                
                 
             </Routes>
         </BrowserRouter>

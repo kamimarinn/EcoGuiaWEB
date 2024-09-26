@@ -55,7 +55,7 @@ function HorarioColeta() {
         </div>
         <div className='container-artigo-dois'>
             <img src='/img/img-noticia-dois.svg' alt='img-noticia' className='img-not-dois'/>
-        <div className='container-artigo-dois-div'>
+            <div className='container-artigo-dois-div'>
             <h5>A importancia  da <br></br> reciclagem.</h5>
             <button className='btn-leiamais-dois' type='button'>LEIA MAIS</button>
         </div>
