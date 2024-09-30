@@ -42,8 +42,8 @@ function Crud (){
         </div>
 
         <div className="container-icon-tres">
-        <a href="#" className='botao-addicons'>
-            <img className="engrenagem-crudtela" src ='/img/perfil-crud.svg' alt='icon'/></a>
+        <Link className="btn-alticons" to="/telaAltIcons">
+            <img className="engrenagem-crudtela" src ='/img/perfil-crud.svg' alt='icon'/></Link>
             <h5 className="icon-titulo">Icons para<br></br>perfis</h5>
             <p className="icon-texto" >Adicione mais ícones para<br></br>os usuários</p>
            

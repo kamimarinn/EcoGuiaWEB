@@ -7,6 +7,7 @@ import HorarioColeta from "./componentes/HorarioColeta/HorarioColeta.jsx";
 import Login from "./pages/Login/Login.jsx";
 import Crud from "./pages/Tela CRUD/crud.jsx";
 import AddArtigos from "./pages/telaAddArtigos/AddArtigos.jsx";
+import TelaAltIcons from "./pages/telaAltIcons/telaAltIcons.jsx";
 
 
 export default function Rotas() {
@@ -21,6 +22,7 @@ export default function Rotas() {
                 <Route path="/Login" element={<Login/>}/>
                 <Route path="/Crud"  element={<Crud/>}/>
                 <Route path="/AddArtigos" element={<AddArtigos/>}/>
+                <Route path="/telaAltIcons" element={<TelaAltIcons/>}/>
                 
                 
             </Routes>
