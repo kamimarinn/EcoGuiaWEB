@@ -50,9 +50,10 @@ function AddArtigos() {
             </div>
 
             <div className="container-tit">
-                <h3 className={editingIndex !== null ? "highlight" : ""}>
-            {editingIndex !== null ? "Editar Notícia" : "Adicionar Notícia"}
-            </h3>
+                 <h3 className={editingIndex !== null ? "highlight" : ""}>
+                {editingIndex !== null ? "Editar Notícia" : "Adicionar Notícia"}
+                </h3>
+
                 <img src='/img/retangulo-hcoleta.svg' alt='retangulo-hcoleta' className='retang-coleta'/>
                 </div>
 
@@ -66,32 +67,33 @@ function AddArtigos() {
                     value={currentNoticia.image} 
                     onChange={(e) => setCurrentNoticia({ ...currentNoticia, image: e.target.value })} 
                 />
+
                 <button onClick={addNoticia}>{editingIndex !== null ? "Atualizar" : "Adicionar"}</button>
-                <input 
+
+               
+               </div>
+
+            <div className="container-addnoticia">
+            <input 
                     type="text" 
                     placeholder="Título" 
                     value={currentNoticia.title} 
                     onChange={(e) => setCurrentNoticia({ ...currentNoticia, title: e.target.value })} 
                 />
                 <textarea 
-                    placeholder="Texto da notícia" 
+                    placeholder="Texto da Notícia" 
                     value={currentNoticia.text} 
                     onChange={(e) => setCurrentNoticia({ ...currentNoticia, text: e.target.value })} 
                 />
-                
-               </div>
-
-            <div className="container-addnoticia">
+           
            
             </div>
-              
-              
-                             
+                                          
             </div>
 
             {/* Lista de Notícias */}
             <div className="noticias-list">
-                <h3>Lista de Notícias</h3>
+                {/* <h3>Lista de Notícias</h3>
                 {noticias.map((noticia, index) => (
                     <div key={index} className="noticia-item">
                         <h4>{noticia.title}</h4>
@@ -100,7 +102,7 @@ function AddArtigos() {
                         <button onClick={() => editNoticia(index)}>Editar</button>
                         <button onClick={() => deleteNoticia(index)}>Excluir</button>
                     </div>
-                ))}
+                ))} */}
             </div>
         </div>
     );
