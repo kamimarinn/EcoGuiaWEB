@@ -8,6 +8,7 @@ import Login from "./pages/Login/Login.jsx";
 import Crud from "./pages/Tela CRUD/crud.jsx";
 import AddArtigos from "./pages/telaAddArtigos/AddArtigos.jsx";
 import TelaAltIcons from "./pages/telaAltIcons/telaAltIcons.jsx";
+import PagEditIcon from "./pages/PagEditIcon/PagEditIcon.jsx";
 
 
 export default function Rotas() {
@@ -23,7 +24,7 @@ export default function Rotas() {
                 <Route path="/Crud"  element={<Crud/>}/>
                 <Route path="/AddArtigos" element={<AddArtigos/>}/>
                 <Route path="/telaAltIcons" element={<TelaAltIcons/>}/>
-                
+                <Route path="/PagEditIcon" element={<PagEditIcon/>}/>            
                 
             </Routes>
         </BrowserRouter>

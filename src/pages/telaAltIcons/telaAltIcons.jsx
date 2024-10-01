@@ -1,8 +1,8 @@
-
-import { Link } from 'react-router-dom'; // Certifique-se de importar o Link
+import { Link } from 'react-router-dom';
 import "./telaAltIcons.css";
 
-function TelaAltIcons() { // Mudei para iniciar com letra maiúscula
+
+function TelaAltIcons() {
     return (
         <div className='container-catalogo'>
             <div className='container-logo'>
@@ -18,6 +18,22 @@ function TelaAltIcons() { // Mudei para iniciar com letra maiúscula
             </div>
             <div className='btn-login'>
                 <Link className="button" to="/Login">LOGIN</Link>
+            </div>
+            <div className='container-titulo-alt'>
+                <h2><span className='highlight'>Icons</span>para Perfis</h2>
+                <img src='/img/retangulo-hcoleta.svg' alt='retangulo-hcoleta' className='retang-coleta'/>
+                <p>Edite o seu icone com a foto que preferir!</p>
+            </div>
+            <div className='pai-container-alticons'>
+            <div className='container-alticons'>
+                {[...Array(9)].map((_, index) => (
+                <Link key={index} to="/PagEditIcon" className='icon-link'> 
+                <img className='img-icon-alt' src='/img/perfil-crud.svg' alt={`icon-${index}`} />
+                </Link>
+                    ))}
+                </div>
+
+               
             </div>
         </div>
     );
