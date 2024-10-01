@@ -66,3 +66,93 @@
     margin-left: 40px;
     margin-top: 10px;
 }
+
+.container-titulo-alt{
+    display: flex;
+    flex-direction: column;
+}
+
+.container-titulo-alt h2{
+    font-size: 36px;
+    text-align: center;
+    z-index: 7;
+    margin: 30px 10px 20px 0;
+}
+
+.container-titulo-alt h2 .highlight{
+    color: #6BBF59; 
+    margin: 5px;
+}
+
+
+
+.retang-coleta{
+    position: absolute; 
+      z-index: 1;
+      top: 125px; 
+      left: 32%; 
+      display: flex;
+      margin: 0;
+}
+
+.container-titulo-alt p{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+    text-align: center;
+    margin: 0 10px 5px 5px;
+}
+
+
+
+.pai-container-alticons{
+    width: 80vw; 
+    height: 70vh; 
+    background-color: #F1F1F1;
+    border: 0.5px solid transparent;
+    border-radius: 39px;
+    box-shadow: 1px 3px 10px 9px rgba(0, 0, 0, 0.16);
+    margin: 40px 80px 20px;
+    z-index: 7;
+    position: relative; 
+    display: flex; 
+    justify-content: center; 
+    padding: 40px; 
+}
+
+.container-alticons {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center; 
+    width: 50%; 
+    margin-left: 60px;
+}
+
+.icon-link {
+    margin: 10px; /* Espaçamento entre os ícones */
+    width: calc(25% - 20px); /* Aproximadamente 4 ícones por linha */
+    max-width: 90px; /* Limita o tamanho máximo do ícone */
+    transition: transform 0.3s; /* Efeito de transição suave */
+    display: flex; /* Permite centralizar a imagem */
+    justify-content: center; /* Centraliza a imagem horizontalmente */
+}
+
+.icon-link:hover {
+    transform: scale(1.1); /* Aumenta o ícone no hover */
+}
+
+.img-icon-alt {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Faz a imagem ocupar 100% da largura do link */
+    height: auto; /* Mantém a proporção */
+ 
+}
+
+
+
+
+
+
