@@ -50,11 +50,10 @@ function AddArtigos() {
             </div>
 
             <div className="container-tit">
-                 <h3 className={editingIndex !== null ? "highlight" : ""}>
-                {editingIndex !== null ? "Editar Notícia" : "Adicionar Notícia"}
-                </h3>
+            <h3><span className='highlight'>Adicionar</span> Artigo </h3>
 
                 <img src='/img/retangulo-hcoleta.svg' alt='retangulo-hcoleta' className='retang-coleta'/>
+                <p>Contribua para a conscientização ambiental! Utilize esta página para publicar artigos<br></br> e notícias que promovam práticas sustentáveis.</p>
                 </div>
 
             <div className="pai-container-addnoticia">

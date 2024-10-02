@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import "./Login.css";
+import { Link } from "react-router-dom";
 
 function Login() {
     const [isLogin, setIsLogin] = useState(false);
@@ -30,7 +31,7 @@ function Login() {
                         <>
                             <input type="text" id="input-email" className="cad-input" placeholder="E-mail" />
                             <input type="password" id="input-senha" className="cad-input" placeholder="Senha" />
-                            <button className="btn-confirmar">Entrar</button>
+                            <Link className="btn-confirmar" to="/Crud">Entrar</Link>
 
                             {/* Botão do Google posicionado abaixo do botão de login */}
                             <button className="btn-google-login" onClick={handleGoogleLogin}>
