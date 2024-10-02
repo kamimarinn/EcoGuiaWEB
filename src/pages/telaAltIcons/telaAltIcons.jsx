@@ -22,7 +22,7 @@ function TelaAltIcons() {
             <div className='container-titulo-alt'>
                 <h2><span className='highlight'>Icons</span>para Perfis</h2>
                 <img src='/img/retangulo-hcoleta.svg' alt='retangulo-hcoleta' className='retang-coleta'/>
-                <p>Edite o seu icone com a foto que preferir!</p>
+                <p>Edite o seu icone com a foto que preferir!<br></br> Clique no icone que quer editar.</p>
             </div>
             <div className='pai-container-alticons'>
             <div className='container-alticons'>

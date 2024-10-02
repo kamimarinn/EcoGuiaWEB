@@ -80,6 +80,7 @@
     font-size: 36px;
     text-align: center;
     z-index: 7;
+    margin-bottom: 5px;
     
 }
 
@@ -89,12 +90,22 @@
 }
 
 .retang-coleta{
-position: absolute; 
+display: flex;
+flex-direction: column;
   z-index: 1;
   top: 130px; 
   left: 32%; 
-  display: flex;
-  margin: 0;
+
+}
+
+.container-tit p{
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    text-align: center;
+    margin: 0 10px 25px 5px;
+
+ 
 }
 
 .pai-container-addnoticia{
