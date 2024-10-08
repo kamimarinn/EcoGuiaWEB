@@ -58,3 +58,13 @@
     text-decoration: none;   
 }
 
+@media screen and (max-width: 768px){
+    .container{
+        width: 100vw;
+    }
+
+    .container-pag a{
+        width: 20vw;
+    }
+}
+

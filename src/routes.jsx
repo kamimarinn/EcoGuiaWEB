@@ -1,4 +1,3 @@
-
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home/home-index.jsx";
 import PageCatalogo from "./pages/catalogo/catalogo.jsx";
@@ -9,6 +8,8 @@ import Crud from "./pages/Tela CRUD/crud.jsx";
 import AddArtigos from "./pages/telaAddArtigos/AddArtigos.jsx";
 import TelaAltIcons from "./pages/telaAltIcons/telaAltIcons.jsx";
 import PagEditIcon from "./pages/PagEditIcon/PagEditIcon.jsx";
+import telaEsqueciSenha from "./pages/telaEsqueciSenha/telaEsqueciSenha.jsx";
+import TelaTrilha from "./pages/telaTrilha/telaTrilha.jsx";
 
 
 export default function Rotas() {
@@ -24,7 +25,9 @@ export default function Rotas() {
                 <Route path="/Crud"  element={<Crud/>}/>
                 <Route path="/AddArtigos" element={<AddArtigos/>}/>
                 <Route path="/telaAltIcons" element={<TelaAltIcons/>}/>
-                <Route path="/PagEditIcon" element={<PagEditIcon/>}/>            
+                <Route path="/PagEditIcon" element={<PagEditIcon/>}/>  
+                <Route path="/telaEsqueciSenha" element={<telaEsqueciSenha/>}/>  
+                <Route path="/telaTrilha" element={<TelaTrilha/>}/>            
                 
             </Routes>
         </BrowserRouter>

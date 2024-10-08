@@ -28,8 +28,8 @@ function Crud (){
     </div>
     <div className="pai-container-icones">
         <div className="container-icon-um">
-        <a href="/AddArtigos" className='botao-missoes'>
-            <img className="engrenagem-crudtela" src ='/img/objt-crud.svg' alt='icon'/></a>
+        <Link className="btn" to="/telaTrilha">
+            <img className="engrenagem-crudtela" src ='/img/objt-crud.svg' alt='icon'/></Link>
             <h5 className="icon-titulo">Trilha de<br></br> Objetivos</h5>
             <p className="icon-texto" >Manipule missões e<br></br> badges</p>
         </div>

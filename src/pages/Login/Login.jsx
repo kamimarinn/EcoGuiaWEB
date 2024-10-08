@@ -30,14 +30,20 @@ function Login() {
                     {isLogin ? (
                         <>
                             <input type="text" id="input-email" className="cad-input" placeholder="E-mail" />
-                            <input type="password" id="input-senha" className="cad-input" placeholder="Senha" />
+                            <input type="password" id="input-senha" className="cad-input-senha" placeholder="Senha" />
+
+                            <Link to="/telaEsqueciSenha" className="link-esqueci-senha">Esqueci a senha</Link>
+
+                            
+
                             <Link className="btn-confirmar" to="/Crud">Entrar</Link>
 
-                            {/* Botão do Google posicionado abaixo do botão de login */}
+
                             <button className="btn-google-login" onClick={handleGoogleLogin}>
                                 <img src="/img/google-logo.svg" alt="Google Icon" className="google-logo" />
                                 Login com o Google
                             </button>
+                           
                         </>
                     ) : (
                         <>
@@ -51,7 +57,7 @@ function Login() {
                             <input type="text" id="input-email-cadastro" className="cad-input" placeholder="E-mail" />
                             <input type="password" id="input-senha-cadastro" className="cad-input" placeholder="Senha" />
                             <input type="password" id="input-confirmar-senha" className="cad-input" placeholder="Confirmar Senha" />
-                            <button className="btn-confirmar">Concluído</button>
+                            <button className="btn-confirmar-cadastro">Concluído</button>
                         </>
                     )}
 

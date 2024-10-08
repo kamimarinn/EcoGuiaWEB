@@ -38,5 +38,21 @@
   font-family: 'Poppins', sans-serif;
 }
 
+@media screen and (max-width: 768px){
+  .inicio-apresetaçao{
+    display:block;
+    
+  }
+
+  .limitar-container{
+    width: 100vw;
+  }
+
+  .img-logo {
+    margin: 7em 6em;
+
+  }
+}
+
 
 
