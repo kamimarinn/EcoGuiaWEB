@@ -1,0 +1,24 @@
+.pai-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-color: #ffff;
+    justify-content: center; 
+    align-items: center; 
+    position: relative; 
+}
+
+.container-senha{
+    width: 70vw; 
+    height: 80%; 
+    background-color: #0000;
+    border: 0.5px solid transparent;
+    border-radius: 39px;
+    box-shadow: 1px 3px 10px 9px rgba(0, 0, 0, 0.16);
+    margin: 20px 150px 20px;
+    z-index: 7;
+    position: relative; 
+    display: flex; 
+    justify-content: center; 
+    padding: 40px; 
+}
