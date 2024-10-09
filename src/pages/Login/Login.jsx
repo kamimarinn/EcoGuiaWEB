@@ -21,29 +21,27 @@ function Login() {
     return (
         <div className="container-login">
             <div className="container-eco">
-                <img src='/img/img-telalogin.svg' alt='img-um' className='imgum-telalogin' />
+                {/* Imagem condicional */}
+                <img 
+                    src={isLogin ? '/img/img-fazer-login.svg' : '/img/img-telacadastro.svg'} 
+                    alt='imagem-login' 
+                    className='imgum-telalogin' 
+                />
 
                 <div className="container-cadastro">
-                    <img src='/img/logo-telalogin.svg' alt='img-um' className='logo-telalogin' />
+                    <img src='/img/logo-telalogin.svg' alt='logo' className='logo-telalogin' />
                     <h2>{isLogin ? 'Faça login!' : 'Cadastre-se!'}</h2>
                     
                     {isLogin ? (
                         <>
-                            <input type="text" id="input-email" className="cad-input" placeholder="E-mail" />
+                            <input type="text" id="input-email" className="cad-input" placeholder="seuemail@ecoguia.com" />
                             <input type="password" id="input-senha" className="cad-input-senha" placeholder="Senha" />
-
-                            <Link to="/telaEsqueciSenha" className="link-esqueci-senha">Esqueci a senha</Link>
-
-                            
-
+                            <Link className="link-esqueci-senha" to="/TelaEsqueciSenha">Esqueci a senha</Link>
                             <Link className="btn-confirmar" to="/Crud">Entrar</Link>
-
-
                             <button className="btn-google-login" onClick={handleGoogleLogin}>
                                 <img src="/img/google-logo.svg" alt="Google Icon" className="google-logo" />
                                 Login com o Google
                             </button>
-                           
                         </>
                     ) : (
                         <>
@@ -51,10 +49,9 @@ function Login() {
                                 <img src="/img/google-logo.svg" alt="Google Icon" className="google-logo" />
                                 Criar conta com o Google
                             </button>
-
                             <input type="text" id="input-nome" className="cad-input" placeholder="Nome" />
                             <input type="text" id="input-sob" className="cad-input" placeholder="Sobrenome" />
-                            <input type="text" id="input-email-cadastro" className="cad-input" placeholder="E-mail" />
+                            <input type="text" id="input-email-cadastro" className="cad-input" placeholder="seuemail@ecoguia.com" />
                             <input type="password" id="input-senha-cadastro" className="cad-input" placeholder="Senha" />
                             <input type="password" id="input-confirmar-senha" className="cad-input" placeholder="Confirmar Senha" />
                             <button className="btn-confirmar-cadastro">Concluído</button>

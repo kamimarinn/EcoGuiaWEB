@@ -72,6 +72,11 @@
     border-radius: 5px; 
 }
 
+.cad-input-token{
+    align-items: center;
+    justify-content: center;
+}
+
 .btn-redefinir{
     width: 15vw;
     background-color: #6BBF59;
