@@ -348,4 +348,75 @@
    margin-left: 70px;
 }
 
+@media screen and (max-width: 768px){
+ .hc-container img {
+  position: absolute;
+  width: 60vw;
+  height: 5vh;
+  margin-left: -90px;
+  
+ }
+
+ .hc-container p{
+  font-size: 14px;
+ }
+
+ .folhas{
+  width: 80vw;
+ }
+
+ .FimFolhas{
+  width: 80vw;
+   
+ }
+
+ .g-artigos{
+ margin-right: -60px;
+ }
+
+ .container-artigo-um{
+  
+ 
+ 
+ }
+
+ .container-artigo-um h4{
+  font-size: 18px;
+ }
+
+ .btn-leiamais{
+  font-size: 15px;
+  width: 15vw;
+  height: 5vh;
+ }
+
+ .pai-container-artigo-dois{
+  margin-top: 45% !important;
+  
+  
+  
+ }
+
+ .container-artigo-dois {
+ 
+ }
+
+ .container-artigo-dois img{
+  /* width: 15vw; */
+ }
+
+ .container-artigo-dois h5{
+  
+ }
+
+ .btn-leiamais-dois{
+  /* font-size: 12px;
+  width: 100px;
+  height: 30px;
+  margin-left: 5px; */
+  
+ }
+
+}
+
 

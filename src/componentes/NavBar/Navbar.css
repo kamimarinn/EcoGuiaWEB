@@ -60,11 +60,20 @@
 
 @media screen and (max-width: 768px){
     .container{
-        width: 100vw;
+        width: 90vw;
+        display: flex;
+        /* gap:  10px; */
+    }
+
+    .container-pag{
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .container-pag a{
-        width: 20vw;
+        
+        display: flex;
     }
 }
 
