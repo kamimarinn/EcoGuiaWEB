@@ -37,7 +37,7 @@ function Funcionalidades(){
           </div>
         </div>
         <div className='funcionalidades-container'>
-            <h3>Funcionalidades do Aplicativo</h3>
+            <h3 className='titulo-func'>Funcionalidades do Aplicativo</h3>
             
         <div className='aplicativo-container'>
         <div className='aplicativo-info'>

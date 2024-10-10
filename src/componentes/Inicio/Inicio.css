@@ -40,18 +40,24 @@
 
 @media screen and (max-width: 768px){
   .inicio-apresetaçao{
-    display:block;
+    display:flex;
+    width: 100vw;
     
   }
 
   .limitar-container{
     width: 100vw;
+    
   }
 
   .img-logo {
-    margin: 7em 6em;
+    display: flex;
+    width: 70vw;
+    margin: 3em 4em;
 
   }
+
+  
 }
 
 
