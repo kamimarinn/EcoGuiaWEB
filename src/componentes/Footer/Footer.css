@@ -42,16 +42,19 @@
   width: 100%;
   margin-top: -80px;
   margin-bottom: 90px;
+  margin-left:75px; 
+
  
 }
 
 .container-footer-btn a {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   color: #fff;
   font-size: 24px;
   z-index: 1;
-  display: flex;
-  justify-content: space-around;
-  margin-left:55px; 
+  
 
 }
 
@@ -73,4 +76,28 @@
   font-size: 14px;
   text-align: center; 
   margin-bottom: 30px; 
+}
+
+@media screen and (max-width: 768px){
+
+  .container-footer-btn {
+    display: flex;
+   /* margin-right:10px ; */
+    /* flex-direction: column; */
+    /* align-content: flex-end;
+    align-items: flex-end;
+    flex-wrap: wrap; */
+    
+    
+  }
+
+  .container-footer-btn a {
+    display: flex;
+    flex-direction: column;
+    /* align-content: flex-end;
+    align-items: flex-end;
+    flex-wrap: wrap; */
+    
+  }
+
 }
