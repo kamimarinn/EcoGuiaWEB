@@ -62,7 +62,7 @@
     .container{
         width: 90vw;
         display: flex;
-        /* gap:  10px; */
+        
     }
 
     .container-pag{
@@ -72,8 +72,8 @@
     }
 
     .container-pag a{
-        
         display: flex;
     }
 }
+
 
