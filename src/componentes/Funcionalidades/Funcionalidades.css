@@ -213,6 +213,67 @@
 
 }
 
+@media screen and (max-width: 425px){
+  .container-MissaoValores{
+    width: 200vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: start;
+    margin-left: 80px;
+  }
+
+  .funcionalidades-container{
+    height: 100vh;
+   
+  }
+
+  .titulo-func{
+    display: flex;
+    margin-top: 275% !important;
+  }
+
+  .funcionalidades-container h3{
+    font-size: 36px;
+    text-align: center;
+  }
+
+  .aplicativo-info{
+    width: 10px;
+  }
+
+  .icone{
+    width:80px
+  }
+
+  .titulo-aplicativo{
+    font-size: 15px;
+    
+  }
+
+  .texto-aplicativo{
+    font-size: 12px;
+    
+    }
+
+    .arrow{
+      width: 50px;
+      /* margin-bottom: 30px; */
+    }
+
+    .btn-baixeagora{
+  
+      height: 20vh;
+      margin-top: 30px;
+    }
+    
+    .btn-baixar{
+      width: 30vw;
+      font-size: 12px;
+      margin: 0;
+    }
+}
+
 
 
  
