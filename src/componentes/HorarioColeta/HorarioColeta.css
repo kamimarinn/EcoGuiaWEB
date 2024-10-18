@@ -450,16 +450,126 @@
     font-size: 14px;
   }
 
+  .hc-botao{
+    margin-left: -25px;
+    margin-top: 25px;
+  }
+
   .form-input{
-    width: 30vw;
-    margin-right: 50px;
+    width: 20vw;
+    margin-right: 15px;
+    
   }
 
   .form-input::placeholder{
-    font-size: 14px;
+    font-size: 12px;
+    
   }
-  
- }
 
+     .btn-cep {
+    
+      font-size: 12px;
+    }
+
+    .container-artigos h2{
+      font-size: 36px;
+    }
+
+    .ret-artigos{
+      width: 60vw;
+    }
+  
+    .container-artigos p{
+      font-size: 14px;
+      gap: 10px;
+    }
+
+    .pai-div-parte{
+      margin-top: 80px !important;
+      
+    }
+
+    .container-artigo-um h4{
+      font-size: 12px;
+
+    }
+
+    .btn-leiamais{
+      align-items: center;
+      width: 15vw;
+      height: 10px;
+      padding: 0.5rem;
+      font-size: 10px;
+      margin-top: 40px;
+      margin-right: 10px;
+      
+    }
+
+    .pai-container-artigo-dois{
+     margin-left: 70px;
+      margin-top: 70px !important;
+      display: flex;
+      flex-direction: column;
+     
+    }
+
+    .container-artigo-dois{
+      width: 45vw;
+      height: 20vh;
+    }
+
+    .container-artigo-dois img{
+      width: 15vw;
+      height: 20vh;
+      object-fit: cover;
+    }
+
+    .container-artigo-dois-div h5{
+      font-size: 10px;
+      align-content: center;
+     
+    }
+
+    .btn-leiamais-dois{
+      width: 15vw;
+      height: 25px;
+      font-size: 8px;
+      margin-bottom: 10px;
+      
+    }
+
+    
+
+    .container-EcoPonto{
+      width: 100%;
+      display: flex;
+    }
+
+    .container-EcoPonto h2{
+      font-size: 42px;
+    }
+
+    .container-EcoPonto img{
+      width: 80vw;
+      margin-bottom: 5px;
+    }
+
+    .container-EcoPonto p{
+      font-size: 14px;
+    }
+
+    .container-EcoPonto iframe{
+      width: 80vw;
+      height: 60vh;
+    }
+
+    .container-ajudasp img{
+      width: 75vw;
+      margin-bottom: 90px;
+      margin-left: -5px;
+      
+      
+    }
+ }
 
 
