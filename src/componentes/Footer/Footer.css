@@ -16,8 +16,7 @@
   color: #fff;
   font-size: 20px;
   text-align: left;
-  /* margin-top: 20px; 
-  margin-bottom: 20px;  */
+  
 }
 
 .container-footer .botao-voltar {
@@ -82,22 +81,67 @@
 
   .container-footer-btn {
     display: flex;
-   /* margin-right:10px ; */
-    /* flex-direction: column; */
-    /* align-content: flex-end;
-    align-items: flex-end;
-    flex-wrap: wrap; */
-    
-    
+   
   }
 
   .container-footer-btn a {
     display: flex;
     flex-direction: column;
-    /* align-content: flex-end;
-    align-items: flex-end;
-    flex-wrap: wrap; */
+   
+  }
+
+}
+
+@media screen and (max-width: 425px){
+  .container-footer{
+    width: 60vw;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    align-content: center;
+    margin-top: 30px !important;
+    
+  
     
   }
+
+  .container-footer img{
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+ 
+    
+   
+   
+  }
+
+  .container-footer p{
+    font-size: 16px !important;
+  }
+
+  
+  .container-footer-btn {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-end;
+   
+  }
+
+  .botao-voltar{
+    margin-bottom: 45px !important ;
+  }
+
+ 
+  
+  .container-linha img{
+    width: 85vw;
+    
+  }
+
+  .container-linha p{
+    font-size: 16px;
+  }
+
 
 }
