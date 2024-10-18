@@ -230,7 +230,7 @@
 
   .titulo-func{
     display: flex;
-    margin-top: 275% !important;
+    margin-top: 285% !important;
   }
 
   .funcionalidades-container h3{
@@ -256,22 +256,23 @@
     
     }
 
-    .arrow{
-      width: 50px;
-      /* margin-bottom: 30px; */
-    }
+  .arrow{
+      width: 45px;
+      
+  }
 
-    .btn-baixeagora{
+  .btn-baixeagora{
   
       height: 20vh;
       margin-top: 30px;
-    }
+  }
     
-    .btn-baixar{
+  .btn-baixar{
       width: 30vw;
       font-size: 12px;
       margin: 0;
-    }
+  }
+
 }
 
 
