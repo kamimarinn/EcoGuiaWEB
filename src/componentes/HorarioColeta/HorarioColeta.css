@@ -537,9 +537,7 @@
       margin-bottom: 10px;
       
     }
-
-    
-
+   
     .container-EcoPonto{
       width: 100%;
       display: flex;
@@ -572,4 +570,287 @@
     }
  }
 
+ @media screen and (max-width: 375px){
+  .horario-container img{
+    width:120vw;
+  }
 
+  .hc-container{
+  width: 85vw;
+  right: 3%;
+  }
+
+  .hc-container h2{
+    font-size: 28px;
+  }
+
+  .hc-container img {
+    width: 75vw;
+    margin-top: -20px;
+    margin-left: -67px;
+  }
+
+  .hc-container p{
+    font-size: 14px;
+  }
+
+  .hc-botao{
+    margin-left: -25px;
+    margin-top: 25px;
+  }
+
+  .form-input{
+    width: 20vw;
+    margin-right: 15px;
+    
+  }
+
+  .form-input::placeholder{
+    font-size: 10px;
+    
+    
+  }
+  .btn-cep {
+    font-size: 12px;
+  }
+
+  .container-artigos h2{
+    font-size: 34px;
+  }
+
+  .g-artigos{
+    width: 15vw;
+  }
+
+  .ret-artigos{
+    width: 60vw;
+  }
+
+  .container-artigos p{
+    font-size: 12px;
+    gap: 10px;
+  }
+
+  .pai-div-parte{
+    margin-top: 100px !important;
+    
+  }
+
+  .container-artigo-um h4{
+    font-size: 10px;
+
+  }
+
+  .btn-leiamais{
+    align-items: center;
+    width: 15vw;
+    height: 10px;
+    font-size: 10px;
+       
+  }
+
+  .pai-container-artigo-dois{
+    margin-left: 70px;
+    display: flex;
+     flex-direction: column;
+    
+   }
+
+   .container-artigo-dois{
+     width: 45vw;
+     height: 20vh;
+   }
+
+   .container-artigo-dois img{
+     width: 15vw;
+     height: 20vh;
+     object-fit: cover;
+   }
+
+   .container-artigo-dois-div h5{
+     font-size: 10px;
+     align-content: center;
+    
+   }
+
+   .btn-leiamais-dois{
+     width: 15vw;
+     height: 20px;
+     font-size: 6px;
+          
+   }
+
+   .container-EcoPonto{
+    width: 100%;
+    display: flex;
+  }
+
+  .container-EcoPonto h2{
+    font-size: 40px;
+  }
+
+  .container-EcoPonto img{
+    width: 80vw;
+    margin-bottom: 5px;
+  }
+
+  .container-EcoPonto p{
+    font-size: 14px;
+  }
+
+  .container-EcoPonto iframe{
+    width: 80vw;
+    height: 60vh;
+  }
+
+  .container-ajudasp img{
+    width: 80vw;
+    margin-bottom: 90px;
+    margin-left: -5px;
+        
+  }
+
+
+ }
+
+ @media screen and (max-width: 320px){
+  .horario-container img{
+    width:120vw;
+  }
+
+  .hc-container{
+    width: 85vw;
+    right: 3%;
+    }
+
+    .hc-container h2{
+      font-size: 24px;
+    }
+  
+    .hc-container img {
+      width: 75vw;
+      margin-top: -20px;
+      margin-left: -57px;
+    }
+  
+    .hc-container p{
+      font-size: 12px;
+    }
+  
+    .hc-botao{
+      margin-left: -25px;
+      margin-top: 25px;
+    }
+  
+    .form-input{
+      width: 20vw;
+      margin-right: 15px;
+      
+    }
+  
+    .form-input::placeholder{
+      font-size: 8px;
+      
+      
+    }
+    .btn-cep {
+      font-size: 12px;
+    }
+    
+    .container-artigos h2{
+      font-size: 32px;
+    }
+  
+    .g-artigos{
+      width: 15vw;
+    }
+  
+    .ret-artigos{
+      width: 70vw;
+    }
+  
+    .container-artigos p{
+      font-size: 10px;
+    
+    }
+  
+    .pai-div-parte{
+      margin-top: 120px !important;
+      
+    }
+  
+    .container-artigo-um h4{
+      font-size: 8px;
+  
+    }
+  
+    .btn-leiamais{
+      align-items: center;
+      width: 15vw;
+      height: 10px;
+      font-size: 8px;
+         
+    }
+  
+    .pai-container-artigo-dois{
+      margin-left: 70px;
+      display: flex;
+       flex-direction: column;
+       
+      
+     }
+  
+     .container-artigo-dois{
+       width: 45vw;
+       height: 10vh;
+     }
+  
+     .container-artigo-dois img{
+       width: 15vw;
+       height: 10vh;
+       object-fit: cover;
+     }
+  
+     .container-artigo-dois-div h5{
+       font-size: 8px;
+       align-content: center;
+      
+     }
+  
+     .btn-leiamais-dois{
+       width: 15vw;
+       font-size: 6px;
+            
+     }
+  
+     .container-EcoPonto{
+      width: 100%;
+      display: flex;
+    }
+  
+    .container-EcoPonto h2{
+      font-size: 36px;
+    }
+  
+    .container-EcoPonto img{
+      width: 80vw;
+      margin-bottom: 5px;
+    }
+  
+    .container-EcoPonto p{
+      font-size: 12px;
+    }
+  
+    .container-EcoPonto iframe{
+      width: 80vw;
+      height: 50vh;
+    }
+  
+    .container-ajudasp img{
+      width: 80vw;
+      margin-bottom: 90px;
+      margin-left: -5px;
+          
+    }
+
+ }

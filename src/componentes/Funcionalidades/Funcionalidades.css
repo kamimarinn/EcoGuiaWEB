@@ -274,6 +274,134 @@
     }
 }
 
+@media screen and (max-width: 425px){
+  .container-MissaoValores{
+    width: 200vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: start;
+    margin-left: 80px;
+  }
+
+  .funcionalidades-container{
+    height: 100vh;
+   
+  }
+
+  .titulo-func{
+    display: flex;
+    margin-top: 320% !important;
+  }
+
+  .funcionalidades-container h3{
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .aplicativo-info{
+    width: 10px;
+  }
+
+  .icone{
+    width:70px
+  }
+
+  .titulo-aplicativo{
+    font-size: 14px;
+    
+  }
+
+  .texto-aplicativo{
+    font-size: 10px;
+    
+    }
+
+    .arrow{
+      width: 55px;
+      gap: 30px;
+    }
+
+    .btn-baixeagora{
+  
+      height: 20vh;
+      margin-top: 20px;
+    }
+    
+    .btn-baixar{
+      width: 30vw;
+      font-size: 12px;
+      margin: 0;
+    }
+}
+
+@media screen and (max-width: 320px){
+  .container-MissaoValores{
+    width: 200vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: start;
+    margin-left: 65px;
+  }
+
+  .caixa-simples{
+    height: 80vh;
+    
+  }
+
+  .funcionalidades-container{
+    width: 100vw;
+    height: 100vh;
+   
+  }
+
+  .titulo-func{
+    display: flex;
+    margin-top: 445% !important;
+  }
+
+  .funcionalidades-container h3{
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .aplicativo-info{
+    width: 10px;
+  }
+
+  .icone{
+    width:60px
+  }
+
+  .titulo-aplicativo{
+    font-size: 10px;
+    
+  }
+
+  .texto-aplicativo{
+    font-size: 8px;
+   
+    
+    }
+
+    .arrow{
+      width: 45px;
+      
+    }
+
+    .btn-baixeagora{
+      margin-top: -70px;
+    
+      
+    }
+    
+    .btn-baixar{
+      width: 30vw;
+      height: 8vh;
+      font-size: 10px;
+    }
+}
 
 
  
