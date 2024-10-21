@@ -9,9 +9,9 @@ import AddArtigos from "./pages/telaAddArtigos/AddArtigos.jsx";
 import TelaAltIcons from "./pages/telaAltIcons/telaAltIcons.jsx";
 import PagEditIcon from "./pages/PagEditIcon/PagEditIcon.jsx";
 import TelaTrilha from "./pages/telaTrilha/telaTrilha.jsx";
-import TelaEsqueciSenha from "./pages/telaEsqueciSenha/TelaEsqueciSenha.jsx";
 import TelaToken from "./pages/telaToken/TelaToken.jsx";
 import TelaRedefinirSenha from "./pages/telaRedefinirSenha/TelaRedefinirSenha.jsx";
+import TelaEsqueciSenha from "./pages/TelaEsqueciSenha";
 
 
 

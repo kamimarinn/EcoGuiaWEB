@@ -1,4 +1,5 @@
-import "./TelaEsqueciSenha.css";
+import "./TelaEsqueciSenha.css"
+
 import { Link } from "react-router-dom";
 
 function TelaEsqueciSenha(){
@@ -24,4 +25,4 @@ function TelaEsqueciSenha(){
 }
 
 export default TelaEsqueciSenha;
- 
+
