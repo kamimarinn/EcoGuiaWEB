@@ -11,7 +11,7 @@ import PagEditIcon from "./pages/PagEditIcon/PagEditIcon.jsx";
 import TelaTrilha from "./pages/telaTrilha/telaTrilha.jsx";
 import TelaToken from "./pages/telaToken/TelaToken.jsx";
 import TelaRedefinirSenha from "./pages/telaRedefinirSenha/TelaRedefinirSenha.jsx";
-import TelaEsqueciSenha from "./pages/TelaEsqueciSenha";
+// import TelaEsqueciSenha from "./pages/TelaEsqueciSenha";
 
 
 
@@ -29,7 +29,7 @@ export default function Rotas() {
                 <Route path="/AddArtigos" element={<AddArtigos/>}/>
                 <Route path="/telaAltIcons" element={<TelaAltIcons/>}/>
                 <Route path="/PagEditIcon" element={<PagEditIcon/>}/>  
-                <Route path="/TelaEsqueciSenha" element={<TelaEsqueciSenha/>}/>
+                {/* <Route path="/TelaEsqueciSenha" element={<TelaEsqueciSenha/>}/> */}
                 <Route path="/telaTrilha" element={<TelaTrilha/>}/>  
                 <Route path="/TelaToken" element={<TelaToken/>}/>    
                 <Route path="/TelaRedefinirSenha" element={<TelaRedefinirSenha/>}/>   
