@@ -85,3 +85,52 @@
   }
 }
 
+@media screen and (max-width: 375px){
+  .inicio-apresetaçao{
+    display: flex;
+    width: 100vw;
+  }
+
+  .limitar-container{
+    width: 100vw;
+    
+  }
+
+  .img-logo {
+    display: flex;
+    width:75vw;
+    margin: 6em 2em;
+
+  }
+
+  .titulo-sessao {
+    font-size: 26px;
+   
+  }
+}
+
+
+@media screen and (max-width: 320px){
+  .inicio-apresetaçao{
+    display: flex;
+    width: 100vw;
+  }
+
+  .limitar-container{
+    width: 100vw;
+    
+  }
+
+  .img-logo {
+    display: flex;
+    width:75vw;
+    margin: 6em 2em;
+
+  }
+
+  .titulo-sessao {
+    font-size: 26px;
+   
+  }
+
+}
