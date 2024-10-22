@@ -77,7 +77,7 @@
   margin-bottom: 30px; 
 }
 
-@media screen and (max-width: 768px){
+@media screen and (min-width: 768px) and (max-width: 1024px) {
 
   .container-footer-btn {
     display: flex;
@@ -190,19 +190,24 @@
 @media screen and (max-width: 320px){
   .container-footer{
     width: 60vw;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    margin-left: 15px !important;
     
   }
 
   .container-footer img{
-    width: 35vw;
+    /* width: 35vw;
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: start; */
  
   }
 
   .container-footer p{
-    font-size: 14px !important;
+    font-size: 16px !important;
+    margin: 0;
+    
   }
 
   
@@ -220,18 +225,24 @@
     margin-bottom: 5px;
   }
 
+  
   .botao-voltar{
-    margin-bottom: 45px !important ;
+    margin-bottom: 55px !important;
+  }
+
+  .botao-voltar img{
+    width: 20vw !important;
   }
 
   .container-linha img{
-    width: 85vw;
+    /* width: 65vw !important; */
+    
     
   }
 
   .container-linha p{
-    font-size: 14px !important;
-    align-items: center;
+    font-size: 12px !important;
+   
    
   }
 }
