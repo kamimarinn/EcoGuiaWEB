@@ -143,7 +143,7 @@
         
 }
 
-@media screen and (max-width: 768px){
+@media screen and (min-width: 768px) and (max-width: 1024px) {
 .container-MissaoValores{
   width: 100vw;
 }
@@ -347,6 +347,16 @@
 
   .caixa-simples{
     height: 80vh;
+    
+  }
+  .titulo {
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .texto{
+    font-size: 16px;
     
   }
 
