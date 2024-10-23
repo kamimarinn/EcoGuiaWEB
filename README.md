@@ -23,3 +23,8 @@ Em acordo com o 12º ODS (Objetivo de Desenvolvimento Sustentável), desenvolvem
 # 📄 Sobre o projeto:
 
 Trabalho de Conclusão de Curso desenvolvido pelo grupo ECOBIO12 da turma 3DM do curso de Desenvolvimento de Sistemas do SENAI Suíço-Brasileiro.
+
+### Pré-requisitos
+
+- [Node.js](https://nodejs.org/) 
+- [npm](https://www.npmjs.com/)
