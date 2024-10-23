@@ -39,7 +39,32 @@
   
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 1080px) and (max-width: 2400px) {
+  .inicio-apresetaçao{
+    display:flex;
+    width: 100vw;
+    
+  }
+
+  .limitar-container{
+    width: 100vw;
+    
+  }
+
+  .img-logo {
+    display: flex;
+    width: 70vw;
+    margin: 15em 6em;
+
+  }
+
+  .titulo-sessao{
+    font-size: 70px;
+  }
+}
+
+
+@media  screen and (max-width: 768px) {
   .inicio-apresetaçao{
     display:flex;
     width: 100vw;
