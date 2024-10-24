@@ -68,7 +68,7 @@ function catalogo(){
         <img src="/img/logo-v2.svg" alt="logo" className='logo-verdois' />  
         <p>Seu guia para um futuro <br></br>mais verde.</p> 
         <a href="#top" className='botao-voltar'>
-            <img src='/img/btn-voltar.svg' alt='Voltar ao topo' />
+            <img className='img-voltar-cat' src='/img/btn-voltar.svg' alt='Voltar ao topo' />
         </a>
         
         <div className='container-footer-btn'>
