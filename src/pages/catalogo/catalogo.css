@@ -2,11 +2,12 @@
 /* CONTAINER NAVBAR */
 
 .container-catalogo {
-    position: absolute; 
-    top: 0; 
+    height: 100%;
+    position: relative; 
+    /* top: 0;  */
     width: 100%; 
-    padding: 10px 0; 
-    z-index: 1000; 
+    padding: 10px 0px; 
+    /* z-index: 1000;  */
     flex-direction: column;
     justify-content: center; 
     align-items: center; 
@@ -230,8 +231,8 @@
     color: #fff;
     font-size: 20px;
     text-align: left;
-    /* margin-top: 20px; 
-    margin-bottom: 20px;  */
+    margin-top: 20px; 
+    margin-bottom: 20px; 
   }
   
   .container-footer .botao-voltar {
@@ -291,7 +292,8 @@
   
   @media  screen and (max-width: 768px){
     .container-catalogo{
-      width: 100vw;
+      width: 80vw;
+      height: auto;
       display: flex;
       
     
@@ -382,7 +384,148 @@
       display: flex;
       flex-direction: row;
       justify-content: flex-end;
-      margin: 10px 0px 0px 10px;
+      margin-left: 10px;
     }
   }
 
+  @media screen and (max-width: 425px){
+    .container-catalogo{
+      width: 100vw;
+      height: auto;
+      display: flex;
+          
+    }
+
+    .container-logo {
+      display: flex;
+      justify-content: start;
+      width: 110vw !important;
+      
+  }
+
+  .container-logo img{
+    width: 20% !important;
+    margin-right: 70px !important;
+    margin-top: 10px;
+}
+
+  .container-navbar {
+    width: 60vw;
+    display: flex;
+    
+  }
+
+  .container-navbar a{
+    font-size: 8px;
+    margin-left: 15px;
+  }
+
+  .btn-login{
+    width: 0px;
+    margin-right: 50px;
+  }
+
+  .button{
+    font-size: 8px;
+    padding: 4px 15px; 
+    margin-left: 20px;
+  }
+
+  .container-titulo{
+    margin-left: 15px;
+    margin: 10px;
+  }
+
+  .container-titulo h2{
+    font-size: 18px ;
+  }
+
+  
+
+  .container-descricoes p{
+    font-size: 6px;
+
+  }
+
+  .container-descricoes h5{
+    font-size: 6px;
+
+  }
+
+  .container-not img{
+    width: 90vw;
+    margin-top: 10px;
+   
+  }
+  
+  .container-not p{
+    font-size: 12px;
+  }
+
+  .container-outras-not h3{
+    font-size: 12px;
+    margin: 0 30px;
+  }
+
+  
+  .container-not-um {
+    width: 25vw;
+    height: 40vh;
+    margin: 10px ;
+    
+  }
+
+  .container-not-um h5{
+    font-size: 12px;
+    text-align: center;
+    margin: 0;
+  }
+
+  .btn-not-um {
+    width: 15vw;
+    height: 6vw;
+    font-size: 10px;
+    margin-left: 20px;
+    justify-content: center;
+   
+  }
+
+  .container-footer{
+    /* margin-top: 80px ; */
+  }
+
+  .container-footer a{
+    width: 15vw !important;
+   z-index: 7;
+   margin-bottom: 10px !important;
+    
+  }
+
+  .container-footer {
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  .container-footer p{
+    font-size: 14px !important;
+  }
+
+  .container-footer-btn{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    text-align: end;
+    margin-bottom: 50px;
+    
+  }
+
+  .container-footer-btn a{
+    font-size: 18px;
+    margin-top: 10px;
+   
+  }
+
+  
+  }
