@@ -44,7 +44,7 @@ function AddArtigos() {
                 <a href="/">ECOPONTOS</a>
             </div>
             <div className='btn-login'>
-                <Link className="button" to="/Login">LOGIN</Link>
+                <Link className="button" to="/Login">ADMIN</Link>
                             
 
             </div>
