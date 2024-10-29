@@ -18,7 +18,7 @@ function Crud (){
 
     </div>
     <div className='btn-login'>
-         <Link className="button" to="/Login">LOGIN</Link>
+         <Link className="button" to="/Login">ADMIN</Link>
     </div>
     
     <div className="container-admin">

@@ -16,7 +16,7 @@ export default  function NavBar() {
         
         <div className='container-btnlogin'>
 
-        <Link className="button" to="/Login">LOGIN</Link>
+        <Link className="button" to="/Login">ADMIN</Link>
         
         </div>
     
