@@ -1,3 +1,4 @@
+
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home/home-index.jsx";
 import PageCatalogo from "./pages/catalogo/catalogo.jsx";
@@ -12,8 +13,9 @@ import TelaEsqueciSenha from "./pages/TelaEsqueciSenha/TelaEsqueciSenha.jsx"
 import TelaTrilha from "./pages/telaTrilha/telaTrilha.jsx";
 import TelaToken from "./pages/telaToken/TelaToken.jsx";
 import TelaRedefinirSenha from "./pages/telaRedefinirSenha/TelaRedefinirSenha.jsx";
-
-
+import TelaMateriais from "./pages/TelaMateriais/TelaMateriais.jsx";
+import TelaModificarLevel from "./pages/TelaModificarLevel/TelaModificarLevel.jsx";
+import TelaDicas from "./pages/TelaDicas/TelaDicas.jsx";
 
 
 export default function Rotas() {
@@ -22,7 +24,6 @@ export default function Rotas() {
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/catalogo" element={<PageCatalogo />} />
-                <Route path="/" element={<Login/>}/>
                 <Route path="/Funcionalidades" element={<Funcionalidades/>}/>
                 <Route path="/HorarioColeta" element={<HorarioColeta/>}/>
                 <Route path="/Login" element={<Login/>}/>
@@ -33,7 +34,10 @@ export default function Rotas() {
                 <Route path="/TelaEsqueciSenha" element={<TelaEsqueciSenha/>}/>
                 <Route path="/telaTrilha" element={<TelaTrilha/>}/>  
                 <Route path="/TelaToken" element={<TelaToken/>}/>    
-                <Route path="/TelaRedefinirSenha" element={<TelaRedefinirSenha/>}/>   
+                <Route path="/TelaRedefinirSenha" element={<TelaRedefinirSenha/>}/> 
+                <Route path="/TelaMateriais" element={<TelaMateriais/>}/> 
+                <Route path="/TelaModificarLevel" element={<TelaModificarLevel/>}/> 
+                <Route path="/TelaDicas" element={<TelaDicas/>}/> 
                 
             </Routes>
         </BrowserRouter>
