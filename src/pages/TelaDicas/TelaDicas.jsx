@@ -18,6 +18,18 @@ function TelaDicas(){
             <div className='btn-login'>
                 <Link className="button" to="/Login">ADMIN</Link>
             </div>
+            <div className='container-titulo-alt'>
+                <h2><span className='highlight'>Dicas</span>Diárias</h2>
+                <img src='/img/retangulo-hcoleta.svg' alt='retangulo-hcoleta' className='retang-coleta'/>
+                <p>Edite e atualize aqui as dicas diárias!</p>
+            </div>
+            <div className='pai-container-teladicas'>
+            <div className='container-adddicas'>
+            
+
+            </div>
+
+            </div>
         </div>
     );
 }

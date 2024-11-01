@@ -62,7 +62,7 @@ function AddArtigos() {
                 <a href="/">ECOPONTOS</a>
             </div>
             <div className='btn-login'>
-                <Link className="button" to="/Login">LOGIN</Link>
+                <Link className="button" to="/Login">ADMIN</Link>
                             
 
             </div>
@@ -120,19 +120,6 @@ function AddArtigos() {
                                           
             </div>
 
-            {/* Lista de Notícias */}
-            <div className="noticias-list">
-                {/* <h3>Lista de Notícias</h3>
-                {noticias.map((noticia, index) => (
-                    <div key={index} className="noticia-item">
-                        <h4>{noticia.title}</h4>
-                        <img src={noticia.image} alt={noticia.title} style={{ width: "100px", height: "auto" }} />
-                        <p>{noticia.description}</p>
-                        <button onClick={() => editNoticia(index)}>Editar</button>
-                        <button onClick={() => deleteNoticia(index)}>Excluir</button>
-                    </div>
-                ))} */}
-            </div>
         </div>
     );
 }
