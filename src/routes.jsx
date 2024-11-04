@@ -16,6 +16,7 @@ import TelaRedefinirSenha from "./pages/telaRedefinirSenha/TelaRedefinirSenha.js
 import TelaMateriais from "./pages/TelaMateriais/TelaMateriais.jsx";
 import TelaModificarLevel from "./pages/TelaModificarLevel/TelaModificarLevel.jsx";
 import TelaDicas from "./pages/TelaDicas/TelaDicas.jsx";
+import TelaDicasAdd from "./pages/TelaDicasAdd/TelaDicasAdd.jsx"
 
 
 export default function Rotas() {
@@ -38,6 +39,7 @@ export default function Rotas() {
                 <Route path="/TelaMateriais" element={<TelaMateriais/>}/> 
                 <Route path="/TelaModificarLevel" element={<TelaModificarLevel/>}/> 
                 <Route path="/TelaDicas" element={<TelaDicas/>}/> 
+                <Route path="/TelaDicasAdd" element={<TelaDicasAdd/>}/>
                 
             </Routes>
         </BrowserRouter>

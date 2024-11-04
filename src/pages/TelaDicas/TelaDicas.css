@@ -67,6 +67,7 @@
 .container-titulo-alt{
     display: flex;
     flex-direction: column;
+ 
 }
 
 .container-titulo-alt h2{
@@ -102,25 +103,87 @@
 
 .pai-container-teladicas {
     width: 80vw; 
-    height: 110vh; 
+    height: 80vh; 
     background-color: #F1F1F1;
     border: 0.5px solid transparent;
     border-radius: 39px;
     box-shadow: 1px 3px 10px 9px rgba(0, 0, 0, 0.16);
     margin: 20px 80px 20px;
     z-index: 7;
-    position: relative; 
+    position: absolute;
     display: flex; 
-    justify-content: center; 
+    flex-direction: column; /* Muda a direção para coluna */
     padding: 40px; 
 }
 
-
-
-.container-adddicas{
-    display: flex;
-    flex-direction: column; 
-    justify-content: flex-end; 
+.btn-adicionar {
+    width: 130px;
+    height: 30px;
+    background-color: #6BBF59;
+    justify-content: center;
+    text-align: center;
+    margin-left: auto; /* Move o botão para a direita */
+    margin-bottom: 30px; /* Adiciona um espaço abaixo do botão */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
+
+.container-adddicas {
+    display: flex;
+    flex-direction: column; /* Mantenha as dicas em coluna */
+    align-items: center;
+}
+
+
+
+.container-dicaum,
+.container-dicadois,
+.container-dicatres,
+.container-dicaquatro {
+    width: 80vw; 
+    height: 10vh; 
+    background-color: #E2F2DF;
+    border: 0.5px solid transparent;
+    border-radius: 10px;
+    box-shadow: 1px 3px 10px 9px rgba(0, 0, 0, 0.16);
+    margin-bottom: 50px;
+    margin-top: 10px;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 0 10px; 
+    gap:25px;
+}
+
+.container-dicaum h5,
+.container-dicadois h5,
+.container-dicatres h5,
+.container-dicaquatro h5 {
+    font-size: 20px;
+    margin: 0; 
+    flex: 1; 
+}
+
+.buttons-container {
+    display: flex; 
+    gap: 10px; 
+}
+
+.container-dicaum button,
+.container-dicadois button,
+.container-dicatres button,
+.container-dicaquatro button {
+    width: 130px;
+    height: 30px;
+    background-color: #ffff;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+   
+}
+
+
 
 

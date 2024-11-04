@@ -24,12 +24,31 @@ function TelaDicas(){
                 <p>Edite e atualize aqui as dicas diárias!</p>
             </div>
             <div className='pai-container-teladicas'>
-            <div className='container-adddicas'>
-            
-
-            </div>
-
-            </div>
+                <Link className='btn-adicionar' to="/TelaDicasAdd">Adicionar + </Link>
+                <div className='container-adddicas'>
+                <div className='container-dicaum'>
+                   <h5>Dica 1</h5>
+                   <button>Visualizar</button>
+                   <button>Apagar</button>
+                   </div>
+                <div className='container-dicadois'>
+                   <h5>Dica 2</h5>
+                   <button>Visualizar</button>
+                   <button>Apagar</button>
+                   </div>
+                <div className='container-dicatres'>
+                   <h5>Dica 3</h5>
+                   <button>Visualizar</button>
+                   <button>Apagar</button>
+                   </div>
+                <div className='container-dicaquatro'>
+                   <h5>Dica 4</h5>
+                   <button>Visualizar</button>
+                   <button>Apagar</button>
+                   </div>
+                    
+                    </div>
+                </div>
         </div>
     );
 }
