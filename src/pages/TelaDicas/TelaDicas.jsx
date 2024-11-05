@@ -30,24 +30,24 @@ function TelaDicas(){
                    <h5>Dica 1</h5>
                    <button>Visualizar</button>
                    <button>Apagar</button>
-                   </div>
+                </div>
                 <div className='container-dicadois'>
                    <h5>Dica 2</h5>
                    <button>Visualizar</button>
                    <button>Apagar</button>
-                   </div>
+                </div>
                 <div className='container-dicatres'>
                    <h5>Dica 3</h5>
                    <button>Visualizar</button>
                    <button>Apagar</button>
-                   </div>
+                </div>
                 <div className='container-dicaquatro'>
                    <h5>Dica 4</h5>
                    <button>Visualizar</button>
                    <button>Apagar</button>
-                   </div>
+                </div>
                     
-                    </div>
+                </div>
                 </div>
         </div>
     );

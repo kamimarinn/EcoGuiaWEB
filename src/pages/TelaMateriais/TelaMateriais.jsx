@@ -18,6 +18,51 @@ function TelaMateriais(){
         <div className='btn-login'>
             <Link className="button" to="/Login">ADMIN</Link>
         </div>
+        <div className='container-titulo-alt'>
+                <h2><span className='highlight'>Materiais</span>Recicláveis</h2>
+                <img src='/img/retangulo-hcoleta.svg' alt='retangulo-hcoleta' className='retang-coleta'/>
+                <p>Adicione e exclua máteriais recicláveis!</p>
+                </div>
+            <div className='pai-container-telamateriais'>
+                <button className='botao-add'>OK +</button>
+                <div className='container-alterar-material-um'>
+                <div className='container-material-um'>
+                <h1>25XP</h1>
+                <h5>PLÁSTICO</h5>
+                {/* <button className='btn-um'>+</button>
+                <button className='btn-dois'>-</button> */}
+
+                </div>
+                <div className='container-material-dois'>
+                    <h1>25XP</h1>
+                    <h5>PAPEL</h5>
+                    {/* <button className='btn-um'>+</button>
+                    <button className='btn-dois'>-</button> */}
+                </div>
+                <div className='container-alterar-material-dois'>
+                <div className='container-material-tres'>
+                <h1>25XP</h1>
+                <h5>METAL</h5>
+                {/* <button className='btn-um'>+</button>
+                    <button className='btn-dois'>-</button> */}
+                </div>
+                <div className='container-material-quatro'>
+                <h1>25XP</h1>
+                <h5>VIDRO</h5>
+                {/* <button className='btn-um'>+</button>
+                    <button className='btn-dois'>-</button> */}
+                </div>
+                <div className='container-material-cinco'>
+                <h1>25XP</h1>
+                <h5>ORGANICOS</h5>
+                {/* <button className='btn-um'>+</button>
+                    <button className='btn-dois'>-</button> */}
+                </div>
+                </div>
+
+            </div>
+
+            </div>
     </div>
 
     );
