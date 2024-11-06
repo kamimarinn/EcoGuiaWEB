@@ -64,4 +64,115 @@
     
 }
 
+.container-titulo-alt{
+    display: flex;
+    flex-direction: column;
+ 
+}
 
+.container-titulo-alt h2{
+    font-size: 36px;
+    text-align: center;
+    z-index: 7;
+    margin: 30px 10px 20px 0;
+}
+
+.container-titulo-alt h2 .highlight{
+    color: #6BBF59; 
+    margin: 5px;
+}
+
+.retang-coleta{
+      z-index: 1;
+      top: 125px; 
+      left: 32%; 
+      display: flex;
+      margin: 0;
+}
+
+.container-titulo-alt p{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+    text-align: center;
+    margin: 0 10px 5px 5px;
+}
+
+.pai-container-mod-level{
+    width: 65vw; 
+    height: auto; 
+    background-color: #F1F1F1;
+    border: 0.5px solid transparent;
+    border-radius: 39px;
+    box-shadow: 1px 3px 10px 9px rgba(0, 0, 0, 0.16);
+    margin: 20px 175px 20px;
+    z-index: 7;
+    position: absolute;
+    display: flex; 
+    flex-direction: column; 
+    padding: 40px; 
+}
+
+.container-mod-level{
+    display: flex;
+    flex-direction: column;
+    /* width: 50%; */
+    margin: 2em;
+}
+
+.container-mod-level h2{
+    display: flex;
+    justify-content: center;
+    font-size: 28px;
+    text-align: center;
+}
+
+.container-btns {
+    display: flex; 
+    flex-direction: row; 
+    gap: 30px; 
+    justify-content: center; 
+    margin-top: 20px; 
+}
+
+.level-input {
+    width: 20vw;
+    padding: 10px;
+    border: 0.5px solid #6BBF59;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 20px; 
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+.level-input::placeholder {
+    color: #6BBF59;
+}
+
+.btn-level-add, .btn-level-excluir {
+    width: 12vw;
+    height: 8vh;
+    background-color: #6BBF59;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-level-excluir {
+    background-color: #265705; 
+}
+
+.container-lista-level h3{
+    font-size: 20px;
+    margin-top: 70px;
+}

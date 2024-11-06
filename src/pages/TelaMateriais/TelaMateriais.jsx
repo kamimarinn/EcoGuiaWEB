@@ -27,36 +27,36 @@ function TelaMateriais(){
                 <button className='botao-add'>OK +</button>
                 <div className='container-alterar-material-um'>
                 <div className='container-material-um'>
-                <h1>25XP</h1>
+                <h1>10XP</h1>
                 <h5>PLÁSTICO</h5>
-                {/* <button className='btn-um'>+</button>
-                <button className='btn-dois'>-</button> */}
+                <button className='btn-um'>+</button>
+                <button className='btn-dois'>-</button>
 
                 </div>
                 <div className='container-material-dois'>
-                    <h1>25XP</h1>
+                    <h1>20XP</h1>
                     <h5>PAPEL</h5>
-                    {/* <button className='btn-um'>+</button>
-                    <button className='btn-dois'>-</button> */}
+                    <button className='btn-um'>+</button>
+                    <button className='btn-dois'>-</button>
                 </div>
                 <div className='container-alterar-material-dois'>
                 <div className='container-material-tres'>
-                <h1>25XP</h1>
+                <h1>30XP</h1>
                 <h5>METAL</h5>
-                {/* <button className='btn-um'>+</button>
-                    <button className='btn-dois'>-</button> */}
+                <button className='btn-um'>+</button>
+                    <button className='btn-dois'>-</button>
                 </div>
                 <div className='container-material-quatro'>
-                <h1>25XP</h1>
+                <h1>40XP</h1>
                 <h5>VIDRO</h5>
-                {/* <button className='btn-um'>+</button>
-                    <button className='btn-dois'>-</button> */}
+                <button className='btn-um'>+</button>
+                    <button className='btn-dois'>-</button>
                 </div>
                 <div className='container-material-cinco'>
-                <h1>25XP</h1>
-                <h5>ORGANICOS</h5>
-                {/* <button className='btn-um'>+</button>
-                    <button className='btn-dois'>-</button> */}
+                <h1>50XP</h1>
+                <h5>ELETRÔNICOS</h5>
+                <button className='btn-um'>+</button>
+                    <button className='btn-dois'>-</button>
                 </div>
                 </div>
 

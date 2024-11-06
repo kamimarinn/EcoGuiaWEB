@@ -69,8 +69,8 @@ function Crud (){
         <div className="container-icon-seis">
         <Link className="btn-alticons" to="/TelaModificarLevel">
             <img className="engrenagem-crudtela" src ='/img/telalevel.svg' alt='icon'/></Link>
-            <h5 className="icon-titulo">Level</h5>
-            <p className="icon-texto" >Criação e exclusão<br ></br>de levels. </p>
+            <h5 className="icon-titulo">Alteração<br></br> de Level</h5>
+            <p className="icon-texto" >Adição e exclusão<br ></br>de levels. </p>
            
         </div>
      

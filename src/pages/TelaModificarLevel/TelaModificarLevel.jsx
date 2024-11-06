@@ -18,6 +18,31 @@ function TelaModificarLevel (){
         <div className='btn-login'>
             <Link className="button" to="/Login">ADMIN</Link>
         </div>
+        <div className='container-titulo-alt'>
+                <h2><span className='highlight'>Alteração</span>de Levels</h2>
+                <img src='/img/retangulo-hcoleta.svg' alt='retangulo-hcoleta' className='retang-coleta'/>
+                <p>Crie e exclua Levels!</p>
+                </div>
+                <div className='pai-container-mod-level'>
+                <div className='container-mod-level'>
+                <h2>Adicione o level:</h2>
+                </div>
+                <div className='container-input'>
+                <input type="number" className="level-input" placeholder="INSIRA O LEVEL"/>
+                <div className='container-btns'>
+                <button className='btn-level-add' type="button">ADICIONAR</button>
+                <button className='btn-level-excluir' type="button">EXCLUIR</button>
+                </div>
+                
+                </div>
+
+                <div className='container-lista-level'>
+                <h3>Lista de Levels:</h3>
+
+                </div>
+
+                </div>
+
     </div>
 
     );
