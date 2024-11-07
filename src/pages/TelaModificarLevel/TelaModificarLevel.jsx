@@ -24,16 +24,19 @@ function TelaModificarLevel (){
                 <p>Crie e exclua Levels!</p>
                 </div>
                 <div className='pai-container-mod-level'>
-                <div className='container-mod-level'>
-                <h2>Adicione o level:</h2>
+                <div className='container-level'>
+                <img src="/img/img-tela-level.svg" alt="foto-horariocoleta" className='img-level' />
                 </div>
+                <div className='container-mod-level'>
+                <h2>Adicione o Level:</h2>
+                
                 <div className='container-input'>
                 <input type="number" className="level-input" placeholder="INSIRA O LEVEL"/>
                 <div className='container-btns'>
                 <button className='btn-level-add' type="button">ADICIONAR</button>
                 <button className='btn-level-excluir' type="button">EXCLUIR</button>
                 </div>
-                
+                </div>
                 </div>
 
                 <div className='container-lista-level'>
