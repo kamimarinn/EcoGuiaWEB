@@ -25,7 +25,7 @@ function TelaModificarLevel (){
                 </div>
                 <div className='pai-container-mod-level'>
                 <div className='container-level'>
-                <img src="/img/img-tela-level.svg" alt="foto-horariocoleta" className='img-level' />
+                <img src="/img/img-tela-level.svg" alt="foto-modificarlevel" className='img-level' />
                 </div>
                 <div className='container-mod-level'>
                 <h2>Adicione o Level:</h2>
