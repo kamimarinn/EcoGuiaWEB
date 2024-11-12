@@ -65,18 +65,21 @@ function catalogo(){
         </div>
 
         <div className='container-footer'>
-        <img src="/img/logo-v2.svg" alt="logo" className='logo-verdois' />  
+            <div className='cont-footer'>
+            <img src="/img/logo-v2.svg" alt="logo" className='logo-verdois' />  
         <p>Seu guia para um futuro <br></br>mais verde.</p> 
-        <a href="#top" className='botao-voltar'>
+        <a id='btn-voltar-fot' href="#top" className='botao-voltar'>
             <img className='img-voltar-cat' src='/img/btn-voltar.svg' alt='Voltar ao topo' />
         </a>
+         </div>
+       
         
-        <div className='container-footer-btn'>
+        <div id='cont-footer-btn' className='container-footer-btn'>
         <a href="/horariocoleta">ARTIGOS</a>
         <a href="/funcionalidades">SOBRE</a>
         </div>
 
-        <div className='container-linha'>
+        <div id='cont-linha' className='container-linha'>
         <img src="/img/line-footer.svg" alt="linha" className='linha-footer'/>
         <p>Copyright © 2024 | ECOGUIA | by ECO12BIOTEC</p>
         </div>
