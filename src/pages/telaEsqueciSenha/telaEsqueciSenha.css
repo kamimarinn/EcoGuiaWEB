@@ -101,3 +101,160 @@
     margin: 10px 10px 0 135px;
     cursor: pointer; 
 }
+
+@media  screen and (max-width: 768px){
+    .container-senha{
+        width: 40vw;
+        padding: 15px;
+        left: 10%;
+        /* margin: 0; */
+        display: flex; /* Usando flexbox */
+        flex-direction: column; /* Organizando os itens verticalmente */
+        justify-content: center;
+        align-items: center; /* Centraliza os itens no eixo transversal (horizontal) */
+        height: auto; /* Permite que a altura seja dinâmica */
+    }
+
+    .cad-input-redefinir{
+        margin-left: 45px !important;
+    }
+
+    .btn-redefinir{
+        margin-left: 90px !important;
+    }
+
+    .retornar-login{
+        margin-left: 87px !important;
+    }
+}
+
+@media  screen and (max-width: 425px){
+    .container-senha{
+        position: absolute;
+        width: 55vw !important;
+        height: 85vh !important;
+        left:30% !important;
+        margin: 0 !important;
+        display: flex; /* Usando flexbox */
+        flex-direction: column; /* Organizando os itens verticalmente */
+        justify-content: center;
+        align-items: center; /* Centraliza os itens no eixo transversal (horizontal) */
+       
+    
+    }
+
+    .logo-telalogin{
+        width: 50vw !important;
+        margin-left: 10px !important;
+    }
+
+    .container-redefinir h2{
+        font-size: 24px !important;
+    }
+
+    .container-redefinir p{
+        font-size: 12px !important;
+        margin-left: 10px;
+    }
+
+    .cad-input-redefinir{
+        margin-left: 30px !important;
+    }
+
+    .btn-redefinir{
+        width: 35vw !important;
+        margin-left: 40px !important;
+    }
+
+    .retornar-login{
+        margin-left: 50px !important;
+    }
+
+}
+
+@media  screen and (max-width: 375px){
+    .container-senha{
+        position: absolute;
+        width: 55vw !important;
+        height: 85vh !important;
+        left:30% !important;
+        margin: 0 !important;
+        display: flex; 
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center; 
+    
+    }
+
+    .logo-telalogin{
+        width: 50vw !important;
+        margin-left: 10px !important;
+    }
+
+    .container-redefinir h2{
+        font-size: 24px !important;
+    }
+
+    .container-redefinir p{
+        font-size: 12px !important;
+        margin-left: 10px;
+    }
+
+    .cad-input-redefinir{
+        margin-left: 25px !important;
+    }
+
+    .btn-redefinir{
+        width: 35vw !important;
+        margin-left: 35px !important;
+    }
+
+    .retornar-login{
+        margin-left: 40px !important;
+    }
+}
+
+@media  screen and (max-width: 320px){
+    .container-senha{
+        position: absolute;
+        width: 55vw !important;
+        height: 85vh !important;
+        left:30% !important;
+        margin: 0 !important;
+        display: flex; 
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center; 
+    
+    }
+
+    .logo-telalogin{
+        width: 50vw !important;
+        margin-left: 10px !important;
+    }
+
+    .container-redefinir h2{
+        font-size: 24px !important;
+    }
+
+    .container-redefinir p{
+        font-size: 12px !important;
+        margin-left: 10px;
+    }
+
+    .cad-input-redefinir{
+        width: 30vw !important;
+        margin-left: 23px !important;
+    }
+
+    .btn-redefinir{
+        width: 35vw !important;
+        font-size: 12px !important;
+        margin-left: 25px !important;
+    }
+
+    .retornar-login{
+        font-size: 12px !important;
+        margin-left: 30px !important;
+    }
+}

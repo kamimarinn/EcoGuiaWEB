@@ -12,10 +12,7 @@ function Login() {
         <div className="container-login">
             <div className="container-eco">
                 <img 
-                    src='/img/img-fazer-login.svg' 
-                    alt='imagem-login' 
-                    className='imgum-telalogin' 
-                />
+                    src='/img/img-fazer-login.svg' alt='imagem-login' className='imgum-telalogin' />
 
                 <div className="container-cadastro">
                     <img src='/img/logo-telalogin.svg' alt='logo' className='logo-telalogin' />
