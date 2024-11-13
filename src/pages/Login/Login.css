@@ -202,8 +202,236 @@
     margin: 10px 0 0 60px;
     cursor: pointer; 
     
+}
+
+@media  screen and (max-width: 768px){
+    .container-eco {
+        width: 40vw;
+        padding: 15px;
+        left: 10%;
+        /* margin: 0; */
+        display: flex; /* Usando flexbox */
+        flex-direction: column; /* Organizando os itens verticalmente */
+        justify-content: center;
+        align-items: center; /* Centraliza os itens no eixo transversal (horizontal) */
+        height: auto; /* Permite que a altura seja dinâmica */
+    }
+
+    /* Ocultando a imagem corretamente */
+    .imgum-telalogin {
+        display: none !important; /* Força a imagem a desaparecer com maior prioridade */
+        width: 0 !important; /* Também assegura que a largura seja zero */
+    }
+
+    .logo-telalogin{
+        margin-top: 30px !important;
+        margin-left: 25px !important;
+    }
+
+    .container-cadastro input {
+        width: 50%; /* Ajustando os campos de input */
+        margin-bottom: 15px; /* Dando um espaçamento entre os inputs */
+    }
+
+    .cad-input, .cad-input-senha{
+        margin-left: 60px !important;
+    }
+
+    .link-esqueci-senha{
+        margin: 0;
+        font-size: 12px;
+        margin-left: 55px !important;
+    }
+
+    .btn-google, .btn-google-login {
+        width: 50%; 
+        margin-bottom: 15px; 
+        font-size: 8px;
+        margin-left: 75px !important;
+    }
 
    
+    .btn-confirmar-cadastro, .btn-confirmar {
+        width: 30%; /* Ajustando a largura dos botões */
+        margin-bottom: 15px; 
+        margin-left: 100px !important;
+    }
+
+    .container-cadastro h2{
+        margin-left: 15px;
+    }
+
+    .logo-telalogin {
+        width: 60%; /* Ajustando o tamanho da logo para se adaptar melhor */
+        margin-left: 0;
+        margin-bottom: 20px; /* Adicionando um espaçamento abaixo da logo */
+    }
+
+    .container-cadastro h2 {
+        font-size: 24px;
+        margin-bottom: 20px; /* Dando um espaçamento abaixo do título */
+    }
+
+}
+
+@media  screen and (max-width: 425px){
+    
+    .container-eco {
+         width: 60vw;
+         /* position: absolute; */
+         margin: 0;
+         left: 25%;
+        display: flex; /* Usando flexbox */
+        flex-direction: column; /* Organizando os itens verticalmente */
+        align-items: center; /* Centraliza os itens no eixo transversal (horizontal) */
+     
+    }
+
+    .imgum-telalogin {
+        display: none !important; /* Força a imagem a desaparecer com maior prioridade */
+        width: 0 !important; /* Também assegura que a largura seja zero */
+    }
+
+    .logo-telalogin{
+        margin-top: 30px !important;
+        margin-left: 15px !important;
+    }
+
+    .container-cadastro h2{
+        margin-right: 15px !important;
+    }
+
+    .cad-input, .cad-input-senha{
+        margin-left: 45px !important;
+    }
+
+
+    .link-esqueci-senha{
+        margin: 0;
+        font-size: 12px;
+        margin-left: 40px !important;
+    }
+
+    .btn-confirmar-cadastro, .btn-confirmar {
+        width: 25vw; 
+        margin-bottom: 15px; 
+        margin-left: 70px !important;
+    }
+
+    .btn-google, .btn-google-login {
+        width: 35vw; 
+        margin-bottom: 15px; 
+        font-size: 8px;
+        margin-left: 55px !important;
+    }
+
+   
+    
+}
+
+@media  screen and (max-width: 375px){
+    
+    .container-eco {
+         width: 60vw;
+         /* position: absolute; */
+         margin: 0;
+        display: flex; /* Usando flexbox */
+        flex-direction: column; /* Organizando os itens verticalmente */
+        align-items: center; /* Centraliza os itens no eixo transversal (horizontal) */
+     
+    }
+
+    .imgum-telalogin {
+        display: none !important; /* Força a imagem a desaparecer com maior prioridade */
+        width: 0 !important; /* Também assegura que a largura seja zero */
+    }
+
+    .logo-telalogin{
+        margin-top: 30px !important;
+        margin-left: 15px !important;
+    }
+
+    .container-cadastro h2{
+        margin-right: 15px !important;
+    }
+
+    .cad-input, .cad-input-senha{
+        margin-left: 40px !important;
+    }
+
+
+    .link-esqueci-senha{
+        margin: 0;
+        font-size: 12px;
+        margin-left: 40px !important;
+    }
+
+    .btn-confirmar-cadastro, .btn-confirmar {
+        width: 25vw; 
+        margin-bottom: 15px; 
+        margin-left: 60px !important;
+    }
+
+    .btn-google, .btn-google-login {
+        width: 45vw; 
+        margin-bottom: 15px; 
+        font-size: 8px;
+        margin-left: 25px !important;
+    }
+
+   
+    
+}
+
+@media  screen and (max-width: 320px){
+    .container-eco {
+        width: 60vw;
+        /* position: absolute; */
+        margin: 0;
+       display: flex; /* Usando flexbox */
+       flex-direction: column; /* Organizando os itens verticalmente */
+       align-items: center; /* Centraliza os itens no eixo transversal (horizontal) */
+    
+   }
+
+   .imgum-telalogin {
+       display: none !important; /* Força a imagem a desaparecer com maior prioridade */
+       width: 0 !important; /* Também assegura que a largura seja zero */
+   }
+
+   .logo-telalogin{
+       margin-top: 30px !important;
+       margin-left: 15px !important;
+   }
+
+   .container-cadastro h2{
+       margin-right: 15px !important;
+   }
+
+   .cad-input, .cad-input-senha{
+       margin-left: 30px !important;
+   }
+
+
+   .link-esqueci-senha{
+       margin: 0;
+       font-size: 10px;
+       margin-left: 20px !important;
+   }
+
+   .btn-confirmar-cadastro, .btn-confirmar {
+       width: 25vw; 
+       margin-bottom: 15px; 
+       margin-left: 50px !important;
+   }
+
+   .btn-google, .btn-google-login {
+       width: 50vw; 
+       margin-bottom: 15px; 
+       font-size: 8px;
+       margin-left: 20px !important;
+   }
+
 }
 
 
