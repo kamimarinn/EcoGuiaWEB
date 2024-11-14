@@ -90,7 +90,7 @@
 
 .container-admin h2 .highlight {
     color: #6BBF59; 
-    /* margin-right: 10px;  */
+    
 }
 
 .container-admin p{
@@ -103,7 +103,6 @@
 .pai-container-icones {
     display: flex; 
     justify-content: center; 
-    /* gap: 20px;  */
     margin-top: 20px; 
     margin-right: 65px;
 }
@@ -143,6 +142,77 @@
 .icon-texto {
     font-size: 14px; 
     margin: 0 0 0 60px;
+}
+
+@media  screen and (max-width: 768px){
+    .pai-container-icones{
+        width: 93vw;
+        margin: 0;
+        gap: -10px;
+    }
+}
+
+@media  screen and (max-width: 425px){
+    .container-header{
+        width: 100%;
+    }
+
+    .container-navbar{
+        width: 100%;
+        /* gap: 10px; */
+    }
+
+    .container-logo img{
+        width: 12vw !important;
+        margin: 10px !important;
+        
+    }
+
+    .container-admin p{
+        font-size: 14px;
+    }
+
+    .pai-container-icones{
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+@media  screen and (max-width: 375px){
+    .container-header{
+        width: 100%;
+    }
+
+    .container-navbar{
+        width: 100%;
+        /* gap: 10px; */
+    }
+
+    .container-logo img{
+        width: 12vw !important;
+        margin: 10px !important;
+        
+    }
+
+    .container-admin img {
+        margin-left: 25px;
+    }
+
+    .container-admin h2 {
+        margin-left: 15px;
+    }
+
+    .container-admin p{
+        margin-left: 10px;
+        font-size: 12px;
+    }
+
+    .pai-container-icones{
+        display: flex;
+        flex-direction: column;
+    }
+
 }
 
 

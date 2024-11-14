@@ -120,7 +120,7 @@ flex-direction: column;
     position: relative; 
     display: flex; 
     justify-content: center; 
-    padding: 40px; /* Ajuste conforme necessário */
+    padding: 40px; 
   }
 
   .container-info-crud{
@@ -141,7 +141,7 @@ flex-direction: column;
     border: 0.5px solid transparent;
     border-radius: 5px;
     margin-bottom: 170px;
-    padding: 25px 80px 60px ; /* Ajuste conforme necessário */
+    padding: 25px 80px 60px ; 
 }
 
 .container-info-crud button {
@@ -182,12 +182,8 @@ flex-direction: column;
     border: 0.5px solid transparent;
     border-radius: 5px;
     margin-top: 20px;
-    padding: 20px; /* Ajuste conforme necessário */
+    padding: 20px; 
 }
-
-
-
-
 
 select {
     width: 200px; 
@@ -199,10 +195,216 @@ select {
     color: #6BBF59; 
     appearance: none; 
     margin-top: 40px;
-    /* background-image: url('seta.png'); 
-    background-repeat: no-repeat;
-    background-position: right 10px center; 
-    background-size: 12px;  */
+}
+
+@media  screen and (max-width: 768px){
+    .retang-coleta{
+       margin-left: -12% !important;
+      
+    }
+
+    .pai-container-addnoticia{
+        right: 5%;
+    }
+
+    .container-info-crud{
+        width: 70vw;
+    }
+
+    .container-info-crud button{
+        font-size: 14px;
+    }
+}
+
+@media  screen and (max-width: 425px){
+
+    .container-addartigos {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        padding: 10px;
+        /* margin: 0 !important; */
+        z-index: 1000;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        
+    }
+
+    /* Container da navbar */
+    .container-navbar {
+        display: flex; 
+    justify-content: center; 
+    flex: 1; 
+    z-index: 1;
+    margin-left: 5%;
+    }
+
+    .container-navbar a {
+        position: absolute;
+        z-index: 7;
+        color: #000;
+        text-decoration: none;
+        margin-bottom: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Ajustes do botão de login */
+    .btn-login {
+        position: absolute;
+        top: 15px;
+        left: 94% !important;
+        display: flex;
+        align-items: center;
+    }
+
+    .btn-login button {
+        background: none;
+        border: 0.5px solid #000;
+        border-radius: 0;
+        color: #000;
+        padding: 8px 20px;
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+    .container-tit h3{
+        margin-left: 80px !important;
+        /* margin-left: 100px; */
+    }
+
+    .container-tit p{
+        font-size: 14px;
+        margin-left: 80px !important;
+    }
+
+    .retang-coleta{
+        width: 90vw;
+        left: 28% !important;
+    }
+
+    .pai-container-addnoticia{
+        right: 12%;
+        gap: 20px !important;
+    }
+
+    .container-info-crud input{
+        width: 5vw;
+        
+    }
+
+    .container-info-crud button{
+        width: 20vw;
+        font-size: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .container-addnoticia input, 
+    .container-addnoticia select, 
+    .container-addnoticia textarea{
+        width: 35vw;
+    }
+    
+}
+
+@media  screen and (max-width: 375px){
+    .container-tit h3{
+        font-size: 34px;
+        margin-left: 70px !important;
+        margin-bottom: 10px !important;
+        
+    }
+
+    .container-tit p{
+        font-size: 12px;
+        margin-left: 80px !important;
+    }
+
+    .pai-container-addnoticia{
+        right: 14%;
+        gap: 20px !important;
+    }
+
+    .container-info-crud input{
+        width: 5vw;
+        
+    }
+
+    .container-info-crud button{
+        width: 20vw;
+        font-size: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .container-addnoticia input, 
+    .container-addnoticia select, 
+    .container-addnoticia textarea{
+        width: 30vw;
+
+    }
+    
+}
+
+
+@media  screen and (max-width: 320px){
+    .container-tit h3{
+        font-size: 26px;
+        margin-left: 70px !important;
+        margin-top: 50px !important;
+        
+        
+    }
+
+    .container-tit p{
+        font-size: 10px;
+        margin-left: 80px !important;
+    }
+
+    .pai-container-addnoticia{
+        right: 18%;
+        gap: 20px !important;
+    }
+
+    .container-info-crud input{
+        width: 1vw;
+        height: 30vh;
+        
+    }
+
+    .container-info-crud button{
+        width: 20vw;
+        font-size: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .container-addnoticia input, 
+    .container-addnoticia select, 
+    .container-addnoticia textarea{
+        width: 30vw;
+
+    }
+
+    .container-info-crud button{
+        width: 20vw;
+        font-size: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    
 }
 
 

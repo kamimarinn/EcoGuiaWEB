@@ -107,12 +107,11 @@
         width: 40vw;
         padding: 15px;
         left: 10%;
-        /* margin: 0; */
-        display: flex; /* Usando flexbox */
-        flex-direction: column; /* Organizando os itens verticalmente */
+        display: flex; 
+        flex-direction: column; 
         justify-content: center;
-        align-items: center; /* Centraliza os itens no eixo transversal (horizontal) */
-        height: auto; /* Permite que a altura seja dinâmica */
+        align-items: center; 
+        height: auto; 
     }
 
     .btn-redef{
@@ -130,7 +129,7 @@
     .container-senha{
         position: absolute;
         width: 40vw;
-        left: 80% !important;
+        margin-left: 80px !important;
         display: flex; 
         flex-direction: column; 
         justify-content: center;
@@ -154,7 +153,7 @@
     .container-senha{
         position: absolute;
         width: 40vw;
-        /* left: 60% !important; */
+        margin-left: 65px !important;
         display: flex; 
         flex-direction: column; 
         justify-content: center;
@@ -175,5 +174,33 @@
 
     .retornar-login{
         margin-left: 47px !important;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .container-senha{
+        position: absolute;
+        width: 40vw;
+        margin-left: 55px !important;
+        display: flex; 
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center; 
+        
+    }
+
+    .container-redefinir p{
+        font-size: 12px !important;
+        margin-left: 20px;
+    }
+
+    .btn-redef{
+        width: 30vw;
+        font-size: 10px;
+        margin-left: 35px;
+    }
+
+    .retornar-login{
+        margin-left: 30px !important;
     }
 }
