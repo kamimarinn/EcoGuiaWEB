@@ -16,7 +16,7 @@ function PagEditIcon() {
                 <a href="/">ECOPONTOS</a>
             </div>
             <div className='btn-login'>
-                <Link className="button" to="/Login">LOGIN</Link>
+                <Link className="button" to="/Login">ADMIN</Link>
             </div>
             <div className='container-titulo-alt'>
                 <h2><span className='highlight'>Editar</span> Icon </h2>
