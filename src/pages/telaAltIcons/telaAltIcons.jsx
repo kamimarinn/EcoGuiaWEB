@@ -19,6 +19,7 @@ function TelaAltIcons() {
             <div className='btn-login'>
                 <Link className="button" to="/Login">ADMIN</Link>
             </div>
+           
             <div className='container-titulo-alt'>
                 <h2><span className='highlight'>Icons</span>para Perfis</h2>
                 <img src='/img/retangulo-hcoleta.svg' alt='retangulo-hcoleta' className='retang-coleta'/>

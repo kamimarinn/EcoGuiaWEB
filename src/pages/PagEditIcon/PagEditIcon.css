@@ -116,7 +116,7 @@
 
 .circle-container {
     width: 150px; 
-    height: 150px; 
+    height: 150px;
     background-color: #F1F1F1;
     border-radius: 50%;
     display: flex; 
@@ -201,3 +201,38 @@
 .confirm-button:hover {
     background-color: #5AAE4D; 
 }
+
+@media  screen and (max-width: 768px){
+.pai-container-edicao{
+    height: 100vh;
+    margin-right: 15%;
+
+}
+}
+
+@media  screen and (max-width: 425px){
+    .circle-container{
+        width: 30vw;
+        height: auto;
+    }
+
+    .input-container{
+        font-size: 12px;
+        width: 60vw;
+        height: auto;
+        margin: 0;
+    }
+
+    .btn-confirmar-action{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .confirm-button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
