@@ -1,7 +1,25 @@
+import { useState } from "react";
 import "./TelasDicasAdd.css";
 import { Link } from 'react-router-dom';
-
+import api from "../../services/api";
 function TelasDicasAdd(){
+ 
+    const [tip,setTip] = useState('');
+ 
+   const addTip = async () =>{
+    try{
+        console.log(tip)
+    const response = await api.post('/createTips',{
+        tip_description:tip
+    })
+    alert("Dica adicionada com sucesso!")
+    setTip("")
+    window.location = '/TelaDicas'
+} catch(error){
+    alert("Erro ao adicionar a dica", error.response)
+    console.error(error);
+}
+   }
     return (
         <div className='container-catalogo'>
         <div className='container-logo'>
@@ -25,21 +43,22 @@ function TelasDicasAdd(){
             </div>
             <div className="pai-container-adddicas">
             <div className='container-adddicas'>
-                    <textarea 
-                        className='textarea-dicas' 
-                        placeholder='Adicione sua dica aqui...' 
-                        rows='4' 
+                    <textarea
+                        className='textarea-dicas'
+                        placeholder='Adicione sua dica aqui...'
+                        rows='4'
                         cols='50'
+                        onChange={(e) => setTip(e.target.value)}
                     ></textarea>
-                    <button className='btn-add'>Adicionar Dica</button>
+                    <button className='btn-add'onClick={addTip}>Adicionar Dica</button>
                 </div>
-
-
+ 
+ 
             </div>
         </div>
-
+ 
     );
-
+ 
 }
-
+ 
 export default TelasDicasAdd;
