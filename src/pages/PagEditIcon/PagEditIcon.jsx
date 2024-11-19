@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 
 function PagEditIcon() {
     return (
-        <div className='container-catalogo'>
-            <div className='container-logo'>
+        <div className='container-editicon'>
+            <div className='container-logo-editicon'>
                 <Link to="/">
                     <img className='img-logo-pag-artigo' src='/img/logo-pag-artigo.svg' alt='logo' />
                 </Link>
@@ -15,13 +15,13 @@ function PagEditIcon() {
                 <a href="/">ARTIGOS</a>
                 <a href="/">ECOPONTOS</a>
             </div>
-            <div className='btn-login'>
+            <div className='btn-login-edicon'>
                 <Link className="button" to="/Login">ADMIN</Link>
             </div>
-            <div className='container-titulo-alt'>
-                <h2><span className='highlight'>Editar</span> Icon </h2>
-                <img src='/img/retangulo-hcoleta.svg' alt='retangulo-hcoleta' className='retang-coleta'/>
-                <p>Edite aqui o seu icon.</p>
+            <div className='container-titulo-editicon'>
+                <h2><span className='highlight'>Editar </span> Icon </h2>
+                <img src='/img/retangulo-hcoleta.svg' alt='retangulo-hcoleta' className='retang-tit'/>
+                <p>Edite seu icon aqui.</p>
                  </div>
             <div className="pai-container-edicao">
                 
