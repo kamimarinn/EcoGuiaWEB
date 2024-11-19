@@ -1,7 +1,18 @@
+import { useEffect, useState } from "react";
 import "./PagEditIcon.css";
 import { Link } from "react-router-dom";
 
+
 function PagEditIcon() {
+
+const [avatar,setAvatar] = useState('')
+    useState(() => {
+    async function img() {
+    const imag = localStorage.getItem('avatar')
+    setAvatar(imag);
+       }
+       img()
+    },[])
     return (
         <div className='container-editicon'>
             <div className='container-logo-editicon'>
@@ -17,6 +28,7 @@ function PagEditIcon() {
             </div>
             <div className='btn-login-edicon'>
                 <Link className="button" to="/Login">ADMIN</Link>
+
             </div>
             <div className='container-titulo-editicon'>
                 <h2><span className='highlight'>Editar </span> Icon </h2>
@@ -26,7 +38,7 @@ function PagEditIcon() {
             <div className="pai-container-edicao">
                 
                 <div className="circle-container">
-                    <img src='/img/perfil-crud.svg' alt='icon' className='circle-icon' />
+                    <img src={avatar} alt='icon' className='circle-icon' />
                 </div>
                 
                 <div className="input-container">
