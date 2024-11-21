@@ -53,8 +53,8 @@ const updateXpMateriais = async () =>{
         getMateriais()
     },[])
     return(
-        <div className='container-catalogo'>
-        <div className='container-logo'>
+        <div className='container-telamaterial'>
+        <div className='container-logo-telmaterial'>
             <Link to="/">
                 <img className='img-logo-pag-artigo' src='/img/logo-pag-artigo.svg' alt='logo' />
             </Link>
@@ -70,7 +70,7 @@ const updateXpMateriais = async () =>{
         </div>
         <div className='container-titulo-alt'>
                 <h2><span className='highlight'>Materiais</span>Recicláveis</h2>
-                <img src='/img/retangulo-hcoleta.svg' alt='retangulo-hcoleta' className='retang-coleta'/>
+                <img src='/img/retangulo-hcoleta.svg' alt='retangulo-hcoleta' className='ret-coleta-telmaterial'/>
                 <p>Adicione e exclua máteriais recicláveis!</p>
                 </div>
             {materiais[0] ?

@@ -1,4 +1,4 @@
-.container-catalogo {
+.container-telaalticons {
     position: absolute; 
     top: 0; 
     width: 100%; 
@@ -34,7 +34,7 @@
     align-items: center; 
 }
 
-.btn-login{
+.btn-login-alticon{
     position: absolute; 
     top: 15px; 
     right: 30px; 
@@ -42,7 +42,7 @@
     align-items: center;
 }
 
-.btn-login button{
+.btn-login-alticon button{
     background: none; 
     border: 0.5px solid #000; 
     border-radius: 0;
@@ -54,14 +54,14 @@
 }
 
 
-.container-logo {
+.container-logo-alticons {
     display: flex;
     justify-content: start;
     width: 100%;
-    margin-bottom: 10px; /* Espaço abaixo do logo, ajuste conforme necessário */
+    margin-bottom: 10px; 
 }
 
-.container-logo img{
+.container-logo-alticons img{
     width: 60%;
     margin-left: 40px;
     margin-top: 10px;
@@ -86,7 +86,7 @@
 
 
 
-.retang-coleta{
+.retang-coleta-altcoleta{
     position: absolute; 
       z-index: 1;
       top: 125px; 
@@ -113,12 +113,14 @@
     border: 0.5px solid transparent;
     border-radius: 10px;
     box-shadow: 1px 3px 10px 9px rgba(0, 0, 0, 0.16);
-    margin: 35px 165px 20px;
+    margin-top: 30px;
+    margin-left: 185px;
+    margin-bottom: 50px;
     z-index: 7;
     position: relative; 
     display: flex; 
     justify-content: center; 
-    padding: 30px; 
+   
 }
 
 .container-alticons {
@@ -128,7 +130,7 @@
     justify-content: center; 
     width: 50%; 
     margin-left: 30px;
-    
+    margin-bottom: 10px;
     
 }
 
@@ -152,7 +154,6 @@
     height: auto; 
     margin-top: 20px;
     
- 
 }
 
 @media  screen and (max-width: 768px){
@@ -166,27 +167,46 @@
 }
 
 @media  screen and (max-width: 425px){
-    .container-logo{
+    .container-telaalticons{
+        position: absolute;
+        margin: 0 !important;
+        right: 5%;
+        
+
+    }
+    .container-logo-alticons{
        margin-left: 50px;
     }
 
-    .btn-login{
-        margin-left: -20px !important;
+    .container-logo-alticons img{
+        width: 15vw !important;
+        margin-left: -25px !important;
     }
-    .retang-coleta{
-        width: 80vw;
+
+    .btn-login-alticon{
+        margin-right: -50px !important;
+    }
+
+    .btn-login-alticon buttom{
+        margin-right:10px !important ;
+    }
+    .retang-coleta-altcoleta{
+        width: 70vw !important;
+        
+       
     }
     .container-titulo-alt h2{
         font-size: 26px !important;
-        margin-left:20% !important;
+        margin-left:10% !important;
     }
     .container-titulo-alt p{
         font-size: 14px !important;
-        margin-left:20% !important;
+        margin-left:10% !important;
+        margin-top: 5% !important;
     }
 
     .pai-container-alticons{
-        left: 6%;
+        right: 25%;
     }
 
     .container-alticons{
@@ -198,7 +218,7 @@
         align-content: center;
       
     
-       }
+    }
 }
 
 

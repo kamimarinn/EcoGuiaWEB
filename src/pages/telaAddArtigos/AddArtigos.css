@@ -32,7 +32,7 @@
       align-items: center; 
   }
   
-.btn-login{
+.btn-login-addartigos{
       position: absolute; 
       top: 15px; 
       right: 30px; 
@@ -40,7 +40,7 @@
       align-items: center;
   }
   
-.btn-login button{
+.btn-login-addartigos button{
       background: none; 
       border: 0.5px solid #000; 
       border-radius: 0;
@@ -89,12 +89,13 @@
     
 }
 
-.retang-coleta{
-display: flex;
-flex-direction: column;
-  z-index: 1;
-  top: 130px; 
-  left: 32%; 
+.retang-coleta-addartigos{
+    position: absolute; 
+    z-index: 1;
+    top: 125px; 
+    left: 32%; 
+    display: flex;
+    margin: 0;
 
 }
 
@@ -198,7 +199,7 @@ select {
 }
 
 @media  screen and (max-width: 768px){
-    .retang-coleta{
+    .retang-coleta-addartigos{
        margin-left: -12% !important;
       
     }
@@ -253,7 +254,7 @@ select {
     }
 
     /* Ajustes do botão de login */
-    .btn-login {
+    .btn-login-addartigos {
         position: absolute;
         top: 15px;
         left: 94% !important;
@@ -261,7 +262,7 @@ select {
         align-items: center;
     }
 
-    .btn-login button {
+    .btn-login-addartigos button {
         background: none;
         border: 0.5px solid #000;
         border-radius: 0;
@@ -281,7 +282,7 @@ select {
         margin-left: 80px !important;
     }
 
-    .retang-coleta{
+    .retang-coleta-addartigos{
         width: 90vw;
         left: 28% !important;
     }
