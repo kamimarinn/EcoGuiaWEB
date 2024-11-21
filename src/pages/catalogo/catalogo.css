@@ -2,12 +2,12 @@
 /* CONTAINER NAVBAR */
 
 .container-catalogo {
-  height: 100%;
-  position: relative; 
-  /* top: 0;  */
   width: 100%; 
+  height: 100%;
+  position: absolute; 
+  top: 0; 
   padding: 10px 0px; 
-  /* z-index: 1000;  */
+  z-index: 1000; 
   flex-direction: column;
   justify-content: center; 
   align-items: center; 

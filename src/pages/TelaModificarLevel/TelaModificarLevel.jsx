@@ -3,8 +3,8 @@ import "./TelaModificarLevel.css";
 
 function TelaModificarLevel (){
     return(
-        <div className='container-catalogo'>
-        <div className='container-logo'>
+        <div className='container-modlevel'>
+        <div className='container-logo-modlevel'>
             <Link to="/">
                 <img className='img-logo-pag-artigo' src='/img/logo-pag-artigo.svg' alt='logo' />
             </Link>
@@ -15,12 +15,12 @@ function TelaModificarLevel (){
             <Link to="/">ARTIGOS</Link>
             <Link to="/">ECOPONTOS</Link>
         </div>
-        <div className='btn-login'>
+        <div className='btn-login-modlevel'>
             <Link className="button" to="/Login">ADMIN</Link>
         </div>
         <div className='container-titulo-alt'>
                 <h2><span className='highlight'>Alteração</span>de Levels</h2>
-                <img src='/img/retangulo-hcoleta.svg' alt='retangulo-hcoleta' className='retang-coleta'/>
+                <img src='/img/retangulo-hcoleta.svg' alt='retangulo-hcoleta' className='retang-coleta-modlevel'/>
                 <p>Crie e exclua Levels!</p>
                 </div>
                 <div className='pai-container-mod-level'>

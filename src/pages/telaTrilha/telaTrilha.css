@@ -1,6 +1,6 @@
 /* CONTAINER NAVBAR */
 
-.container-catalogo {
+.container-telatrilha {
     position: absolute; 
     top: 0; 
     width: 100%; 
@@ -36,7 +36,7 @@
     align-items: center; 
 }
 
-.btn-login{
+.btn-login-telatrilha{
     position: absolute; 
     top: 15px; 
     right: 30px; 
@@ -44,7 +44,7 @@
     align-items: center;
 }
 
-.btn-login button{
+.btn-login-telatrilha button{
     background: none; 
     border: 0.5px solid #000; 
     border-radius: 0;
@@ -56,14 +56,14 @@
 }
 
 
-.container-logo {
+.container-logo-telatrilha {
     display: flex;
     justify-content: start;
     width: 100%;
     margin-bottom: 10px; /* Espaço abaixo do logo, ajuste conforme necessário */
 }
 
-.container-logo img{
+.container-logo-telatrilha img{
     width: 60%;
     margin-left: 40px;
     margin-top: 10px;

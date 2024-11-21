@@ -61,7 +61,7 @@ function AddArtigos() {
                 <a href="/">ARTIGOS</a>
                 <a href="/">ECOPONTOS</a>
             </div>
-            <div className='btn-login'>
+            <div className='btn-login-addartigos'>
                 <Link className="button" to="/Login">ADMIN</Link>
                             
 
@@ -70,7 +70,7 @@ function AddArtigos() {
             <div className="container-tit">
             <h3><span className='highlight'>Adicionar</span> Artigo </h3>
 
-                <img src='/img/retangulo-hcoleta.svg' alt='retangulo-hcoleta' className='retang-coleta'/>
+                <img src='/img/retangulo-hcoleta.svg' alt='retangulo-hcoleta' className='retang-coleta-addartigos'/>
                 <p>Contribua para a conscientização ambiental! Utilize esta página para publicar artigos<br></br> e notícias que promovam práticas sustentáveis.</p>
                 </div>
 

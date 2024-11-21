@@ -1,6 +1,6 @@
 import "./TelaEsqueciSenha.css"
-
 import { Link } from "react-router-dom";
+
 
 function TelaEsqueciSenha(){
     return(

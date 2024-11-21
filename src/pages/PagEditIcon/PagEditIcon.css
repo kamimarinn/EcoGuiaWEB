@@ -55,12 +55,12 @@
     display: flex;
     justify-content: start;
     width: 100%;
-    /* margin-bottom: 10px;  */
+    margin-bottom: 10px; 
 }
 
 .container-logo-editicon img {
-    width: 60%; /* Reduzido para uma melhor adaptação na tela pequena */
-    margin-left: 20px;
+    width: 60%;
+    margin-left: 40px;
     margin-top: 10px;
 }
 
@@ -79,7 +79,7 @@
     font-size: 40px; 
     text-align: center;
     z-index: 10;  
-    margin: 0;  
+    margin: 0 10px 15px;  
 }
 
 .container-titulo-editicon h2 .highlight {
@@ -98,11 +98,11 @@
     z-index: 9; 
  }
 
-.retang-tit {
-    position: absolute;
-    z-index: 5;  
-    left: 50%; 
-    transform: translateX(-50%);
+.retang-editicon {
+    position: absolute; 
+    z-index: 1;
+    top: 160px; 
+    left: 32%; 
     display: flex;
     margin: 0;
 }
@@ -110,15 +110,15 @@
 .pai-container-edicao {
     display: flex;
     flex-direction: column; 
-    width: 70vw; /* Reduzido para se adaptar à tela pequena */
-    height: auto; /* Removido para permitir flexibilidade */
+    width: 70vw; 
+    height: auto; 
     background-color: #F1F1F1;
     border: 0.5px solid transparent;
     border-radius: 39px;
     box-shadow: 1px 3px 10px 9px rgba(0, 0, 0, 0.16);
     align-items: center; 
     margin-top: 70px;
-    margin-left: 0; /* Removido para melhor ajuste */
+    margin-left: 10px;
     margin-right: 10px;
     margin-bottom: 30px;
 }
@@ -197,8 +197,9 @@
 .confirm-button {
     display: flex;
     flex-direction: column;
-   margin-right: -250px;
-   margin-top: 30px;
+     margin-right: -250px;
+    margin-top: 35px;
+    margin-bottom: 15px;
     background-color: #6BBF59; 
     color: white; 
     border: none; 
@@ -221,38 +222,91 @@
 }
 
 @media  screen and (max-width: 425px){
-    .container-logo-editicon img{
-        width: 15vw;
+    .container-logo-editicon img {
+        width: 30%; /* Aumenta a largura da imagem para preencher melhor a tela */
+        margin-left: 20px;
     }
-    .pai-container-edicao{
+
+    .retang-editicon{
+        position: relative;
+        width: 60vw;
+        top:15%;
+        left: 5%;
+        bottom: 10% !important;
+      
+    }
+    
+
+    .container-titulo-editicon h2 {
+        font-size: 28px; /* Ajuste no tamanho da fonte */
+    }
+
+    .container-titulo-editicon p {
+        font-size: 14px; /* Tamanho da fonte reduzido */
+    }
+
+    .pai-container-edicao {
+        width: 80vw; 
+        height: 70vh;
+        margin-top: 40px; 
+    }
+
+    .circle-container {
+        width: 100px; /* Reduz o tamanho do círculo */
+        height: 100px; 
+    }
+
+    .circle-icon {
+        width: 80%; /* Diminui o tamanho do ícone */
+    }
+
+    .input-container {
+       
+        gap: 10px;
+        margin-left: 0;
+    }
+
+    .file-input-container {
+        gap: 20px; 
+    }
+
+    .file-label {
+        width: 15vw;
+        font-size: 14px;
+        padding: 10px 10px; 
+        margin-top: 20px; 
+        justify-content: space-between;
+    }
+
+    .drop-area {
+        width: 120px; 
+        height: 60px;
+        font-size: 14px;
+        gap:10px; 
+    }
+
+    .confirm-button {
+        font-size: 14px; /* Diminui o tamanho da fonte */
+        padding: 10px 20px; /* Ajusta o padding do botão */
+    }
+
+    .btn-login-edicon button {
+        padding: 4px 12px; /* Ajusta o padding para telas pequenas */
+    }
+}
+
+@media  screen and (max-width: 375px){
+    .btn-login-edicon{
+        margin-right: -10px !important;
+    }
+
+    .pai-container-edicao {
         width: 80vw; 
         height: 75vh;
-        margin-right: 5px !important;
+        margin-top: 30px;
+        margin-left: 10px;
     }
-
-    .circle-container{
-        width: 25vw;
-        height: auto;
-    }
-
-    .input-container{
-        font-size: 12px;
-        width: 60vw;
-        height: auto;
-        margin: 0;
-    }
-
-    .btn-confirmar-action{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .confirm-button{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+    
 }
 
 @media  screen and (max-width: 320px){
@@ -296,19 +350,18 @@
 
     .container-titulo-editicon p {
         display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 14px; 
-    text-align: center;
-    
-    z-index: 9; 
+        justify-content: center;
+        align-items: center;
+        font-size: 14px; 
+        text-align: center;
+        z-index: 9; 
     }
 
     .pai-container-edicao {
         width: 80vw; 
         height: 75vh;
         margin-top: 30px;
-        margin-left: 80px;
+        margin-left: 10px;
     }
 
     .circle-container {

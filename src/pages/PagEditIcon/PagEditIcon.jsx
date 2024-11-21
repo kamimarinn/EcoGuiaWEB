@@ -20,7 +20,7 @@ function PagEditIcon() {
             </div>
             <div className='container-titulo-editicon'>
                 <h2><span className='highlight'>Editar </span> Icon </h2>
-                <img src='/img/retangulo-hcoleta.svg' alt='retangulo-hcoleta' className='retang-tit'/>
+                <img src='/img/retangulo-hcoleta.svg' alt='retangulo-hcoleta' className='retang-editicon'/>
                 <p>Edite seu icon aqui.</p>
                  </div>
             <div className="pai-container-edicao">

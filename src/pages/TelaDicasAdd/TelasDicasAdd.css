@@ -1,4 +1,4 @@
-.container-catalogo {
+.container-teladicasadd{
     position: absolute; 
     top: 0; 
     width: 100%; 
@@ -11,14 +11,14 @@
 }
 
 
-.container-logo {
+.container-logo-teladicas{
     display: flex;
     justify-content: start;
     width: 100%;
     margin-bottom: 10px;
 }
 
-.container-logo img{
+.container-logo-teladicasadd img{
     width: 60%;
     margin-left: 40px;
     margin-top: 10px;
@@ -45,7 +45,7 @@
     align-items: center; 
 }
 
-.btn-login{
+.btn-login-teladicasadd{
     position: absolute; 
     top: 15px; 
     right: 30px; 
@@ -53,7 +53,7 @@
     align-items: center;
 }
 
-.btn-login button{
+.btn-login-teladicasadd button{
     background: none; 
     border: 0.5px solid #000; 
     border-radius: 0;
@@ -84,6 +84,7 @@
 
 
 .retang-coleta{
+    position: absolute; 
       z-index: 1;
       top: 125px; 
       left: 32%; 
