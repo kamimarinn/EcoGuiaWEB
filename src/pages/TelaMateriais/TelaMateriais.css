@@ -171,8 +171,7 @@
 .container-material-um h5,
 .container-material-dois h5,
 .container-material-tres h5,
-.container-material-quatro h5,
-.container-material-cinco h5 {
+.container-material-quatro h5{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -181,8 +180,33 @@
     text-align: center;
     margin: 0;
 }
+.container-material-um input,
+.container-material-dois input,
+.container-material-tres input,
+.container-material-quatro input,
+.container-material-cinco input {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: 18px;
+    color: #6BBF59;
+    text-align: center;
+    margin: 0;
+    border: none;
+    background-color: transparent;
+    font-weight: 790;
+    width:-webkit-fill-available;
+}
 
+.container-material-um input:focus,
+.container-material-dois input:focus,
+.container-material-tres input:focus,
+.container-material-quatro input:focus,
+.container-material-cinco input:focus{
+box-shadow: 0;
+outline: 0;
 
+}
 .layout-container {
     display: flex;
     flex-wrap: wrap; 

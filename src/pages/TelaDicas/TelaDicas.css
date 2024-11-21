@@ -169,11 +169,8 @@
     gap: 10px; 
 }
 
-.container-dicaum button,
-.container-dicadois button,
-.container-dicatres button,
-.container-dicaquatro button {
-    width: 130px;
+.container-dicaum button{
+    width: auto;
     height: 30px;
     background-color: #ffff;
     display: flex;

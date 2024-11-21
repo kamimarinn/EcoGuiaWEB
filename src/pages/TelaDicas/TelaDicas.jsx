@@ -8,8 +8,8 @@ function TelaDicas(){
  
     const getAllTips = async () => {
         try{
-        const response = await api.get('/AllTips');
-        setTips(response.data);
+        const response = await api.get('/tips');
+        setTips(response.data.tips);
     }catch(error){
         alert("Erros ao pegar os dados")
         console.error(error);
@@ -64,7 +64,6 @@ function TelaDicas(){
                     {tips.map((_,index) => (
                 <div className='container-dicaum' key={tips[index].pk_IDtip}>
                     <p>{tips[0] ? tips[index].description_tip : "carregando.." }</p>
-                    <button>Visualizar</button>
                     <button onClick={() => deleteTip(tips[index].pk_IDtip)}>Apagar</button>
                  </div>
                     ))}

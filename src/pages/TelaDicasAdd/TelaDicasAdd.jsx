@@ -8,9 +8,8 @@ function TelasDicasAdd(){
  
    const addTip = async () =>{
     try{
-        console.log(tip)
     const response = await api.post('/createTips',{
-        tip_description:tip
+        description_tip:tip
     })
     alert("Dica adicionada com sucesso!")
     setTip("")
