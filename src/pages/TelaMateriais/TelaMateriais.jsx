@@ -2,8 +2,11 @@ import { Link } from 'react-router-dom';
 import "./TelaMateriais.css";
 import api from '../../services/api'
 import { useEffect, useState } from 'react';
+
 function TelaMateriais(){
 
+
+    
     const [xpUm, setXpUm] = useState('')
     const [xpDois, setXpDois] = useState('')
     const [xpTres, setXpTres] = useState('')
@@ -129,7 +132,10 @@ const updateXpMateriais = async () =>{
             </div>
            
             </div>
-            : <h1>carregando...</h1>}
+            : <div className='loading'>
+            <h1>carregando...</h1>
+            </div>
+            }
     </div>
 
     );

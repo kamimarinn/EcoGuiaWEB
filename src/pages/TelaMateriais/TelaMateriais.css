@@ -301,3 +301,9 @@ outline: 0;
     outline: none; /* Remove o outline (bordas azuis) */
 }
 
+.loading{
+    align-items: center;
+    text-align: center;
+
+}
+

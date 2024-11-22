@@ -295,7 +295,7 @@
     }
 
     .container-titulo-editicon p {
-        display: flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     font-size: 14px; 
@@ -321,10 +321,8 @@
     }
 
     .drop-area {
-        width: 200px; /
+        width: 200px; 
     }
-
-    
 
     .file-label {
         padding: 8px 10px; 
