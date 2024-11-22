@@ -68,3 +68,123 @@
     margin-left: 40px;
     margin-top: 10px;
 }
+
+.container-titulo-alt-trilha{
+    display: flex;
+    flex-direction: column;
+}
+
+.container-titulo-alt-trilha h2{
+    font-size: 36px;
+    text-align: center;
+    z-index: 7;
+    margin: 30px 10px 20px 0;
+}
+
+.container-titulo-alt-trilha h2 .highlight{
+    color: #6BBF59; 
+    margin: 5px;
+}
+
+
+
+.retang-coleta-telatrilha{
+    position: absolute; 
+      z-index: 1;
+      top: 125px; 
+      left: 32%; 
+      display: flex;
+      margin: 0;
+}
+
+.container-titulo-alt-trilha p{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+    text-align: center;
+    margin: 0 10px 5px 5px;
+}
+
+
+.container-principal {
+    display: flex;  
+    justify-content: space-around; 
+    margin-top: 50px !important;
+}
+
+
+.container-um-quests {
+    position: relative;
+    width: 40vw; 
+    height: 40vh; 
+    background-color: #F1F1F1;
+    border: 0.5px solid transparent;
+    border-radius: 10px;
+    box-shadow: 1px 3px 10px 9px rgba(0, 0, 0, 0.16);
+    padding: 40px; 
+    display: flex; 
+    flex-direction: row; 
+    flex-wrap: nowrap;
+    gap: 10px; 
+    margin: 0;
+}
+
+.input-quest-trilha {
+    width: 3vw; 
+    height: 5vh;
+    background-color: #6BBF59;
+    border: 0.5px solid transparent;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    font-size: 1.2rem; 
+    margin: 0;
+}
+
+
+
+.text-input-um,
+.text-input-dois,
+.text-input-tres {
+    width: 15vw; 
+    height: 10vh;
+    border: 0.5px solid transparent;
+    border-radius: 5px;
+    display: flex; 
+    flex-direction: row; 
+    flex-wrap: nowrap;
+    font-size: 1.5em; 
+    margin: 0;
+}
+
+.input-quest{
+    width: 3vw; 
+    height: 5vh;
+    background-color: #87C0F8;
+    border: 0.5px solid transparent;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    font-size: 1.2rem; 
+    margin: 0;
+}
+
+
+/* Container 2 (o segundo) */
+.container-dois-badge {
+    width: 40vw; 
+    height: 40vh; 
+    background-color: #F1F1F1;
+    border: 0.5px solid transparent;
+    border-radius: 10px;
+    box-shadow: 1px 3px 10px 9px rgba(0, 0, 0, 0.16);
+    padding: 40px; 
+    display: flex; 
+    flex-direction: column; 
+    margin: 0;
+}
