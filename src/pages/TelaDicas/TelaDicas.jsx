@@ -64,7 +64,7 @@ function TelaDicas(){
                     {tips.map((_,index) => (
                 <div className='container-dicaum' key={tips[index].pk_IDtip}>
                     <p>{tips[0] ? tips[index].description_tip : "carregando.." }</p>
-                    <button>Visualizar</button>
+                    {/* <button>Visualizar</button> */}
                     <button onClick={() => deleteTip(tips[index].pk_IDtip)}>Apagar</button>
                  </div>
                     ))}
