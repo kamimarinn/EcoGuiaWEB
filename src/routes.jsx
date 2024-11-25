@@ -9,7 +9,7 @@ import Crud from "./pages/Tela CRUD/crud.jsx";
 import AddArtigos from "./pages/telaAddArtigos/AddArtigos.jsx";
 import TelaAltIcons from "./pages/telaAltIcons/telaAltIcons.jsx";
 import PagEditIcon from "./pages/PagEditIcon/PagEditIcon.jsx";
-// import TelaEsqueciSenha from "./pages/TelaEsqueciSenha/TelaEsqueciSenha.jsx";
+import TelaEsqueciSenha from "./pages/TelaEsqueciSenha/TelaEsqueciSenha.jsx";
 import TelaTrilha from "./pages/telaTrilha/telaTrilha.jsx";
 import TelaToken from "./pages/telaToken/TelaToken.jsx";
 import TelaRedefinirSenha from "./pages/telaRedefinirSenha/TelaRedefinirSenha.jsx";
@@ -32,7 +32,7 @@ export default function Rotas() {
                 <Route path="/AddArtigos" element={<AddArtigos/>}/>
                 <Route path="/telaAltIcons" element={<TelaAltIcons/>}/>
                 <Route path="/PagEditIcon" element={<PagEditIcon/>}/>  
-                {/* <Route path="/TelaEsqueciSenha" element={<TelaEsqueciSenha/>}/> */}
+                <Route path="/TelaEsqueciSenha" element={<TelaEsqueciSenha/>}/>
                 <Route path="/telaTrilha" element={<TelaTrilha/>}/>  
                 <Route path="/TelaToken" element={<TelaToken/>}/>    
                 <Route path="/TelaRedefinirSenha" element={<TelaRedefinirSenha/>}/> 
