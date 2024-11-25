@@ -355,6 +355,7 @@
         font-size: 14px; 
         text-align: center;
         z-index: 9; 
+
     }
 
     .pai-container-edicao {
@@ -374,10 +375,8 @@
     }
 
     .drop-area {
-        width: 200px; /
+        width: 200px; 
     }
-
-    
 
     .file-label {
         padding: 8px 10px; 

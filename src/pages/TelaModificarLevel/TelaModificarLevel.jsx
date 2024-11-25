@@ -10,7 +10,7 @@ function TelaModificarLevel (){
     const addLevel = async () => {
         try{
         const response = await api.post('/createLevel',{
-            xp_level:xp
+            XP:xp
         })
         console.log(response.data)
         alert('Level adicionado com sucesso')
@@ -89,7 +89,13 @@ useEffect(() => {
 
                 <div className='container-lista-level'>
                 <h3>Lista de Levels:</h3>
-         
+                <div className='container-lista'> 
+               {levels.map((_,index) => (
+           <div className='container-levels' key={levels[index].pk_IDlevel}>
+               <p>Level {levels ? index +1 : ""} XP  {levels ? levels[index].XP_level : "carregando.." }</p>
+            </div>
+               ))}
+           </div>
                 </div>
 
                 </div>
