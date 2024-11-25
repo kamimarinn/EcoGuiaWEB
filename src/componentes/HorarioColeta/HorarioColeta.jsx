@@ -31,7 +31,11 @@ function HorarioColeta() {
                 <p>Confira através do seu CEP, quais são os horários e datas que os caminhões<br /> de coleta padrão e coleta sustentável passam em sua rua!</p>
                 <div className='hc-botao'>
                     <input type="number" id="input-id" className="form-input" placeholder="INSIRA O CEP" onChange={(e) => setCep(e.target.value)} />
+                    {loading?
+                    <div></div> 
+                    :
                     <button className='btn-cep' type="button" onClick={() => getTime()}>BUSCAR</button>
+                    }
              </div>      
       </div>
 <div className='horario'>
