@@ -24,7 +24,7 @@ function TelaMateriais(){
                 <p>Adicione e exclua máteriais recicláveis!</p>
                 </div>
             <div className='pai-container-telamateriais'>
-                <button className='botao-add'>OK +</button>
+                <button className='botao-add'>OK</button>
                 <div className='container-alterar-material-um'>
                 <div className='container-material-um'>
                 <h1>10XP</h1>

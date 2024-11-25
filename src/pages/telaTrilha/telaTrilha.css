@@ -115,7 +115,7 @@
 
 
 .container-um-quests {
-    position: relative;
+
     width: 40vw; 
     height: 40vh; 
     background-color: #F1F1F1;
@@ -125,23 +125,25 @@
     padding: 40px; 
     display: flex; 
     flex-direction: row; 
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     gap: 10px; 
-    margin: 0;
+    
+   
 }
 
-.input-quest-trilha {
+.input-quest-trilha,
+.input-quest {
     width: 3vw; 
-    height: 5vh;
+    height: auto;
     background-color: #6BBF59;
     border: 0.5px solid transparent;
     border-radius: 10px;
     padding: 10px;
     display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
+    flex-direction: row;
+    flex-wrap: wrap;
     font-size: 1.2rem; 
-    margin: 0;
+    
 }
 
 
@@ -149,29 +151,15 @@
 .text-input-um,
 .text-input-dois,
 .text-input-tres {
-    width: 15vw; 
-    height: 10vh;
+    width: 10vw; 
+    height: auto;
     border: 0.5px solid transparent;
     border-radius: 5px;
     display: flex; 
     flex-direction: row; 
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     font-size: 1.5em; 
-    margin: 0;
-}
-
-.input-quest{
-    width: 3vw; 
-    height: 5vh;
-    background-color: #87C0F8;
-    border: 0.5px solid transparent;
-    border-radius: 10px;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    font-size: 1.2rem; 
-    margin: 0;
+    
 }
 
 
