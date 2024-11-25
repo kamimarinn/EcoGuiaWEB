@@ -19,7 +19,7 @@ function TelaTrilha() {
                 <Link className="button" to="/Login">ADMIN</Link>
             </div>
             <div className='container-titulo-alt-trilha'>
-                <h2><span className='highlight'>Trilha </span>de Objetivos</h2>
+                <h2><span className='highlight'>Trilha</span> de Objetivos</h2>
                 <img src='/img/retangulo-hcoleta.svg' alt='retangulo-hcoleta' className='retang-coleta-telatrilha'/>
                 <p>Manipule missões e badges!</p>
             </div>
