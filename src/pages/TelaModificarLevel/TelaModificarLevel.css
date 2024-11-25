@@ -1,4 +1,4 @@
-.container-catalogo {
+.container-modlevel {
     position: absolute; 
     top: 0; 
     width: 100%; 
@@ -11,14 +11,14 @@
 
 }
 
-.container-logo {
+.container-logo-modlevel {
     display: flex;
     justify-content: start;
     width: 100%;
     margin-bottom: 10px;
 }
 
-.container-logo img{
+.container-logo-modlevel img{
     width: 60%;
     margin-left: 40px;
     margin-top: 10px;
@@ -45,7 +45,7 @@
     align-items: center; 
 }
 
-.btn-login{
+.btn-login-modlevel{
     position: absolute; 
     top: 15px; 
     right: 30px; 
@@ -53,7 +53,7 @@
     align-items: center;
 }
 
-.btn-login button{
+.btn-login-modlevel button{
     background: none; 
     border: 0.5px solid #000; 
     border-radius: 0;
@@ -82,12 +82,13 @@
     margin: 5px;
 }
 
-.retang-coleta{
-      z-index: 1;
-      top: 125px; 
-      left: 32%; 
-      display: flex;
-      margin: 0;
+.retang-coleta-modlevel{
+    position: absolute; 
+    z-index: 1;
+    top: 125px; 
+    left: 32%; 
+    display: flex;
+    margin: 0;
 }
 
 .container-titulo-alt p{
@@ -108,7 +109,7 @@
     box-shadow: 1px 3px 10px 9px rgba(0, 0, 0, 0.16);
     margin: 20px 175px 20px;
     z-index: 7;
-    position: absolute;
+    position: relative;
     display: flex; 
     flex-direction: column; 
     padding: 40px; 
@@ -123,6 +124,7 @@
   }
   
   .img-level{
+    position: relative;
     width: 50vw;
     margin-top: 60px; 
     border-radius: 5px;

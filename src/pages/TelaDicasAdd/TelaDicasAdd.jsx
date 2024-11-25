@@ -20,8 +20,8 @@ function TelasDicasAdd(){
 }
    }
     return (
-        <div className='container-catalogo'>
-        <div className='container-logo'>
+        <div className='container-teladicasadd'>
+        <div className='container-logo-teladicasadd'>
             <Link to="/">
                 <img className='img-logo-pag-artigo' src='/img/logo-pag-artigo.svg' alt='logo' />
             </Link>
@@ -37,7 +37,7 @@ function TelasDicasAdd(){
         </div>
         <div className='container-titulo-alt'>
                 <h2><span className='highlight'>Dicas</span>Diárias</h2>
-                <img src='/img/retangulo-hcoleta.svg' alt='retangulo-hcoleta' className='retang-coleta'/>
+                <img src='/img/retangulo-hcoleta.svg' alt='retangulo-hcoleta' className='retang-coleta-teladicasadd'/>
                 <p>Adicione a dica aqui!</p>
             </div>
             <div className="pai-container-adddicas">

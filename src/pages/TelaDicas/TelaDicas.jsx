@@ -37,8 +37,8 @@ function TelaDicas(){
         }
      }
     return (
-        <div className='container-catalogo'>
-            <div className='container-logo'>
+        <div className='container-telasdicas'>
+            <div className='container-logo-telasdicas'>
                 <Link to="/">
                     <img className='img-logo-pag-artigo' src='/img/logo-pag-artigo.svg' alt='logo' />
                 </Link>
@@ -49,12 +49,12 @@ function TelaDicas(){
                 <Link to="/">ARTIGOS</Link>
                 <Link to="/">ECOPONTOS</Link>
             </div>
-            <div className='btn-login'>
+            <div className='btn-login-telasdicas'>
                 <Link className="button" to="/Login">ADMIN</Link>
             </div>
             <div className='container-titulo-alt'>
                 <h2><span className='highlight'>Dicas</span>Diárias</h2>
-                <img src='/img/retangulo-hcoleta.svg' alt='retangulo-hcoleta' className='retang-coleta'/>
+                <img src='/img/retangulo-hcoleta.svg' alt='retangulo-hcoleta' className='retang-coleta-teladicas'/>
                 <p>Edite e atualize aqui as dicas diárias!</p>
             </div>
             <div className='pai-container-teladicas'>
@@ -64,6 +64,9 @@ function TelaDicas(){
                     {tips.map((_,index) => (
                 <div className='container-dicaum' key={tips[index].pk_IDtip}>
                     <p>{tips[0] ? tips[index].description_tip : "carregando.." }</p>
+
+                    {/* <button>Visualizar</button> */}
+
                     <button onClick={() => deleteTip(tips[index].pk_IDtip)}>Apagar</button>
                  </div>
                     ))}

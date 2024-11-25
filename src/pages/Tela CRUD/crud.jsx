@@ -4,7 +4,7 @@ import {Link} from "react-router-dom";
 function Crud (){
     return (
         <div className="container-header">
-            <div className='container-logo'>
+            <div className='container-logo-telacrud'>
         <Link to="/">
         <img className='img-logo-pag-artigo' src='/img/logo-pag-artigo.svg' alt='logo' />
         </Link>
@@ -17,7 +17,7 @@ function Crud (){
         <a href="/">ECOPONTOS</a>
 
     </div>
-    <div className='btn-login'>
+    <div className='btn-login-telacrud'>
          <Link className="button" to="/Login">ADMIN</Link>
     </div>
     
