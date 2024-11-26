@@ -113,78 +113,141 @@
     margin-top: 50px !important;
 }
 
+.quest-tit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+
+}
+
+.quest-tit h3{
+    font-size: 30px;
+    color: #000;
+    margin-left: 200px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+ 
+}
+
 
 .container-um-quests {
-    position: relative;
-    width: 40vw; 
-    height: 40vh; 
+    width: 40vw;
+    height: 50vh;
     background-color: #F1F1F1;
     border: 0.5px solid transparent;
     border-radius: 10px;
     box-shadow: 1px 3px 10px 9px rgba(0, 0, 0, 0.16);
-    padding: 40px; 
+    padding: 40px;
     display: flex; 
     flex-direction: row; 
-    flex-wrap: nowrap;
-    gap: 10px; 
-    margin: 0;
+    flex-wrap: wrap; 
+    gap: 10px;
+    justify-content: space-between; 
 }
 
-.input-quest-trilha {
-    width: 3vw; 
-    height: 5vh;
+.inputs-quests-um, 
+.inputs-quests-dois, 
+.inputs-quests-tres{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+/* Estilo para os inputs */
+.input-quest-trilha,
+.input-quest {
+    width: 10%; 
+    /* height: auto; */
     background-color: #6BBF59;
     border: 0.5px solid transparent;
     border-radius: 10px;
     padding: 10px;
     display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    font-size: 1.2rem; 
-    margin: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 1.2rem;
+  
 }
 
-
-
+/* Estilo para os inputs de texto */
 .text-input-um,
 .text-input-dois,
 .text-input-tres {
-    width: 15vw; 
-    height: 10vh;
+    width: 70%;
+    /* height: auto; */
     border: 0.5px solid transparent;
     border-radius: 5px;
+    padding: 8px;
+    font-size: 1.5em;
     display: flex; 
     flex-direction: row; 
-    flex-wrap: nowrap;
-    font-size: 1.5em; 
-    margin: 0;
-}
-
-.input-quest{
-    width: 3vw; 
-    height: 5vh;
-    background-color: #87C0F8;
-    border: 0.5px solid transparent;
-    border-radius: 10px;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    font-size: 1.2rem; 
-    margin: 0;
+    flex-wrap: wrap;
+    
 }
 
 
-/* Container 2 (o segundo) */
+
 .container-dois-badge {
     width: 40vw; 
-    height: 40vh; 
+    height: 50vh; 
     background-color: #F1F1F1;
     border: 0.5px solid transparent;
     border-radius: 10px;
     box-shadow: 1px 3px 10px 9px rgba(0, 0, 0, 0.16);
     padding: 40px; 
-    display: flex; 
-    flex-direction: column; 
-    margin: 0;
+    
+}
+
+.badge-tit{
+    display: flex;
+    justify-content: center;
+}
+
+.badge-tit h3{
+    font-size: 30px;
+    color: #000;
+    margin-top: 10px;
+    margin-bottom: 30px;
+   
+}
+
+.container-inputs-badge{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px; 
+}
+
+.input-imagem {
+    width: 1vw;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #D9D9D9;
+    border: 0.5px solid transparent;
+    border-radius: 5px;
+    /* margin-bottom: 170px; */
+    padding: 25px 80px 60px ; 
+}
+
+.right-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+    width: 60%; 
+}
+
+.input-texto, .input-descricao {
+    width: 100%; 
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+textarea.input-descricao {
+    height: 100px; 
 }

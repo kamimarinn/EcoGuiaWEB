@@ -34,6 +34,7 @@
 .container-redefinir{
     flex-direction: column; 
     align-items: center; 
+    margin-top: 70px;
 }
 
 .logo-telalogin {

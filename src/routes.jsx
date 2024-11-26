@@ -1,6 +1,7 @@
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home/home-index.jsx";
+import Missao from "./componentes/Missao/Missao.jsx";
 import PageCatalogo from "./pages/catalogo/catalogo.jsx";
 import Funcionalidades from "./componentes/Funcionalidades/Funcionalidades.jsx";
 import HorarioColeta from "./componentes/HorarioColeta/HorarioColeta.jsx";
@@ -9,7 +10,7 @@ import Crud from "./pages/Tela CRUD/crud.jsx";
 import AddArtigos from "./pages/telaAddArtigos/AddArtigos.jsx";
 import TelaAltIcons from "./pages/telaAltIcons/telaAltIcons.jsx";
 import PagEditIcon from "./pages/PagEditIcon/PagEditIcon.jsx";
-// import TelaEsqueciSenha from "./pages/TelaEsqueciSenha/TelaEsqueciSenha.jsx";
+import TelaEsqueciSenha from "./pages/TelaEsqueciSenha/TelaEsqueciSenha.jsx";
 import TelaTrilha from "./pages/telaTrilha/telaTrilha.jsx";
 import TelaToken from "./pages/telaToken/TelaToken.jsx";
 import TelaRedefinirSenha from "./pages/telaRedefinirSenha/TelaRedefinirSenha.jsx";
@@ -17,6 +18,8 @@ import TelaMateriais from "./pages/TelaMateriais/TelaMateriais.jsx";
 import TelaModificarLevel from "./pages/TelaModificarLevel/TelaModificarLevel.jsx";
 import TelaDicas from "./pages/TelaDicas/TelaDicas.jsx";
 import TelaDicasAdd from "./pages/TelaDicasAdd/TelaDicasAdd.jsx";
+import Artigos from "./componentes/Artigos/Artigos.jsx";
+import Ecopontos from "./componentes/Ecopontos/Ecopontos.jsx";
 
 
 export default function Rotas() {
@@ -24,6 +27,7 @@ export default function Rotas() {
         <BrowserRouter>
             <Routes>
                 <Route path="/" element={<Home />} />
+                <Route path="/Missao" element={<Missao/>}/>
                 <Route path="/catalogo" element={<PageCatalogo />} />
                 <Route path="/Funcionalidades" element={<Funcionalidades/>}/>
                 <Route path="/HorarioColeta" element={<HorarioColeta/>}/>
@@ -32,7 +36,7 @@ export default function Rotas() {
                 <Route path="/AddArtigos" element={<AddArtigos/>}/>
                 <Route path="/telaAltIcons" element={<TelaAltIcons/>}/>
                 <Route path="/PagEditIcon" element={<PagEditIcon/>}/>  
-                {/* <Route path="/TelaEsqueciSenha" element={<TelaEsqueciSenha/>}/> */}
+                <Route path="/TelaEsqueciSenha" element={<TelaEsqueciSenha/>}/>
                 <Route path="/telaTrilha" element={<TelaTrilha/>}/>  
                 <Route path="/TelaToken" element={<TelaToken/>}/>    
                 <Route path="/TelaRedefinirSenha" element={<TelaRedefinirSenha/>}/> 
@@ -40,6 +44,9 @@ export default function Rotas() {
                 <Route path="/TelaModificarLevel" element={<TelaModificarLevel/>}/> 
                 <Route path="/TelaDicas" element={<TelaDicas/>}/> 
                 <Route path="/TelaDicasAdd" element={<TelaDicasAdd/>}/>
+                <Route path="/Artigos" element={<Artigos/>}/>
+                <Route path="/Ecopontos" element={<Ecopontos/>}/>
+
                 
             </Routes>
         </BrowserRouter>

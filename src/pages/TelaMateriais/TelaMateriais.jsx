@@ -93,7 +93,10 @@ const updateXpMateriais = async () =>{
             {materiais[0] ?
             <div className='pai-container-telamateriais'>
 
-                <button className='botao-add' onClick={() => updateXpMateriais()}>OK +</button>
+
+
+                <button className='botao-add' onClick={() => updateXpMateriais()}>OK </button>
+
                 <div className='container-alterar-material-um'>
                 <div className='container-material-um'>
                 <h1>{xpUm}</h1>
