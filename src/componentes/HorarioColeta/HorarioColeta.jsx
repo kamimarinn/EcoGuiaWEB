@@ -8,13 +8,14 @@ function HorarioColeta() {
 
     const [dados,setDados] = useState('')
     const [cep,setCep]     = useState('')
+    const[hidden , setHiden] = useState(true)
     const[loading,setLoading] = useState(false)
     const getTime = async () => {
         setLoading(true)
         try{
           const response = await api.post('/pickupTime',{cep})
           setDados(response.data)
-          console.log(response.data)
+          setHiden(false)
         }catch(erro){
           console.log(erro)
         }
@@ -42,7 +43,7 @@ function HorarioColeta() {
 {loading? 
     <div class="loader"></div>
     :
-    <div className="tabela-container">
+    <div className="tabela-container" hidden={hidden}>
     {/* Cabeçalho da tabela */}
     <table className="table">
       <thead>
