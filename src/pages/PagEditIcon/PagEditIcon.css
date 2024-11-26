@@ -142,8 +142,9 @@
 }
 
 .circle-icon {
-    width: 80%; /* Reduzido para telas menores */
+    width: 100%; 
     height: auto; 
+    border-radius: inherit;
 }
 
 .input-container {
@@ -178,13 +179,18 @@
 .drop-area {
     width: 240px; /* Reduzido para telas pequenas */
     height: 80px; /* Reduzido */
-    border: 2px dashed #6BBF59; 
     display: flex; 
     flex-direction: column;
     justify-content: center;
     align-items: center; 
     color: #3F463E; 
     margin-top: 20px; /* Ajustado para menor espaçamento */
+}
+
+.drop-area img{
+    max-width: 200px;
+    max-height: 200px;
+    border: 2px dashed #6BBF59; 
 }
 
 .btn-confirmar-action {

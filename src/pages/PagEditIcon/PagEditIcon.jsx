@@ -35,11 +35,9 @@ const [id, setId] = useState('')
 
 
     const editAvatar = async () =>{
-    console.log(file)
     const formData = new FormData();
     formData.append('file',file); 
     formData.append('ID_avatar',id);
-    console.log(id)
         try{
         const response = await api.put('/updateAvatar', formData,{
             headers:{
