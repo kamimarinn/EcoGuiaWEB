@@ -13,7 +13,7 @@ function catalogo(){
     
         <a href="/">SOBRE</a>
         <a href="/">HORÁRIOS DAS COLETAS</a>
-        <a href="/">ARTIGOS</a>
+        <a href="/HorarioColeta">ARTIGOS</a>
         <a href="/">ECOPONTOS</a>
     </div>
     <div className='btn-login'>
