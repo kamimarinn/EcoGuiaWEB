@@ -71,10 +71,10 @@ function Funcionalidades(){
         </button>
           </div>
           <div>
-          <HorarioColeta />
+          <HorarioColeta/>
           </div>
           <div>
-          <Footer/>  
+          <Footer/>
           </div>
     
    
