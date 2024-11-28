@@ -25,24 +25,21 @@ function TelaTrilha() {
             </div>
             <div className='container-principal'>
                 <div className='container-um-quests'>
-                <div className='quest-tit'>
-                   <h3>Quests</h3>
-                   </div>
                     <div className='inputs-quests-um'>
                         <input type="number" id="input-id" className="input-quest-trilha" placeholder="Nº" />
-                        <textarea className='text-input-um' placeholder="Quest" />
+                        <textarea className='text-input-um' placeholder="quest" />
                         <input type="number" id="input-id" className="input-quest" placeholder="" />
                         </div>
 
                         <div className='inputs-quests-dois'>
                         <input type="number" id="input-id" className="input-quest-trilha" placeholder="Nº" />
-                        <textarea className='text-input-dois' placeholder="Quest"/>
+                        <textarea className='text-input-dois' placeholder="quest"/>
                         <input type="number" id="input-id" className="input-quest" placeholder="" />
                         </div>
                         
                         <div className='inputs-quests-tres'>
                         <input type="number" id="input-id" className="input-quest-trilha" placeholder="Nº" />
-                        <textarea className='text-input-tres' placeholder="Quest"/>
+                        <textarea className='text-input-tres' placeholder="quest"/>
                         <input type="number" id="input-id" className="input-quest" placeholder="" />
                         </div>
 
@@ -50,23 +47,8 @@ function TelaTrilha() {
                         
                     </div>
                     <div className='container-dois-badge'>
-                   <div className='badge-tit'>
-                   <h3>Badge</h3>
-                   </div>
-                  <div className='container-inputs-badge'>
-                  <input type="file" accept="image/*" className="input-imagem" />
-                    
-                    
-                    <div className="right-column">
-                        <input type="text" placeholder="Digite o título" className="input-texto" />
-                        <textarea placeholder="Digite a descrição" className="input-descricao"></textarea>
-                  </div>
-                   
-                    </div>
+                    {/* Adicionar conteúdo se necessário */}
                 </div>
-
-
-                
                 </div>
                
             </div>
