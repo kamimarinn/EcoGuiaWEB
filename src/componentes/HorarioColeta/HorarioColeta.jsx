@@ -77,6 +77,7 @@ function HorarioColeta() {
         </div>
         <div  className='container-ajudasp'>
         <img src='/img/ajuda-sp.svg' alt='ajuda sao paulo' className='ajuda-sp'/>
+        
         </div>
         </div>
            
