@@ -233,6 +233,7 @@
 
 .funcionalidades-container{
   height: 100vh;
+  margin-top: 70% !important;
  
 }
 
@@ -352,12 +353,13 @@
 
   .funcionalidades-container{
     height: 100vh;
+    
    
   }
 
   .titulo-func{
     display: flex;
-    margin-top: 320% !important;
+    margin-top: 330% !important;
   }
 
   .funcionalidades-container h3{
