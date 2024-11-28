@@ -1,11 +1,13 @@
 import "./AddArtigos.css";
+import { useRef } from "react";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import api from "../../services/api";
 
 function AddArtigos() {
     const [noticias, setNoticias] = useState([]);
-    const [currentNoticia, setCurrentNoticia] = useState({ title: "",category:"",description: "",image: "" ,reference:"" });
+    const [currentNoticia, setCurrentNoticia] = useState({ title: "",category:"",description: "",reference:"" });
+     const[image,setImage] = useState(null)
     const [editingIndex, setEditingIndex] = useState(null);
 
     const addNoticia = () => {
@@ -18,25 +20,42 @@ function AddArtigos() {
         } else {
             setNoticias([...noticias, currentNoticia]);
         }
-        setCurrentNoticia({ title: "", description: "", image: "" });
+        setCurrentNoticia({ title: "", description: ""});
     };
 
-    const addNewNoticia = async () => {
-        try{
-         const response = await api.post('/createArticle',{
-           title:currentNoticia.title,
-           category:currentNoticia.category,
-           description:currentNoticia.description,
-           image:currentNoticia.image,
-           reference:currentNoticia.reference
-         })
-    alert(response.status)
-       }
-       catch(erro){
-        alert("Algo deu errado: " +erro)
-       }  
-        
+
+    const imagRef = useRef();
+    const handlerImage = (e) => {
+        if(e.target.files[0]){
+            imagRef.current.src =URL.createObjectURL(e.target.files[0])
+            imagRef.current.style.display="block"
+        }
+        else{
+            imagRef.current.src = ''
+        }
+        setImage(e.target.files[0])
     }
+
+    const addNewNoticia = async () => {
+            const formData = new FormData();
+            formData.append('file', image); 
+            formData.append('title', currentNoticia.title);
+            formData.append('category', currentNoticia.category);
+            formData.append('description', currentNoticia.description);
+            formData.append('reference', currentNoticia.reference);
+           
+        try {
+            const response = await api.post('/createArticle', formData, {
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'multipart/form-data' 
+            }
+        });
+            alert(response.status);
+        } catch (error) {
+            alert("Algo deu errado: " + (error.response.data.msg));
+        }
+    };
 
     const editNoticia = (index) => {
         setCurrentNoticia(noticias[index]);
@@ -78,12 +97,9 @@ function AddArtigos() {
             
 
                 <div className="container-info-crud">
-               <input 
-                    type="description" 
-                    placeholder="URL da Imagem" 
-                    value={currentNoticia.image} 
-                    onChange={(e) => setCurrentNoticia({ ...currentNoticia, image: e.target.value })} 
+               <input  type="file" id="file-input" className="file-input"onChange={handlerImage}
                 />
+                <img  className="imagem"alt="preview" ref={imagRef}></img>
 
                 <button onClick={addNewNoticia}>{editingIndex !== null ? "Atualizar" : "Adicionar"}</button>
 
