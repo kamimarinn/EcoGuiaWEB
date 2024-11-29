@@ -21,7 +21,7 @@ function TelaTrilha() {
             <div className='container-titulo-alt-trilha'>
                 <h2><span className='highlight'>Trilha</span> de Objetivos</h2>
                 <img src='/img/retangulo-hcoleta.svg' alt='retangulo-hcoleta' className='retang-coleta-telatrilha'/>
-                <p>Manipule missões e badges!</p>
+                <p>Manipule quests e badges!</p>
             </div>
             <div className='container-principal'>
                 <div className='container-um-quests'>
