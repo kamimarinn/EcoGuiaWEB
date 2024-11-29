@@ -61,13 +61,15 @@ function TelaTrilha() {
                         <input type="text" placeholder="Digite o título" className="input-texto" />
                         <textarea placeholder="Digite a descrição" className="input-descricao"></textarea>
                   </div>
-                   
                     </div>
                 </div>
 
-
-                
                 </div>
+
+                <div className='btn-adicionar-trilha'>
+                        <button>Adicionar</button>
+
+                    </div>
                
             </div>
 
