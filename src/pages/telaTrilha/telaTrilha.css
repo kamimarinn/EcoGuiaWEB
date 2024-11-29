@@ -251,3 +251,22 @@
 textarea.input-descricao {
     height: 100px; 
 }
+
+.btn-adicionar-trilha {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin-top: 50px;
+    margin-bottom: 60px;
+    
+}
+
+.btn-adicionar-trilha button {
+    
+    background-color: #265705;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffff;
+   
+}
