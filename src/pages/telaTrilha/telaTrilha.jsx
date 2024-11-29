@@ -1,23 +1,11 @@
 import './telaTrilha.css';
+import NavBar from '../../componentes/NavBar/Navbar';
 import { Link } from "react-router-dom";
 
 function TelaTrilha() {
     return (
         <div className='container-telatrilha'>
-            <div className='container-logo-telatrilha'>
-                <Link to="/">
-                    <img className='img-logo-pag-artigo' src='/img/logo-pag-artigo.svg' alt='logo' />
-                </Link>
-            </div>
-            <div className='container-navbar'>
-                <a href="/">SOBRE</a>
-                <a href="/">HORÁRIOS DAS COLETAS</a>
-                <a href="/">ARTIGOS</a>
-                <a href="/">ECOPONTOS</a>
-            </div>
-            <div className='btn-login-telatrilha'>
-                <Link className="button" to="/Login">ADMIN</Link>
-            </div>
+            <NavBar />
             <div className='container-titulo-alt-trilha'>
                 <h2><span className='highlight'>Trilha</span> de Objetivos</h2>
                 <img src='/img/retangulo-hcoleta.svg' alt='retangulo-hcoleta' className='retang-coleta-telatrilha'/>

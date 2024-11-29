@@ -1,9 +1,16 @@
-
+/* 
 .coleta-container {
   position: relative; 
   z-index: 1; 
   background-color: #ffff;
   margin-top: 5%;
+} */
+
+.coleta-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .horario-container {
@@ -33,9 +40,7 @@
   box-shadow: 5px 5px 5px #F1F1F1;
   margin-bottom: 80px; 
   margin-left: 10%;
-  margin-top: -20%;
   z-index: 1;
- 
 }
 
 

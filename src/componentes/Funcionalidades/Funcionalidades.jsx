@@ -7,7 +7,7 @@ function Funcionalidades(){
  return (
     <div className='containerPrincipal'>
       
-       <div className='container-MissaoValores'>
+       <div className='container-MissaoValores' id="funcionalidades">
           <div className='caixa-simples'>
             <img src="/img/icone-nossamissao.svg" alt="icone-missao" className='icone' />
             <p className='titulo'>
@@ -65,7 +65,7 @@ function Funcionalidades(){
         </div>
                
         </div>
-          <div className='btn-baixeagora'> 
+          <div className='btn-baixeagora' id="baixe-agora"> 
           <button className='btn-baixar' type="button">
             BAIXE AGORA!
         </button>

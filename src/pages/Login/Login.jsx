@@ -17,7 +17,7 @@ function Login() {
                         <input type="text" id="input-email" className="cad-input" placeholder="seuemail@ecoguia.com" />
                         <input type="password" id="input-senha" className="cad-input-senha" placeholder="Senha" />
                         <Link className="link-esqueci-senha" to="/TelaEsqueciSenha">Esqueci a senha</Link>
-                        <Link className="btn-confirmar" to="/Crud">Entrar</Link>
+                        <Link className="btn-confirmar" to="/Crud" onClick={ localStorage.setItem('logado', true) }>Entrar</Link>
                     </>
                 </div>
             </div>

@@ -24,27 +24,6 @@
     margin-top: 10px;
 }
 
-.container-navbar{
-  position: absolute; 
-  width: 100%; 
-  top: 20px; 
-  display: flex; 
-  justify-content: center; 
-   
-}
-
-.container-navbar a{
-    position: relative;
-    z-index: 7;
-    color: #000; 
-    text-decoration: none; 
-    margin-bottom: 15px;
-    margin-left: 20px;
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-}
-
 .btn-login-modlevel{
     position: absolute; 
     top: 15px; 
@@ -85,7 +64,7 @@
 .retang-coleta-modlevel{
     position: absolute; 
     z-index: 1;
-    top: 125px; 
+    top: 70px; 
     left: 32%; 
     display: flex;
     margin: 0;

@@ -1,30 +1,59 @@
+import { useState } from "react";
 import './Navbar.css';
+import { Link, useLocation } from "react-router-dom";
 
-import { Link } from "react-router-dom";
+export default function NavBar() {
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const location = useLocation();
+    const logado = localStorage.getItem('logado');
 
-export default  function NavBar() {
+    const toggleMenu = () => {
+
+        setIsMenuOpen(!isMenuOpen);
+    };
+
+    const scrollToSection = (sectionId) => {
+
+        const section = document.getElementById(sectionId);
+
+        if (section) {
+
+            section.scrollIntoView({ behavior: "smooth" });
+        }
+        
+        setIsMenuOpen(false);
+    };
+
     return (
         <div className="container">
-                    
-        <div className='container-pag'>
-        
-        <Link to="/Funcionalidades">SOBRE</Link>
-      
-        <a href="#">HORÁRIOS DA COLETA</a>
-        <a href="/HorarioColeta">ARTIGOS</a>
-        <a href="#">ECOPONTOS</a>
-        </div>
-        
-        
-        <div className='container-btnlogin'>
-
-        <Link className="button" to="/Login">ADMIN</Link>
-        
-        </div>
+            <div className='logo-container' onClick={() => localStorage.removeItem('logado')}>
+                <Link to='/'>
+                    <img className='img-logo-pag-artigo' src='/img/logo-pag-artigo.svg' />
+                </Link>
+            </div>
+            {!logado && (
+                <>
+                    <div className={`container-pag ${isMenuOpen ? 'open' : ''}`}>
+                        <button onClick={() => scrollToSection('funcionalidades')}>SOBRE</button>
+                        <button onClick={() => scrollToSection('horarios')}>HORÁRIOS DA COLETA</button>
+                        <button onClick={() => scrollToSection('artigos')}>ARTIGOS</button>
+                        <button onClick={() => scrollToSection('ecopontos')}>ECOPONTOS</button>
+                    </div>
     
-    </div>
+                    <div className="navbar-mobile-buttons">
+                        <Link className="navbar-login-button" to="/Login">ADMIN</Link>
     
-        
-    );
+                        <button className="menu-toggle" onClick={toggleMenu}>
+                            ☰
+                        </button>
+                    </div>
+                </>
+            )}
+            {logado && (
+                <>
+                    {location.pathname !== '/crud' && <Link className="navbar-login-button" to="/crud">VOLTAR</Link>}
+                </>
+            )}
+        </div>
+    );    
 }
-

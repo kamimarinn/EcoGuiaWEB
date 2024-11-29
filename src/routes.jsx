@@ -25,8 +25,6 @@ export default function Rotas() {
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/catalogo" element={<PageCatalogo />} />
-                <Route path="/Funcionalidades" element={<Funcionalidades/>}/>
-                <Route path="/HorarioColeta" element={<HorarioColeta/>}/>
                 <Route path="/Login" element={<Login/>}/>
                 <Route path="/Crud"  element={<Crud/>}/>
                 <Route path="/AddArtigos" element={<AddArtigos/>}/>

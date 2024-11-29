@@ -56,19 +56,6 @@
 }
 
 
-.container-logo-telatrilha {
-    display: flex;
-    justify-content: start;
-    width: 100%;
-    margin-bottom: 10px; /* Espaço abaixo do logo, ajuste conforme necessário */
-}
-
-.container-logo-telatrilha img{
-    width: 60%;
-    margin-left: 40px;
-    margin-top: 10px;
-}
-
 .container-titulo-alt-trilha{
     display: flex;
     flex-direction: column;
@@ -91,7 +78,7 @@
 .retang-coleta-telatrilha{
     position: absolute; 
       z-index: 1;
-      top: 125px; 
+      top: 70px; 
       left: 32%; 
       display: flex;
       margin: 0;

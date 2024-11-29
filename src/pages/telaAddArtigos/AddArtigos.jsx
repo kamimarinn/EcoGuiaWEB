@@ -1,4 +1,5 @@
 import "./AddArtigos.css";
+import NavBar from '../../componentes/NavBar/Navbar'
 import { useRef } from "react";
 import { Link } from "react-router-dom";
 import { useState } from "react";
@@ -69,23 +70,7 @@ function AddArtigos() {
 
     return (
         <div className="container-addartigos">
-            <div className='container-logo'>
-                <Link to="/">
-                    <img className='img-logo-pag-artigo' src='/img/logo-pag-artigo.svg' alt='logo' />
-                </Link>
-            </div>
-            <div className='container-navbar'>
-                <a href="/">SOBRE</a>
-                <a href="/">HORÁRIOS DAS COLETAS</a>
-                <a href="/">ARTIGOS</a>
-                <a href="/">ECOPONTOS</a>
-            </div>
-            <div className='btn-login-addartigos'>
-                <Link className="button" to="/Login">ADMIN</Link>
-                            
-
-            </div>
-
+            <NavBar />
             <div className="container-tit">
             <h3><span className='highlight'>Adicionar</span> Artigo </h3>
 
