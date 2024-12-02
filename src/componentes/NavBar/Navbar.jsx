@@ -26,11 +26,6 @@ export default function NavBar() {
 
     return (
         <div className="container">
-            <div className='logo-container' onClick={() => localStorage.removeItem('logado')}>
-                <Link to='/'>
-                    <img className='img-logo-pag-artigo' src='/img/logo-pag-artigo.svg' />
-                </Link>
-            </div>
             {!logado && (
                 <>
                     <div className={`container-pag ${isMenuOpen ? 'open' : ''}`}>
@@ -51,7 +46,15 @@ export default function NavBar() {
             )}
             {logado && (
                 <>
-                    {location.pathname !== '/crud' && <Link className="navbar-login-button" to="/crud">VOLTAR</Link>}
+                    <div className='logo-container' onClick={() => localStorage.removeItem('logado')}>
+                        <Link to='/'>
+                            <img className='img-logo-pag-artigo' src='/img/logo-pag-artigo.svg' />
+                        </Link>
+                    </div>
+
+                    {(location.pathname !== '/Crud' && location.pathname !== '/crud') && (
+                        <Link className="navbar-login-button" to="/crud">VOLTAR</Link>
+                    )}
                 </>
             )}
         </div>
