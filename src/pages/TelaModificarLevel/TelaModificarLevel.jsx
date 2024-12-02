@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import "./TelaModificarLevel.css";
 import api from '../../services/api'
+import NavBar from '../../componentes/NavBar/Navbar'
 import { useEffect, useState } from 'react';
 function TelaModificarLevel (){
 
@@ -50,20 +51,7 @@ useEffect(() => {
 },[])
     return(
         <div className='container-modlevel'>
-        <div className='container-logo-modlevel'>
-            <Link to="/">
-                <img className='img-logo-pag-artigo' src='/img/logo-pag-artigo.svg' alt='logo' />
-            </Link>
-        </div>
-        <div className='container-navbar'>
-            <Link to="/">SOBRE</Link>
-            <Link to="/">HORÁRIOS DAS COLETAS</Link>
-            <Link to="/">ARTIGOS</Link>
-            <Link to="/">ECOPONTOS</Link>
-        </div>
-        <div className='btn-login-modlevel'>
-            <Link className="button" to="/Login">ADMIN</Link>
-        </div>
+        <NavBar />
         <div className='container-titulo-alt'>
                 <h2><span className='highlight'>Alteração</span>de Levels</h2>
                 <img src='/img/retangulo-hcoleta.svg' alt='retangulo-hcoleta' className='retang-coleta-modlevel'/>

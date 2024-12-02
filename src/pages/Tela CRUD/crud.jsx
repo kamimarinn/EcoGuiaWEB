@@ -1,26 +1,11 @@
 import "./Crud.css";
+import NavBar from '../../componentes/NavBar/Navbar'
 import {Link} from "react-router-dom";
 
 function Crud (){
     return (
-        <div className="container-header">
-            <div className='container-logo-telacrud'>
-        <Link to="/">
-        <img className='img-logo-pag-artigo' src='/img/logo-pag-artigo.svg' alt='logo' />
-        </Link>
-    </div>
-    <div className='container-navbar'>
-    
-        <a href="/">SOBRE</a>
-        <a href="/">HORÁRIOS DAS COLETAS</a>
-        <a href="/">ARTIGOS</a>
-        <a href="/">ECOPONTOS</a>
-
-    </div>
-    <div className='btn-login-telacrud'>
-         <Link className="button" to="/Login">ADMIN</Link>
-    </div>
-    
+        <div className="container-crud">
+            <NavBar />
     <div className="container-admin">
         <img className="engrenagem-crudtela" src ='/img/engrenagem-crudtela.svg' alt='icon'/>
         <h2>Página de <span className='highlight'>Administrador</span></h2>

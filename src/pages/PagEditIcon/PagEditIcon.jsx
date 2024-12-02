@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useRef } from "react";
 import "./PagEditIcon.css";
-import { Link } from "react-router-dom";
+import NavBar from '../../componentes/NavBar/Navbar'
 import api from "../../services/api";
 
 
@@ -57,21 +57,7 @@ const [id, setId] = useState('')
     
     return (
         <div className='container-editicon'>
-            <div className='container-logo-editicon'>
-                <Link to="/">
-                    <img className='img-logo-pag-artigo' src='/img/logo-pag-artigo.svg' alt='logo' />
-                </Link>
-            </div>
-            <div className='container-navbar'>
-                <a href="/">SOBRE</a>
-                <a href="/">HORÁRIOS DAS COLETAS</a>
-                <a href="/">ARTIGOS</a>
-                <a href="/">ECOPONTOS</a>
-            </div>
-            <div className='btn-login-edicon'>
-                <Link className="button" to="/Login">ADMIN</Link>
-
-            </div>
+            <NavBar />
             <div className='container-titulo-editicon'>
                 <h2><span className='highlight'>Editar </span> Icon </h2>
                 <img src='/img/retangulo-hcoleta.svg' alt='retangulo-hcoleta' className='retang-editicon'/>

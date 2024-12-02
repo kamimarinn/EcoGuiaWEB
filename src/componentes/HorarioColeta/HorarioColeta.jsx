@@ -24,8 +24,8 @@ function HorarioColeta() {
   setLoading(false)
       }
     return (
-        <div className='coleta-container'>
-         <div className='horario-container'>
+      <div className='coleta-container'>
+         <div className='horario-container' id='horarios'>
                 <img src="/img/horariocoleta.svg" alt="foto-horariocoleta" className='icon-hc' />
             </div>
             <div className='hc-container'>
@@ -77,7 +77,11 @@ function HorarioColeta() {
                      
         </div>
 
-        <div href="#artigos"  className='container-artigos'>
+
+
+
+        <div id='artigos'  className='container-artigos'>
+
             <h2><span className='highlight'> Catálago </span> Sustentável</h2>
             <img src='/img/icon-artigos.svg' alt='globo-artigos' className='g-artigos'/>
             <img src='/img/retangulo-hcoleta.svg' alt='retangulo-artigos' className='ret-artigos'/>
@@ -121,7 +125,7 @@ function HorarioColeta() {
                      
         </div>
 
-        <div href="#ecopontos" className='container-EcoPonto'>
+        <div id="ecopontos" className='container-EcoPonto'>
         <h2><span className='highlight'> ECO</span>PONTO</h2>
         <img src='/img/retangulo-hcoleta.svg' alt='retangulo-ecoponto' className='ret-ecoponto'/>
         <p>Recicle nos ecopontos perto de você! Confira no<br></br> mapa interativo o mais próximo!</p>
