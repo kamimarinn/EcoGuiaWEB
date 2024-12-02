@@ -4,21 +4,22 @@ import api from '../../services/api';
 import { useState } from 'react';
 
 
-
 function HorarioColeta() {
 
     const [dados,setDados] = useState('')
     const [cep,setCep]     = useState('')
-    const[hidden , setHiden] = useState(true)
     const[loading,setLoading] = useState(false)
+    const[hidden , setHiden] = useState(true)
     const getTime = async () => {
         setLoading(true)
         try{
           const response = await api.post('/pickupTime',{cep})
           setDados(response.data)
           setHiden(false)
-        }catch(erro){
-          console.log(erro)
+        }catch(error){
+          alert(error.response.data.msg)
+          setDados('')
+          console.error(error)
         }
   setLoading(false)
       }
@@ -26,7 +27,7 @@ function HorarioColeta() {
       <div className='coleta-container'>
          <div className='horario-container' id='horarios'>
                 <img src="/img/horariocoleta.svg" alt="foto-horariocoleta" className='icon-hc' />
-        </div>
+            </div>
             <div className='hc-container'>
                 <h2> <span className='highlight'> Horários </span> da Coleta </h2>
                 <img src='/img/retangulo-hcoleta.svg' alt='retangulo-hcoleta' className='ret-coleta'/>
@@ -36,8 +37,8 @@ function HorarioColeta() {
                     {loading?
                     <div></div> 
                     :
-                    <button className='btn-cep' type="button" onClick={() => getTime()}>BUSCAR</button>
-                    }
+                    <button className='btn-cep' type="button" onClick={() => getTime()}>BUSCAR</button>}
+                    
              </div>      
       </div>
 <div className='horario'>
@@ -77,7 +78,10 @@ function HorarioColeta() {
         </div>
 
 
+
+
         <div id='artigos'  className='container-artigos'>
+
             <h2><span className='highlight'> Catálago </span> Sustentável</h2>
             <img src='/img/icon-artigos.svg' alt='globo-artigos' className='g-artigos'/>
             <img src='/img/retangulo-hcoleta.svg' alt='retangulo-artigos' className='ret-artigos'/>
@@ -130,11 +134,9 @@ function HorarioColeta() {
         </div>
         <div  className='container-ajudasp'>
         <img src='/img/ajuda-sp.svg' alt='ajuda sao paulo' className='ajuda-sp'/>
-        
         </div>
         </div>
            
-
         </div>
     );
 }
