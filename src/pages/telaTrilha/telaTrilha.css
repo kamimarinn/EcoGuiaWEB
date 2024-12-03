@@ -1,6 +1,4 @@
-/* CONTAINER NAVBAR */
-
-.container-telatrilha {
+.container-telastrilhas {
     position: absolute; 
     top: 0; 
     width: 100%; 
@@ -10,33 +8,23 @@
     justify-content: center; 
     align-items: center; 
     background-color: transparent
-
-}
-
-.container-navbar{
-  position: absolute; 
-  width: 100%; 
-  top: 20px; 
-  display: flex; 
-  justify-content: center; 
-   
 }
 
 
-
-.container-navbar a{
-    position: relative;
-    z-index: 7;
-    color: #000; 
-    text-decoration: none; 
-    margin-bottom: 15px;
-    margin-left: 20px;
+.container-logo-telasdicas {
     display: flex;
-    justify-content: center; 
-    align-items: center; 
+    justify-content: start;
+    width: 100%;
+    margin-bottom: 10px;
 }
 
-.btn-login-telatrilha{
+.container-logo-telasdicas img{
+    width: 60%;
+    margin-left: 40px;
+    margin-top: 10px;
+}
+
+.btn-login-telasdicas{
     position: absolute; 
     top: 15px; 
     right: 30px; 
@@ -44,7 +32,7 @@
     align-items: center;
 }
 
-.btn-login-telatrilha button{
+.btn-login-telasdicas button{
     background: none; 
     border: 0.5px solid #000; 
     border-radius: 0;
@@ -55,36 +43,34 @@
     
 }
 
-
-.container-titulo-alt-trilha{
+.container-titulo-alt{
     display: flex;
     flex-direction: column;
+ 
 }
 
-.container-titulo-alt-trilha h2{
+.container-titulo-alt h2{
     font-size: 36px;
     text-align: center;
     z-index: 7;
     margin: 30px 10px 20px 0;
 }
 
-.container-titulo-alt-trilha h2 .highlight{
+.container-titulo-alt h2 .highlight{
     color: #6BBF59; 
     margin: 5px;
 }
 
-
-
-.retang-coleta-telatrilha{
+.retang-coleta-telastrilhas{
     position: absolute; 
-      z-index: 1;
-      top: 70px; 
-      left: 32%; 
-      display: flex;
-      margin: 0;
+    z-index: 1;
+    top: 70px; 
+    left: 32%; 
+    display: flex;
+    margin: 0;
 }
 
-.container-titulo-alt-trilha p{
+.container-titulo-alt p{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -93,167 +79,88 @@
     margin: 0 10px 5px 5px;
 }
 
-
-.container-principal {
-    display: flex;  
-    justify-content: space-around; 
-    margin-top: 50px !important;
-}
-
-.quest-tit{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-
-}
-
-.quest-tit h3{
-    font-size: 30px;
-    color: #000;
-    margin-left: 200px;
-    margin-top: 10px;
-    margin-bottom: 30px;
-    display: flex;
-    justify-content: center;
- 
-}
-
-
-.container-um-quests {
-    width: 40vw;
-    height: 50vh;
+.pai-container-telastrilhas {
+    width: 80vw; 
+    height: auto; 
     background-color: #F1F1F1;
     border: 0.5px solid transparent;
-    border-radius: 10px;
+    border-radius: 39px;
     box-shadow: 1px 3px 10px 9px rgba(0, 0, 0, 0.16);
-    padding: 40px;
+    margin: 20px 80px 20px;
+    z-index: 7;
+    position: absolute;
     display: flex; 
-    flex-direction: row; 
-    flex-wrap: wrap; 
-    gap: 10px;
-    justify-content: space-between; 
-}
-
-.inputs-quests-um, 
-.inputs-quests-dois, 
-.inputs-quests-tres{
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-}
-
-/* Estilo para os inputs */
-.input-quest-trilha,
-.input-quest {
-    width: 10%; 
-    /* height: auto; */
-    background-color: #6BBF59;
-    border: 0.5px solid transparent;
-    border-radius: 10px;
-    padding: 10px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    font-size: 1.2rem;
-  
-}
-
-/* Estilo para os inputs de texto */
-.text-input-um,
-.text-input-dois,
-.text-input-tres {
-    width: 70%;
-    /* height: auto; */
-    border: 0.5px solid transparent;
-    border-radius: 5px;
-    padding: 8px;
-    font-size: 1.5em;
-    display: flex; 
-    flex-direction: row; 
-    flex-wrap: wrap;
-    
-}
-
-
-
-.container-dois-badge {
-    width: 40vw; 
-    height: 50vh; 
-    background-color: #F1F1F1;
-    border: 0.5px solid transparent;
-    border-radius: 10px;
-    box-shadow: 1px 3px 10px 9px rgba(0, 0, 0, 0.16);
+    flex-direction: column; 
     padding: 40px; 
-    
 }
 
-.badge-tit{
+.container-btn-quests {
     display: flex;
-    justify-content: center;
-}
-
-.badge-tit h3{
-    font-size: 30px;
-    color: #000;
-    margin-top: 10px;
-    margin-bottom: 30px;
-   
-}
-
-.container-inputs-badge{
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 20px; 
-}
-
-.file-input {
-    width: 1vw;
-    height: 20vh;
-    display: flex;
-    flex-direction: column;
-    background-color: #D9D9D9;
-    border: 0.5px solid transparent;
-    border-radius: 5px;
-    /* margin-bottom: 170px; */
-    padding: 25px 80px 60px ; 
-}
-
-.right-column {
-    display: flex;
-    flex-direction: column;
-    gap: 10px; 
-    width: 60%; 
-}
-
-.input-texto, .input-descricao {
-    width: 100%; 
-    padding: 8px;
-    margin: 5px 0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-textarea.input-descricao {
-    height: 100px; 
-}
-
-.btn-adicionar-trilha {
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-    margin-top: 50px;
-    margin-bottom: 60px;
-    
-}
-
-.btn-adicionar-trilha button {
-    
-    background-color: #265705;
-    display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: right;
     align-items: center;
-    color: #ffff;
-   
+    margin-bottom: 30px;
+}
+
+.btn-adicionar-quests {
+    background-color: #6BBF59;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-remove-quests {
+    width: 35%;
+    background-color: #bf5959;
+    justify-content: center;
+    text-align: center;
+    margin-right: 50px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.container-quests {
+    display: flex;
+    flex-direction: column; /* Mantenha as dicas em coluna */
+    align-items: center;
+}
+
+
+
+.container-quest {
+    width: 80vw; 
+    background-color: #E2F2DF;
+    border: 0.5px solid transparent;
+    border-radius: 10px;
+    box-shadow: 1px 3px 10px 9px rgba(0, 0, 0, 0.16);
+    margin-bottom: 55px;
+    margin-top: 10px;
+    word-wrap: break-word;
+    word-break: break-word;
+    white-space: normal;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 0 15px; 
+    gap:25px;
+}
+
+.container-quest p {
+    max-width: 530px;
+}
+
+.container-quest h5 {
+    font-size: 20px;
+    margin: 0; 
+    flex: 1; 
+}
+
+.buttons-container {
+    display: flex; 
+    gap: 10px; 
 }

@@ -1,118 +1,81 @@
-import './telaTrilha.css';
-import NavBar from '../../componentes/NavBar/Navbar';
-import { Link } from "react-router-dom";
-import { useState } from 'react';
+import { Link } from 'react-router-dom';
+import "./telaTrilha.css";
+import NavBar from '../../componentes/NavBar/Navbar'
 import api from '../../services/api';
-import { useRef } from 'react';
+import { useEffect, useState } from 'react';
 
-function TelaTrilha() {
+function TelaTrilha(){
+ 
+    const [quests,setQuests] = useState([]);
+ 
+    useEffect(() => {
 
-    const[questUm,setQuestUm] = useState('')
-    const[questDois,setQuestDois] = useState('')
-    const[questTres,setQuestTres] = useState('')
-    const[xpUm,setXpUm] = useState('')
-    const[xpDois,setXpDois] = useState('')
-    const[xpTres,setXpTres] = useState('')
-    const[blobTitle,setBlobTitle] = useState('')
-    const[blobDescription,setBlobDescription] = useState('')
-    const[image,setImage] = useState(null)
+        const getAllQuests = async () => {
 
-
-    const handlerImage = (e) => {
-        if(e.target.files[0]){
-            setImage(e.target.files[0])
-
-        }
-        else{
-            imagRef.current.src = ''
-        }
+            try {
         
-    }
+                const response = await api.get('/quests');
 
-    const addQuests = async () => {
-        const formData = new FormData();
-        formData.append('file', image); // Adiciona a imagem
-        formData.append('description_3', questTres);
-        formData.append('XP_3', xpTres);
-        formData.append('description_2', questDois);
-        formData.append('XP_2', xpDois);
-        formData.append('description_1', questUm);
-        formData.append('XP_1', xpUm);
-        formData.append('blob_title', blobTitle);
-        formData.append('blob_description', blobDescription);
+                const questsInOrder = response.data.quests.reverse()
+
+                setQuests(questsInOrder);
+            } catch (error) {
+        
+                alert("Erros ao pegar os dados")
+                console.error(error);
+            }
+        }
+
+        getAllQuests();
+    },[quests]);
+ 
+   
+    const deleteLatestQuest =  async () => {
     
         try {
-            const response = await api.post('/createQuest', formData, {
-                headers: {
-                    'Content-Type': 'multipart/form-data',  
-                },
-            });
-            console.log(response.data);
-            alert("Quests e Badge criadas com sucesso");
+
+            const response = await api.delete("/deleteQuest");
+
+            alert("Missão mais recente deletada com sucesso!")
+            console.log(response.data)
         } catch (error) {
-            alert("Algo deu errado: " + error.response.data.msg);
-            console.error(error);
+
+            alert("Erro ao apagar a missão mais recente")
+            console.error(error)
         }
-    };
+    }
     
     return (
-        <div className='container-telatrilha'>
+        <div className='container-telastrilhas'>
             <NavBar />
-            <div className='container-titulo-alt-trilha'>
+            <div className='container-titulo-alt'>
                 <h2><span className='highlight'>Trilha</span> de Objetivos</h2>
-                <img src='/img/retangulo-hcoleta.svg' alt='retangulo-hcoleta' className='retang-coleta-telatrilha'/>
-                <p>Manipule quests e badges!</p>
-            </div>
-            <div className='container-principal'>
-                <div className='container-um-quests'>
-                <div className='quest-tit'>
-                   <h3>Quests</h3>
-                   </div>
-                    <div className='inputs-quests-um'>
-                        <textarea className='text-input-um' placeholder="Quest" onChange={(e) => setQuestUm(e.target.value)}/>
-                        <input type="number" id="input-id" className="input-quest" placeholder="XP" onChange={(e) => setXpUm(e.target.value)} />
-                        </div>
-
-                        <div className='inputs-quests-dois'>
-                        <textarea className='text-input-dois' placeholder="Quest" onChange={(e) => setQuestDois(e.target.value)}/>
-                        <input type="number" id="input-id" className="input-quest" placeholder="XP" onChange={(e) => setXpDois(e.target.value)}/>
-                        </div>
-                        
-                        <div className='inputs-quests-tres'>
-                        <textarea className='text-input-tres' placeholder="Quest" onChange={(e) => setQuestTres(e.target.value)}/>
-                        <input type="number" id="input-id" className="input-quest" placeholder="XP" onChange={(e) => setXpTres(e.target.value)}/>
-                        </div>
-
-                      
-                        
-                    </div>
-                    <div className='container-dois-badge'>
-                   <div className='badge-tit'>
-                   <h3>Badge</h3>
-                   </div>
-                  <div className='container-inputs-badge'>
-                  <input type="file" id="file-input"  accept="image/*" className="file-input"onChange={handlerImage} />
-                    
-                    
-                    <div className="right-column">
-                        <input type="text" placeholder="Digite o título" className="input-texto" onChange={(e) => setBlobTitle(e.target.value)} />
-                        <textarea placeholder="Digite a descrição" className="input-descricao" onChange={(e) => setBlobDescription(e.target.value)}></textarea>
-                  </div>
-                    </div>
-                </div>
-
-                </div>
-
-                <div className='btn-adicionar-trilha'>
-                        <button onClick={() => addQuests()}>Adicionar</button>
-
-                    </div>
-               
+                <img src='/img/retangulo-hcoleta.svg' alt='retangulo-hcoleta' className='retang-coleta-telastrilhas'/>
+                <p>Adicione e remova aqui as missões!</p>
             </div>
 
-          
-       
+            <div className='pai-container-telastrilhas'>
+                <div className='container-btn-quests'>
+                    <button className='btn-remove-quests' onClick={() => deleteLatestQuest()}>Apagar a Missão Mais Recente</button>
+                    <Link to="/telaAddTrilha">
+                        <button className='btn-adicionar-quests'>
+                            Adicionar + 
+                        </button>
+                    </Link>
+                </div>
+                <div className='container-quests'>
+                    {quests.map((_,index) => (
+                        <div className='container-quest' key={quests[index].pk_IDquest}>
+                            <p>{quests[0] ? quests[index].description_quest : "carregando.." }</p>
+                            <p>XP: {quests[index].XP_quest}</p>
+                            <p>Badge {quests[index].fk_badge_quest}</p>
+                        </div>
+                    ))}
+                </div>
+            </div>
+        </div>
     );
 }
-
+ 
 export default TelaTrilha;
+ 
