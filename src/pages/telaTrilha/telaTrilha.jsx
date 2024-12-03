@@ -44,7 +44,7 @@ function TelaTrilha(){
             console.error(error)
         }
     }
-
+    
     return (
         <div className='container-telastrilhas'>
             <NavBar />
