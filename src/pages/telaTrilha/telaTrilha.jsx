@@ -27,7 +27,7 @@ function TelaTrilha(){
         }
 
         getAllQuests();
-    },[]);
+    },[quests]);
  
    
     const deleteLatestQuest =  async () => {
@@ -47,7 +47,6 @@ function TelaTrilha(){
     
     return (
         <div className='container-telastrilhas'>
-            <NavBar />
             <div className='container-titulo-alt'>
                 <h2><span className='highlight'>Trilha</span> de Objetivos</h2>
                 <img src='/img/retangulo-hcoleta.svg' alt='retangulo-hcoleta' className='retang-coleta-telastrilhas'/>

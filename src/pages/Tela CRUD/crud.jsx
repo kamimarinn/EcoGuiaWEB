@@ -5,7 +5,6 @@ import {Link} from "react-router-dom";
 function Crud (){
     return (
         <div className="container-crud">
-            <NavBar />
     <div className="container-admin">
         <img className="engrenagem-crudtela" src ='/img/engrenagem-crudtela.svg' alt='icon'/>
         <h2>Página de <span className='highlight'>Administrador</span></h2>

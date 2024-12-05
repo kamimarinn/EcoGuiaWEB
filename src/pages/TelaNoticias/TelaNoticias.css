@@ -1,0 +1,60 @@
+.btns-noticias {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15vh;
+    width: 100vw;
+    height: 30vh;
+}
+
+.btn-adicionarNoticia {
+    width: 6vw;
+    height: 12vh;
+    background-color: rgb(233, 233, 233);
+    border-radius: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn-adicionarNoticia p {
+    margin-top: 20vh;
+    width: 10vw;
+    margin-left: 2vw;
+}
+
+
+.btn-modificarNoticia {
+    width: 6vw;
+    height: 12vh;
+    background-color: rgb(233, 233, 233);
+    border-radius: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn-modificarNoticia p {
+    margin-top: 20vh;
+    width: 10vw;
+    margin-left: 3vw;
+}
+
+.btn-removerNoticia {
+    width: 6vw;
+    height: 12vh;
+    background-color: rgb(233, 233, 233);
+    border-radius: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn-removerNoticia p {
+    margin-top: 20vh;
+    width: 10vw;
+    margin-left: 4vw;
+}

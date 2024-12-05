@@ -8,6 +8,10 @@
     position: relative; 
 }
 
+.container-login-form{
+    margin-top: 10vh;
+}
+
 .container-eco{
     width: 70vw; 
     height: 80vh; 
@@ -31,36 +35,40 @@
    
 }
 
-.container-cadastro {
-    flex-direction: column; 
-    align-items: center; 
-    margin-top: 70px;
-    
-}
-
 .logo-telalogin {
     width: 75%;
     margin-left: 45px;
  
 }
 
-.container-cadastro h2 {
-    font-size: 30px;
+.container-login h2 {
+    font-size: 35px;
     text-align: center; 
     margin: 0;
 }
 
+.container-login .error-message {
+    margin-top: 20px;
+    color: #db3b0a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-login button {
+    margin-left: 11vw;
+}
 
 
 
-.container-cadastro input{
-    width: 60%;
+.container-login input{
+    width: 23vw;
     height: 5px;
     color: #919890;
     background-color: #F1F1F1;
     flex-direction: column;
     padding: 1rem;
-    margin-top: 5px;
+    margin-top: 2vw;
     margin-left: 70px;
     border: 0.5px solid #3F463E;
     border-radius: 5px; 
@@ -113,35 +121,20 @@
     border-radius: 15px; 
 }
 
+.btn-confirmar:hover {
+    background-color: #2b7520;
+}
 
 .container-login-link {
-    font-size: 15px;
+    font-size: 16px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10px; 
-    margin-left: 10px;
+    margin-left: 4vw;
+    margin-top: 3vh; 
+    color: #6BBF59;
 }
 
-.container-login-link span {
-    margin-right: 5px;
-}
-
-.btn-faça-login {
-    font-size: 15px;
-    flex-direction: column;
-    justify-content: center;
-    background-color: #F1F1F1;
-    color: #6BBF59; 
-    border: none; 
-    /* margin-bottom: 30px; */
-    padding: 5px 10px; 
-    cursor: pointer; 
-    margin: 0;
-}
-
-.btn-faça-login:hover {
-    color: darkgreen;
+.container-login-link:hover {
+    color: #2b7520;
 }
 
 .link-esqueci-senha{

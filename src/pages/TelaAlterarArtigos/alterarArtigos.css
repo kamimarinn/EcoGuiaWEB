@@ -103,8 +103,6 @@
     font-size: 16px;
     text-align: center;
     margin: 0 10px 25px 5px;
-
- 
 }
 
 .pai-container-addnoticia{
@@ -186,7 +184,7 @@
 }
 
 .container-addnoticia input {
-    width: 93%; 
+    width: 41vw; 
     height: auto;
     background-color: #D9D9D9;
     border: 0.5px solid transparent;
@@ -206,7 +204,7 @@
 }
 
 select {
-    width: 200px; 
+    width: 43vw; 
     padding: 5px; 
     border: 1px solid #6BBF59; 
     border-radius: 5px; 

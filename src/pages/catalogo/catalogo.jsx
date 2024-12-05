@@ -1,82 +1,186 @@
 import './catalogo.css';
-import NavBar from '../../componentes/NavBar/Navbar'
-import {Link} from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
+import { useEffect, useState } from 'react';
+import api from '../../../../joao/EcoGuiaWEB/src/services/api';
+import Slider from "react-slick"; 
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css"; 
 
-function catalogo(){
-    return(
-    <div className='container-catalogo'>
-    <NavBar />
-    
-    <div className='container-titulo'>
-        <h2>POR QUE ÁRVORES SÃO TÃO<br></br> IMPORTANTES PARA O PLANETA?</h2>
-        
-    <div className='container-descricoes'>
-        <p>São Paulo, 21 de agosto de 2024</p>
-        <h5>via chatGPT</h5>
-    </div>
-    </div>
-    <div className='container-not'>
-    <img className='img-not-art' src='/img/imagem-noticia-art.svg' alt='img' />
-        <p>As árvores são essenciais para o equilíbrio ambiental e a saúde global do planeta. Elas produzem oxigênio através da fotossíntese, absorvendo  dióxido de carbono (CO₂) e ajudando a combater as mudanças climáticas. <span className='highlight'>Uma única árvore pode gerar oxigênio suficiente para uma família de quatro pessoas por um ano.
-    </span> 
-        <br></br> 
-    <br></br>  Além disso, as árvores desempenham um papel crucial na conservação da água. Suas raízes agem como uma esponja natural, absorvendo água e reduzindo o escoamento superficial, o que previne enchentes e mantém o ciclo da água. <span className='highlight'>Elas também filtram poluentes do ar, melhorando a qualidade do ar e contribuindo para a saúde respiratória em áreas urbanas.</span>
-        <br></br> 
-        <br></br> 
-        As árvores oferecem habitat para diversas espécies, sustentando ecossistemas ricos e promovendo a biodiversidade. <span className='highlight'>Elas ajudam a manter o solo estável e a prevenir a erosão, essencial para a agricultura sustentável.</span><br></br> 
-        <br></br> 
-        Além dos benefícios ambientais, o contato com áreas arborizadas reduz o estresse e melhora o bem-estar, oferecendo um ambiente mais saudável e agradável. <span className='highlight'>Preservar e plantar árvores é vital para a sustentabilidade e para um futuro mais equilibrado e saudável para todos.</span></p>
-    </div>
-    <div className='container-outras-not'>
-        <h3>Outras notícias</h3>
-        <img className='img-outras-not' src='/img/linha-outras-not.svg' alt='img' />
-    </div>
-    <div className='pai-outras-noticias'>
-         <div className='container-not-um'>
-            <img src='/img/img-pag-catalogo.svg' alt='img-noticia' className='img-not-dois'/>
-            <h5>A importancia  da <br></br> reciclagem.</h5>          
-            <button className='btn-not-um' type='button'>LEIA MAIS</button>        
-        </div>
+function PageCatalogo() {
+    const { id } = useParams();
+    const [artigos, setArtigos] = useState([]);
+    const [artigoSelecionado, setArtigoSelecionado] = useState(null);
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(null);
 
-        <div className='container-not-um'>
-            <img src='/img/img-pag-catalogo.svg' alt='img-noticia' className='img-not-dois'/>
-            <h5>A importancia  da <br></br> reciclagem.</h5>          
-            <button className='btn-not-um' type='button'>LEIA MAIS</button>        
-        </div>
+    // Função para buscar todos os artigos
+    const fetchArticles = async () => {
+        console.log("Buscando artigos..."); // Log para verificar a chamada
+        try {
+            const resposta = await api.get("/articles");
+            console.log("Resposta da API:", resposta.data.results); // Verifique a resposta completa
+            if (Array.isArray(resposta.data.results)) {
+                setArtigos(resposta.data.results);
+                console.log("Artigos carregados:", resposta.data.results); // Log para verificar os artigos carregados
+            } else {
+                setError("Formato de resposta inválido."); // Verifique se não é um array
+            }
+        } catch (err) {
+            setError("Erro ao carregar os artigos.");
+            console.error("Erro ao buscar artigos:", err);
+        } finally {
+            setLoading(false);
+        }
+    };
 
-        <div className='container-not-um'>
-            <img src='/img/img-pag-catalogo.svg' alt='img-noticia' className='img-not-dois'/>
-            <h5>A importancia  da <br></br> reciclagem.</h5>          
-            <button className='btn-not-um' type='button'>LEIA MAIS</button>        
-        </div>
-        </div>
+    // Função para buscar um artigo específico pelo ID (enviado no corpo da requisição)
+    const fetchArticleById = async (articleId) => {
+        try {
+            const resposta = await api.post("/article", { id: articleId }); // Enviando o ID no corpo
+            const artigo = resposta.data.response.results[0]; // Acessando a estrutura correta da resposta
+            if (artigo) {
+                setArtigoSelecionado(artigo);
+            } else {
+                setError("Artigo não encontrado.");
+            }
+        } catch (err) {
+            setError("Erro ao carregar o artigo.");
+            console.error("Erro ao buscar artigo:", err);
+        } finally {
+            setLoading(false);
+        }
+    };
 
-        <div className='container-footer'>
-            <div className='cont-footer'>
-            <img src="/img/logo-v2.svg" alt="logo" className='logo-verdois' />  
-        <p>Seu guia para um futuro <br></br>mais verde.</p> 
-        <a id='btn-voltar-fot' href="#top" className='botao-voltar'>
-            <img className='img-voltar-cat' src='/img/btn-voltar.svg' alt='Voltar ao topo' />
-        </a>
-         </div>
-       
-        
-        <div id='cont-footer-btn' className='container-footer-btn'>
-        <a href="/horariocoleta">ARTIGOS</a>
-        <a href="/funcionalidades">SOBRE</a>
-        </div>
+    // Efeito para buscar artigos ao carregar o componente
+    useEffect(() => {
+        console.log("Componente montado, id:", id); // Log para verificar o ID
+        if (id) {
+            fetchArticleById(id); // Busca o artigo selecionado
+        }
+        fetchArticles(); // Busca todos os artigos ao acessar a página do artigo
+    }, [id]);
 
-        <div id='cont-linha' className='container-linha'>
-        <img src="/img/line-footer.svg" alt="linha" className='linha-footer'/>
-        <p>Copyright © 2024 | ECOGUIA | by ECO12BIOTEC</p>
-        </div>
+    // Função para formatar a data
+    const formatarData = (data) => {
+        const opcoes = { day: 'numeric', month: 'long', year: 'numeric' };
+        return new Date(data).toLocaleDateString('pt-BR', opcoes);
+    };
 
-                      
-        </div>
+    // Função para formatar o conteúdo
+    const formatarConteudo = (conteudo) => {
+        return conteudo
+            .replace(/\n/g, '<br />')
+            .replace(/<strong>(.*?)<\/strong>/g, '<strong class="bold-highlight">$1</strong>');
+    };
 
-    </div>
-    
-    )
+    // Configurações do carrossel
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        arrows: true,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    };
+
+    // Verificações de loading e error
+    if (loading) {
+        return <div>Carregando...</div>;
+    }
+
+    if (error) {
+        return <div>{error}</div>;
+    }
+
+    return (
+        <div className='container-catalogo'>
+            <div className='container-logo'>
+                <Link to="/">
+                    <img className='img-logo-pag-artigo' src='/img/logo-pag-artigo.svg' alt='logo' />
+                </Link>
+            </div>
+            <div className='container-navbar'>
+                <Link to="/">SOBRE</Link>
+                <Link to="/horariocoleta">HORÁRIOS DAS COLETAS</Link>
+                <Link to="/catalogo">ARTIGOS</Link>
+                <Link to="/">ECOPONTOS</Link>
+            </div>
+            <div className='btn-login'>
+                <Link className="button" to="/Login">ADMIN</Link>
+            </div>
+
+            {/* Renderizando a notícia selecionada */}
+            {artigoSelecionado && (
+                <div className='container-not'>
+                    <div className='div-voltar-home'>
+                        <Link to={'/'} className='voltar-home'>Voltar</Link>
+                    </div>
+                    <div className='container-titulo'>
+                        <h5 className='data'>{formatarData(artigoSelecionado.date_article)}</h5>
+                        <h2 className='titulo'>{artigoSelecionado.title_article}</h2>
+                        <a className='fonte' href={artigoSelecionado.reference_article} target="_blank" rel="noopener noreferrer">
+                {artigoSelecionado.reference_article}
+            </a>
+                    </div>
+                    <img className='img-not-art' src={artigoSelecionado.image_article} alt='img' />
+                    <p dangerouslySetInnerHTML={{ __html: formatarConteudo(artigoSelecionado.description_article) }}></p>
+                </div>
+            )}
+
+            {/* Carrossel de Mais Notícias */}
+            <div className='container-carrossel'>
+                <h2><span className='highlight'>Mais</span> Notícias</h2>
+                {artigos.length > 0 ? (
+                    <Slider {...settings}>
+                    {artigos.slice(0, 5).map((artigo) => (
+                        <div className='container-artigo' key={artigo.pk_IDarticle}>
+                            <Link to={`/catalogo/${artigo.pk_IDarticle}`}>
+                                <img src={artigo.image_article} alt={artigo.title_article} className='img-artigo' />
+                                <h5 className='titulo'>{artigo.title_article}</h5>
+                                <p className='data'>{formatarData(artigo.date_article)}</p>
+                            </Link>
+                        </div>
+                    ))}
+                </Slider>
+                ) : (
+                    <p>Nenhum artigo disponível.</p> // Mensagem se não houver artigos
+                )}
+            </div>
+
+            <div className='container-footer'>
+                <img src="/img/logo-v2.svg" alt="logo" className='logo-verdois' />
+                <p>Seu guia para um futuro <br /> mais verde.</p>
+                <a href="#top" className='botao-voltar'>
+                    <img className='img-voltar-cat' src='/img/btn-voltar.svg' alt='Voltar ao topo' />
+                </a>
+                <div className='container-footer-btn'>
+                    <Link to="/horariocoleta">ARTIGOS</Link>
+                    <Link to="/funcionalidades">SOBRE</Link>
+                </div>
+                <div className='container-linha'>
+                    <img src="/img/line-footer.svg" alt="linha" className='linha-footer'/>
+                    <p>Copyright © 2024 | ECOGUIA | by ECO12BIOTEC</p>
+                </div>
+            </div>
+        </div>
+    );
 }
 
-export default catalogo;
+export default PageCatalogo;

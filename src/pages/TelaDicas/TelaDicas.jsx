@@ -10,9 +10,7 @@ function TelaDicas(){
     const getAllTips = async () => {
         try{
         const response = await api.get('/tips');
-        const tipsInOrder = response.data.tips.reverse()
-
-        setTips(tipsInOrder);
+        setTips(response.data.tips);
     }catch(error){
         alert("Erros ao pegar os dados")
         console.error(error);
@@ -25,6 +23,7 @@ function TelaDicas(){
    
      const deleteTip =  async (id) => {
         const idTip = id
+        console.log(id)
         try{
             const response = await api.delete("/deleteTip",{
             data:{
