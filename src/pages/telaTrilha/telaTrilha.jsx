@@ -27,7 +27,7 @@ function TelaTrilha(){
         }
 
         getAllQuests();
-    },[quests]);
+    },[]);
  
    
     const deleteLatestQuest =  async () => {
