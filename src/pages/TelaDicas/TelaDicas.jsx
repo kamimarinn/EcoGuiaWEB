@@ -18,11 +18,12 @@ function TelaDicas(){
     }
     useEffect(() => {
         getAllTips();
-    },[tips])
+    },[])
  
    
      const deleteTip =  async (id) => {
         const idTip = id
+        console.log(id)
         try{
             const response = await api.delete("/deleteTip",{
             data:{

@@ -208,7 +208,7 @@
     gap: 20px; 
 }
 
-.input-imagem {
+.file-input {
     width: 1vw;
     height: 20vh;
     display: flex;
