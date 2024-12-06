@@ -2,7 +2,8 @@ import "./AddArtigos.css";
 import { useRef } from "react";
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import api from "../../services/api";
+import api from "../../services/api.jsx";
+
 
 function AddArtigos() {
     const [noticias, setNoticias] = useState([]);
