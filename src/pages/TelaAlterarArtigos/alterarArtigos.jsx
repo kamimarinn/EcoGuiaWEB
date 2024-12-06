@@ -1,7 +1,7 @@
 import "./alterarArtigos.css";
 import { useRef, useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import api from "../../../../joao/EcoGuiaWEB/src/services/api";
+import api from "../../services/api.jsx";
 
 function TelaAlterarArtigos() {
     const [noticias, setNoticias] = useState([]);

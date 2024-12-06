@@ -1,6 +1,6 @@
 import "./RemoverArtigos.css";
-import NavBar from '../../../../joao/EcoGuiaWEB/src/componentes/NavBar/Navbar'
-import api from '../../../../joao/EcoGuiaWEB/src/services/api';
+import NavBar from '../../../src/componentes/NavBar/Navbar.jsx'
+import api from '../../services/api.jsx';
 import { useEffect, useState } from 'react';
 function TelaRemoverArtigos(){
  
