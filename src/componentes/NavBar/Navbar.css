@@ -71,6 +71,11 @@
     cursor: pointer;
 }
 
+.navbar-logout-button {
+    position: relative;
+    z-index: 100; 
+}
+
 @media screen and (max-width: 768px) {
     .menu-toggle {
         display: block;

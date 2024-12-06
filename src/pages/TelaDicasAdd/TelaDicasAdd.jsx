@@ -1,7 +1,6 @@
 import { useState } from "react";
 import "./TelasDicasAdd.css";
 import NavBar from '../../componentes/NavBar/Navbar'
-import { Link } from 'react-router-dom';
 import api from "../../services/api";
 function TelasDicasAdd() {
  
@@ -9,14 +8,14 @@ function TelasDicasAdd() {
  
    const addTip = async () =>{
     try{
-    const response = await api.post('/createTips',{
+    const response = await api.post('/createTip',{
         description_tip:tip
     })
     alert("Dica adicionada com sucesso!")
     setTip("")
     window.location = '/TelaDicas'
 } catch(error){
-    alert("Erro ao adicionar a dica", error.response)
+    alert("Erro ao adicionar a dica", error.response.data.msg)
     console.error(error);
 }
    }
@@ -47,5 +46,5 @@ function TelasDicasAdd() {
     );
  
 }
- 
+
 export default TelasDicasAdd;

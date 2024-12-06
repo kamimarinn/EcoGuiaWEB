@@ -1,4 +1,4 @@
-.container-teladicasadd{
+.container-telanoticias {
     position: absolute; 
     top: 0; 
     width: 100%; 
@@ -11,20 +11,20 @@
 }
 
 
-.container-logo-teladicas{
+.container-logo-telanoticias {
     display: flex;
     justify-content: start;
     width: 100%;
     margin-bottom: 10px;
 }
 
-.container-logo-teladicasadd img{
+.container-logo-telanoticias img{
     width: 60%;
     margin-left: 40px;
     margin-top: 10px;
 }
 
-.btn-login-teladicasadd{
+.btn-login-telanoticias{
     position: absolute; 
     top: 15px; 
     right: 30px; 
@@ -32,7 +32,7 @@
     align-items: center;
 }
 
-.btn-login-teladicasadd button{
+.btn-login-telanoticias button{
     background: none; 
     border: 0.5px solid #000; 
     border-radius: 0;
@@ -42,6 +42,7 @@
     text-decoration: none;
     
 }
+
 .container-titulo-alt{
     display: flex;
     flex-direction: column;
@@ -60,15 +61,13 @@
     margin: 5px;
 }
 
-
-
-.retang-coleta-teladicasadd{
+.retang-coleta-telanoticias{
     position: absolute; 
-      z-index: 1;
-      top: 70px; 
-      left: 32%; 
-      display: flex;
-      margin: 0;
+    z-index: 1;
+    top: 70px; 
+    left: 32%; 
+    display: flex;
+    margin: 0;
 }
 
 .container-titulo-alt p{
@@ -80,49 +79,71 @@
     margin: 0 10px 5px 5px;
 }
 
-.pai-container-adddicas{
-    width: 70vw; 
-    height: 50vh; 
+.pai-container-telanoticias {
+    width: 80vw; 
+    height: auto; 
     background-color: #F1F1F1;
     border: 0.5px solid transparent;
     border-radius: 39px;
     box-shadow: 1px 3px 10px 9px rgba(0, 0, 0, 0.16);
-    margin: 20px 150px 20px;
+    margin: 20px 80px 20px;
     z-index: 7;
     position: absolute;
     display: flex; 
-    flex-direction: column; /* Muda a direção para coluna */
+    flex-direction: column; 
     padding: 40px; 
 }
 
-.textarea-dicas {
-    width:40vw;
-    height: 30vh;
+.container-noticias {
     display: flex;
-    justify-content: center;
+    flex-direction: column; /* Mantenha as dicas em coluna */
     align-items: center;
-    margin-top: 15px;
-    margin-bottom: 10px; 
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    
 }
 
-.btn-add {
+
+
+.container-noticiaum,
+.container-noticiadois,
+.container-noticiatres,
+.container-noticiaquatro {
+    width: 80vw; 
+    height: 10vh; 
+    background-color: #E2F2DF;
+    border: 0.5px solid transparent;
+    border-radius: 10px;
+    box-shadow: 1px 3px 10px 9px rgba(0, 0, 0, 0.16);
+    margin-bottom: 55px;
+    margin-top: 10px;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 0 15px; 
+    gap:25px;
+}
+
+.container-noticiaum h5,
+.container-noticiadois h5,
+.container-noticiatres h5,
+.container-noticiaquatro h5 {
+    font-size: 20px;
+    margin: 0; 
+    flex: 1; 
+}
+
+.buttons-container {
+    display: flex; 
+    gap: 10px; 
+}
+
+.container-noticiaum button{
+    width: auto;
+    height: 30px;
+    background-color: #ffff;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: #6BBF59; /* Cor do botão */
-    color: white;
-    border: none;
-    margin-top: 20px;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
+    align-items: center; 
+    justify-content: center; 
+   
 }
 
-.btn-add:hover {
-    background-color: #5aa14b; /* Cor ao passar o mouse */
-}
+
+
