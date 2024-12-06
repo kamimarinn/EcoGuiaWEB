@@ -2,8 +2,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home/home-index.jsx";
 import PageCatalogo from "./pages/catalogo/catalogo.jsx";
-import Funcionalidades from "./componentes/Funcionalidades/Funcionalidades.jsx";
-import HorarioColeta from "./componentes/HorarioColeta/HorarioColeta.jsx";
 import Login from "./pages/Login/Login.jsx";
 import Crud from "./pages/Tela CRUD/crud.jsx";
 import AddArtigos from "./pages/telaAddArtigos/AddArtigos.jsx";
@@ -35,20 +33,20 @@ export default function Rotas() {
 
                 {/* Rotas protegidas */}
                 <Route path="/Crud" element={<ProtectedRoute element={<><ProtectedNavBar /><Crud /></>} />} />
-                <Route path="/AddArtigos" element={<ProtectedRoute element={<><ProtectedNavBar /><AddArtigos /></>} />} />
-                <Route path="/telaAltIcons" element={<ProtectedRoute element={<><ProtectedNavBar /><TelaAltIcons /></>} />} />
-                <Route path="/PagEditIcon" element={<ProtectedRoute element={<><ProtectedNavBar /><PagEditIcon /></>} />} />
-                <Route path="/telaTrilha" element={<ProtectedRoute element={<><ProtectedNavBar /><TelaTrilha /></>} />} />
-                <Route path="/telaAddTrilha" element={<ProtectedRoute element={<><ProtectedNavBar /><TelaAddTrilha /></>} />} />
-                <Route path="/TelaToken" element={<ProtectedRoute element={<><ProtectedNavBar /><TelaToken /></>} />} />
-                <Route path="/TelaRedefinirSenha" element={<ProtectedRoute element={<><ProtectedNavBar /><TelaRedefinirSenha /></>} />} />
-                <Route path="/TelaMateriais" element={<ProtectedRoute element={<><ProtectedNavBar /><TelaMateriais /></>} />} />
-                <Route path="/TelaModificarLevel" element={<ProtectedRoute element={<><ProtectedNavBar /><TelaModificarLevel /></>} />} />
-                <Route path="/TelaDicas" element={<ProtectedRoute element={<><ProtectedNavBar /><TelaDicas /></>} />} />
-                <Route path="/TelaDicasAdd" element={<ProtectedRoute element={<><ProtectedNavBar /><TelaDicasAdd /></>} />} />
-                <Route path="/TelaNoticias" element={<ProtectedRoute element={<><ProtectedNavBar /><TelaNoticias /></>} />} />
-                <Route path="/RemoverArtigos" element={<ProtectedRoute element={<><ProtectedNavBar /><TelaRemoverArtigos /></>} />} />
-                <Route path="/AlterarArtigos" element={<ProtectedRoute element={<><ProtectedNavBar /><TelaAlterarArtigos /></>} />} />
+                <Route path="/AddArtigos" element={<ProtectedRoute element={<AddArtigos />} />} />
+                <Route path="/telaAltIcons" element={<ProtectedRoute element={<TelaAltIcons />} />} />
+                <Route path="/PagEditIcon" element={<ProtectedRoute element={<PagEditIcon />} />} />
+                <Route path="/telaTrilha" element={<ProtectedRoute element={<TelaTrilha />} />} />
+                <Route path="/telaAddTrilha" element={<ProtectedRoute element={<TelaAddTrilha />} />} />
+                <Route path="/TelaToken" element={<ProtectedRoute element={<TelaToken />} />} />
+                <Route path="/TelaRedefinirSenha" element={<ProtectedRoute element={<TelaRedefinirSenha />} />} />
+                <Route path="/TelaMateriais" element={<ProtectedRoute element={<TelaMateriais />} />} />
+                <Route path="/TelaModificarLevel" element={<ProtectedRoute element={<TelaModificarLevel />} />} />
+                <Route path="/TelaDicas" element={<ProtectedRoute element={<TelaDicas />} />} />
+                <Route path="/TelaDicasAdd" element={<ProtectedRoute element={<TelaDicasAdd />} />} />
+                <Route path="/TelaNoticias" element={<ProtectedRoute element={<TelaNoticias />} />} />
+                <Route path="/RemoverArtigos" element={<ProtectedRoute element={<TelaRemoverArtigos />} />} />
+                <Route path="/AlterarArtigos" element={<ProtectedRoute element={<TelaAlterarArtigos />} />} />
 
             </Routes>
         </BrowserRouter>

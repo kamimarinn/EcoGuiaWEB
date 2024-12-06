@@ -2,7 +2,7 @@ import "./AddArtigos.css";
 import { useRef } from "react";
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import api from "../../../../joao/EcoGuiaWEB/src/services/api";
+import api from "../../services/api";
 
 function AddArtigos() {
     const [noticias, setNoticias] = useState([]);

@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import "./Login.css";
-import api from '../../../../joao/EcoGuiaWEB/src/services/api';
+import api from '../../services/api';
 
 function Login() {
     const [email, setEmail] = useState('');

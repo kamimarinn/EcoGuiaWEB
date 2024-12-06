@@ -65,6 +65,13 @@
       margin-top: 10px;
 }
 
+.container-crud {
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 10vw;
+}
+
 .container-admin {
     display: flex;
     flex-direction: column;

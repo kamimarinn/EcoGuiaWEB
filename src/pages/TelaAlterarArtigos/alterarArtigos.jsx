@@ -1,7 +1,7 @@
 import "./alterarArtigos.css";
 import { useRef, useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import api from "../../../../joao/EcoGuiaWEB/src/services/api";
+import api from "../../services/api";
 
 function TelaAlterarArtigos() {
     const [noticias, setNoticias] = useState([]);
@@ -122,12 +122,7 @@ function TelaAlterarArtigos() {
                     <img className='img-logo-pag-artigo' src='/img/logo-pag-artigo.svg' alt='logo' />
                 </Link>
             </div>
-            <div className='container-navbar'>
-                <a href="/">SOBRE</a>
-                <a href="/">HORÁRIOS DAS COLETAS</a>
-                <a href="/">ARTIGOS</a>
-                <a href="/">ECOPONTOS</a>
-            </div>
+            
             <div className='btn-login-addartigos'>
                 <Link className="button" to="/Login">ADMIN</Link>
             </div>

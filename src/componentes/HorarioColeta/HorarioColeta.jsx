@@ -1,6 +1,6 @@
 import './HorarioColeta.css';
 import {Link} from "react-router-dom";
-import api from '../../../../joao/EcoGuiaWEB/src/services/api';
+import api from '../../services/api';
 import { useState, useEffect } from 'react';
 
 

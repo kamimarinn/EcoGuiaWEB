@@ -1,7 +1,7 @@
 import './catalogo.css';
 import { Link, useParams } from "react-router-dom";
 import { useEffect, useState } from 'react';
-import api from '../../../../joao/EcoGuiaWEB/src/services/api';
+import api from '../../services/api';
 import Slider from "react-slick"; 
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css"; 
