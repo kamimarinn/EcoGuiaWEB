@@ -66,4 +66,3 @@ function TelaDicas(){
 }
  
 export default TelaDicas;
- 

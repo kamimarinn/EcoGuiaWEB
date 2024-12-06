@@ -1,7 +1,7 @@
 import './HorarioColeta.css';
 import {Link} from "react-router-dom";
-import api from '../../services/api';
-import { useState } from 'react';
+import api from '../../services/api.jsx';
+import { useState, useEffect } from 'react';
 
 
 function HorarioColeta() {
@@ -22,7 +22,30 @@ function HorarioColeta() {
           console.error(error)
         }
   setLoading(false)
-      }
+      };
+
+      const [artigos, setArtigos] = useState([]);
+
+    const fetchArticles = async () => {
+        try {
+            const resposta = await api.get("/articles");
+            setArtigos(resposta.data.results || []); // Garantindo que seja um array
+            console.log(resposta.data.results); // Log para verificar os dados recebidos
+        } catch (error) {
+            alert("Erro ao pegar os dados");
+            console.log(error);
+        }
+    };
+
+    useEffect(() => {
+        fetchArticles();
+    }, []);
+
+    const formatarData = (data) => {
+      const opcoes = { day: 'numeric', month: 'long', year: 'numeric' };
+      return new Date(data).toLocaleDateString('pt-BR', opcoes);
+    };
+
     return (
       <div className='coleta-container'>
          <div className='horario-container' id='horarios'>
@@ -72,53 +95,47 @@ function HorarioColeta() {
     </table>
   </div>} 
 </div>
-            <div className='containerCatalogo'> 
+            <div id='artigos' className='containerCatalogo'> 
             <img src="/img/folhas.svg" alt="img-folhas" className='folhas' />   
                      
         </div>
 
+            <div className='container-artigos'>
+                <h2><span className='highlight'> Catálago </span> Sustentável</h2>
+                <img src='/img/icon-artigos.svg' alt='globo-artigos' className='g-artigos' />
+                <img src='/img/retangulo-hcoleta.svg' alt='retangulo-artigos' className='ret-artigos' />
+                <p>Encontre toda informação necessária para ter uma<br />vida mais sustentável e um consumo consciente!</p>
+            </div>
 
+            <div className='pai-div-parte'>
+                <div className='container-artigo-grande'>
+                    {artigos.length > 0 && (
+                        <>
+                            <img src={artigos[0].image_article} alt={artigos[0].title_article} className='img-not-grande' />
+                            <h4>{artigos[0].title_article}</h4>
+                            <p>{formatarData(artigos[0].date_article)}</p>
+                            <Link to={`/catalogo/${artigos[0].pk_IDarticle}`} className='link-clicavel'></Link>
+                        </>
+                    )}
+                </div>
 
-
-        <div id='artigos'  className='container-artigos'>
-
-            <h2><span className='highlight'> Catálago </span> Sustentável</h2>
-            <img src='/img/icon-artigos.svg' alt='globo-artigos' className='g-artigos'/>
-            <img src='/img/retangulo-hcoleta.svg' alt='retangulo-artigos' className='ret-artigos'/>
-            <p>Encontre toda informação necessária para ter uma<br></br>vida mais sustentável e um consumo consicente! </p>
-        </div>
-
-        <div className='pai-div-parte'>
-         <div className='container-artigo-um'>
-            <img src='/img/imagem-noticia.svg' alt='img-noticia' className='img-not'/>
-            <h4>Por quê árvores são tão<br></br>importantes para o<br></br> planeta?</h4>          
-            <Link className="btn-leiamais" to="/catalogo">LEIA MAIS</Link>
-                     
-        </div>
-        <div className='pai-container-artigo-dois'>
-        <div className='container-artigo-dois'>
-            <img src='/img/img-noticia-dois.svg' alt='img-noticia' className='img-not-dois'/>
-        <div className='container-artigo-dois-div'>
-            <h5>A importancia  da <br></br> reciclagem.</h5>
-            <button className='btn-leiamais-dois' type='button'>LEIA MAIS</button>
-        </div>
-        </div>
-        <div className='container-artigo-dois'>
-            <img src='/img/img-noticia-dois.svg' alt='img-noticia' className='img-not-dois'/>
-        <div className='container-artigo-dois-div'>
-            <h5>A importancia  da <br></br> reciclagem.</h5>
-            <button className='btn-leiamais-dois' type='button'>LEIA MAIS</button>
-        </div>
-        </div>
-        <div className='container-artigo-dois'>
-            <img src='/img/img-noticia-dois.svg' alt='img-noticia' className='img-not-dois'/>
-            <div className='container-artigo-dois-div'>
-            <h5>A importancia  da <br></br> reciclagem.</h5>
-            <button className='btn-leiamais-dois' type='button'>LEIA MAIS</button>
-        </div>
-        </div>
-        </div>
-        </div>
+                <div className='container-artigos-pequenos'>
+                    {artigos.length > 1 ? (
+                        artigos.slice(1, 4).map((artigo) => (
+                            <div className='container-artigo-pequeno' key={artigo.pk_IDarticle}>
+                                <img src={artigo.image_article} alt={artigo.title_article} className='img-not-pequena' />
+                                <div className='texto-artigo'>
+                                    <h5>{artigo.title_article}</h5>
+                                    <p className='data-artigo'>{formatarData(artigo.date_article)}</p>
+                                </div>
+                                <Link to={`/catalogo/${artigo.pk_IDarticle}`} className='link-clicavel'></Link>
+                            </div>
+                        ))
+                    ) : (
+                        <p>Nenhum artigo disponível.</p>
+                    )}
+                </div>
+            </div>
 
         <div className='container-FimCatalogo'> 
             <img src="/img/folhas.svg" alt="img-folhas" className='FimFolhas' />   

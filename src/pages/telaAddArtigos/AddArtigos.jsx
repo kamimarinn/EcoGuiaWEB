@@ -1,9 +1,9 @@
 import "./AddArtigos.css";
-import NavBar from '../../componentes/NavBar/Navbar'
 import { useRef } from "react";
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import api from "../../services/api";
+import api from "../../services/api.jsx";
+
 
 function AddArtigos() {
     const [noticias, setNoticias] = useState([]);
@@ -70,7 +70,23 @@ function AddArtigos() {
 
     return (
         <div className="container-addartigos">
-            <NavBar />
+            <div className='container-logo'>
+                <Link to="/">
+                    <img className='img-logo-pag-artigo' src='/img/logo-pag-artigo.svg' alt='logo' />
+                </Link>
+            </div>
+            <div className='container-navbar'>
+                <a href="/">SOBRE</a>
+                <a href="/">HORÁRIOS DAS COLETAS</a>
+                <a href="/">ARTIGOS</a>
+                <a href="/">ECOPONTOS</a>
+            </div>
+            <div className='btn-login-addartigos'>
+                <Link className="button" to="/Login">ADMIN</Link>
+                            
+
+            </div>
+
             <div className="container-tit">
             <h3><span className='highlight'>Adicionar</span> Artigo </h3>
 
@@ -82,17 +98,17 @@ function AddArtigos() {
             
 
                 <div className="container-info-crud">
-               <input  type="file" id="file-input" className="file-input"onChange={handlerImage}
-                />
-                <img  className="imagem"alt="preview" ref={imagRef}></img>
+                    <input  type="file" id="file-input" className="file-input"onChange={handlerImage}
+                    />
+                    <div className="img-preview"><img  className="imagem"alt="preview" ref={imagRef}></img></div>
 
-                <button onClick={addNewNoticia}>{editingIndex !== null ? "Atualizar" : "Adicionar"}</button>
+                    <button onClick={addNewNoticia}>{editingIndex !== null ? "Atualizar Artigo" : "Adicionar Artigo"}</button>
 
                
                </div>
 
             <div className="container-addnoticia">
-            <input 
+            <input  className="title-input"
                     type="description" 
                     placeholder="Título" 
                     value={currentNoticia.title} 
