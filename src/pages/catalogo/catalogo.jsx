@@ -2,6 +2,7 @@ import './catalogo.css';
 import { Link, useParams } from "react-router-dom";
 import { useEffect, useState } from 'react';
 import api from '../../services/api.jsx';
+
 import Slider from "react-slick"; 
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css"; 

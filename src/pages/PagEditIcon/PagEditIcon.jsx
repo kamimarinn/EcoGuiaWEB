@@ -1,7 +1,6 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useRef } from "react";
 import "./PagEditIcon.css";
-import NavBar from '../../componentes/NavBar/Navbar'
 import api from "../../services/api";
 
 
@@ -10,6 +9,7 @@ function PagEditIcon() {
 const [avatar,setAvatar] = useState('')
 const [id, setId] = useState('')
     useState(() => {
+        
     async function img() {
     const imag = localStorage.getItem('avatar')
     setAvatar(imag);
@@ -57,7 +57,6 @@ const [id, setId] = useState('')
     
     return (
         <div className='container-editicon'>
-            <NavBar />
             <div className='container-titulo-editicon'>
                 <h2><span className='highlight'>Editar </span> Icon </h2>
                 <img src='/img/retangulo-hcoleta.svg' alt='retangulo-hcoleta' className='retang-editicon'/>

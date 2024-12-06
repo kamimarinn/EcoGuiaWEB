@@ -19,7 +19,7 @@ function Crud (){
         </div>
 
         <div className="container-icon-dois">
-        <Link className="btn" to="/AddArtigos">
+        <Link className="btn" to="/telaNoticias">
             <img className="engrenagem-crudtela" src ='/img/not-crud.svg' alt='icon'/></Link>
             <h5 className="icon-titulo">Artigos e <br></br>Notícias</h5>
             <p className="icon-texto">Desenvolva novos<br></br>artigos</p>
