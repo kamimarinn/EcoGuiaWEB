@@ -40,7 +40,7 @@ function TelaDicas(){
      }
     return (
         <div className='container-telasdicas'>
-            <NavBar />
+      
             <div className='container-titulo-alt'>
                 <h2><span className='highlight'>Dicas</span>Diárias</h2>
                 <img src='/img/retangulo-hcoleta.svg' alt='retangulo-hcoleta' className='retang-coleta-teladicas'/>

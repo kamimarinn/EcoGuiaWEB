@@ -51,7 +51,7 @@ useEffect(() => {
 },[])
     return(
         <div className='container-modlevel'>
-        <NavBar />
+
         <div className='container-titulo-alt'>
                 <h2><span className='highlight'>Alteração</span>de Levels</h2>
                 <img src='/img/retangulo-hcoleta.svg' alt='retangulo-hcoleta' className='retang-coleta-modlevel'/>

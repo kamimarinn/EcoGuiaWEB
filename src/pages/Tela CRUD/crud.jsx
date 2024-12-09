@@ -1,5 +1,5 @@
 import "./Crud.css";
-import NavBar from '../../componentes/NavBar/Navbar'
+
 import {Link} from "react-router-dom";
 
 function Crud (){

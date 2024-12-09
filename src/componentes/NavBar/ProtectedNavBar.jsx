@@ -24,9 +24,11 @@ export default function ProtectedNavBar() {
                 <Link className="navbar-login-button" to="/">VOLTAR</Link>
             )}
 
-            <button className="navbar-logout-button" onClick={() => { console.log("Logout clicado"); logout(); }}>
+            <Link to='/'>
+            <button className="navbar-logout-button">
                 Logout
             </button>
+            </Link>
         </div>
     );
 }

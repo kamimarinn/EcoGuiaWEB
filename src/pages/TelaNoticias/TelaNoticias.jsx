@@ -5,18 +5,9 @@ function TelaNoticias (){
     return (
         <div className="container-header">
             <div className='container-logo'>
-        <Link to="/">
-        <img className='img-logo-pag-artigo' src='/img/logo-pag-artigo.svg' alt='logo' />
-        </Link>
+       
     </div>
-    <div className='container-navbar'>
     
-        <a href="/">SOBRE</a>
-        <a href="/">HORÁRIOS DAS COLETAS</a>
-        <a href="/">ARTIGOS</a>
-        <a href="/">ECOPONTOS</a>
-
-    </div>
 
     <div className="container-admin">
         <img className="engrenagem-crudtela" src ='/img/engrenagem-crudtela.svg' alt='icon'/>
@@ -25,6 +16,7 @@ function TelaNoticias (){
     </div>
     
         <div className="btns-noticias">
+ 
             <Link to={'/AddArtigos'}>
                 <div className="btn-adicionarNoticia">
                     <p> Adicionar Notícias</p>
