@@ -83,7 +83,7 @@ const [id, setId] = useState('')
        
        
                 <div className="drop-area">
-                <img  className="imagem"alt="preview" ref={imagRef}></img>
+                <img  className="imagem"alt="drop here" ref={imagRef}></img>
                 </div>
 
               

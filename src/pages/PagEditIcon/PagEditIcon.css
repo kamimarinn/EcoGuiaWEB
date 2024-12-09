@@ -104,15 +104,15 @@
 }
 
 .circle-container {
-    width: 100px; /* Diminuído para adaptação em telas pequenas */
-    height: 100px;
+    width: 15%; /* Diminuído para adaptação em telas pequenas */
+    height: auto;
     background-color: #F1F1F1;
     border-radius: 50%;
     display: flex; 
     justify-content: center; 
     align-items: center; 
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    margin-top: 20px;
+    margin-top: 55px;
     margin-bottom: 30px; 
 }
 
@@ -124,7 +124,8 @@
 .circle-icon {
     width: 100%; 
     height: auto; 
-    border-radius: inherit;
+    margin-bottom: 20px;
+   
 }
 
 .input-container {
@@ -146,14 +147,18 @@
 }
 
 .file-label {
+    width: 10vw;
+    height: auto;
     display: flex; 
     flex-direction: column;
     background-color: #265705; 
     color: white;
-    padding: 8px 15px; /* Ajustado para telas pequenas */
-    margin-top: 40px; /* Ajustado para maior espaçamento */
-    border-radius: 5px; 
+    padding: 5px 20px; 
+    justify-content: center;
+    text-align: center;
+    border-radius: 15px; 
     cursor: pointer;
+    font-size: 12px;
 }
 
 .drop-area {
@@ -168,9 +173,9 @@
 }
 
 .drop-area img{
-    max-width: 200px;
-    max-height: 200px;
-    border: 2px dashed #6BBF59; 
+    width: 10vw;
+    height: 40vh;
+    border: 5px dashed black; 
 }
 
 .btn-confirmar-action {
@@ -183,7 +188,7 @@
 .confirm-button {
     display: flex;
     flex-direction: column;
-     margin-right: -250px;
+    margin-right: -280px;
     margin-top: 35px;
     margin-bottom: 15px;
     background-color: #6BBF59; 
