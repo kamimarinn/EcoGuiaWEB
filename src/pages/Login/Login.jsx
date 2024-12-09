@@ -74,7 +74,7 @@ function Login() {
                         <button type="submit" className="btn-confirmar">Entrar</button>
                     </form>
 
-                    <Link className='container-login-link' to='/EsqueciSenha'>Esqueci a Senha</Link>
+                 
                 </div>
             </div>
         </div>

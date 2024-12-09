@@ -38,7 +38,7 @@ function TelaRemoverArtigos(){
      }
     return (
         <div className='container-telanoticias'>
-            <NavBar />
+
             <div className='container-titulo-alt'>
                 <h2><span className='highlight'>Deletar</span>Artigos</h2>
                 <img src='/img/retangulo-hcoleta.svg' alt='retangulo-hcoleta' className='retang-coleta-telanoticias'/>

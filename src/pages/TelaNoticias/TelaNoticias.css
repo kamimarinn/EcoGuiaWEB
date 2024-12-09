@@ -16,8 +16,14 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    
 }
+.btncontainerno{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+}
 .btn-adicionarNoticia p {
     margin-top: 20vh;
     width: 10vw;

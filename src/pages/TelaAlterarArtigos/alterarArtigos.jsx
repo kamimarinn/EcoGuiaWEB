@@ -117,15 +117,7 @@ function TelaAlterarArtigos() {
 
     return (
         <div className="container-addartigos">
-            <div className='container-logo'>
-                <Link to="/">
-                    <img className='img-logo-pag-artigo' src='/img/logo-pag-artigo.svg' alt='logo' />
-                </Link>
-            </div>
-            
-            <div className='btn-login-addartigos'>
-                <Link className="button" to="/Login">ADMIN</Link>
-            </div>
+
 
             <div className="container-tit">
                 <h3><span className='highlight'>Alterar </span> Artigo </h3>
